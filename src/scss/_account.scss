@@ -1,17 +1,34 @@
 .account {
-    padding: 50px 0 150px 0;
     display: flex;
-    justify-content: space-between;
 
     &__right {
         width: 100%;
         max-width: 850px;
     }
+
+    @media (min-width: $screen-lg) {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 50px 0 150px 0;
+    }
+
+    @media (max-width: $screen-xs-max) {
+        flex-direction: column;
+        padding: 30px 0 90px 0;
+    }
 }
 
 .account-sidebar {
-    width: 280px;
-    margin-right: 50px;
+
+    @media (min-width: $screen-lg) {
+        width: 280px;
+        margin-right: 50px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+        width: 100%;
+        margin-right: 0;
+    }
 
     &__balance {
         width: 100%;
@@ -21,7 +38,18 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 40px;
+
+        @media (min-width: $screen-lg) {
+            width: 280px;
+            margin-right: 50px;
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: $screen-xs-max) {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 35px;
+        }
     }
 
     &__balance-title {
@@ -50,11 +78,19 @@
         border-radius: 10px;
         font-size: 18px;
         color: var(--color-emerald);
+        max-width: 228px;
     }
 
     &__nav {
-        display: flex;
         flex-direction: column;
+
+        @media (min-width: $screen-lg) {
+            display: flex;
+        }
+
+        @media (max-width: $screen-xs-max) {
+            display: none;
+        }
     }
 
     &__nav-link {
@@ -96,16 +132,34 @@
 
     &__title {
         font-family: "Museo Sans 700 Bold";
-        font-size: 18px;
         line-height: 100%;
         margin-bottom: 30px;
+
+        @media (min-width: $screen-lg) {
+            font-size: 18px;
+            color: #303030;
+        }
+
+        @media (max-width: $screen-xs-max) {
+            font-size: 24px;
+            width: 100%;
+            text-align: center;
+            color: #000;
+        }
     }
 
     &__inputs {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 20px;
         grid-column-gap: 30px;
+
+        @media (min-width: $screen-lg) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: $screen-xs-max) {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 
     &__input {
@@ -131,6 +185,14 @@
         font-size: 18px;
         line-height: 100%;
         color: var(--color-emerald);
+
+        @media (min-width: $screen-lg) {
+            width: 278px;
+        }
+
+        @media (max-width: $screen-xs-max) {
+            width: 100%;
+        }
     }
 }
 
