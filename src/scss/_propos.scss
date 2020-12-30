@@ -1,0 +1,38 @@
+.propos {
+    width: 100%;
+    margin-bottom: 80px;
+
+    &__item {
+        width: 250px;
+        height: 260px;
+        margin-left: 15px;
+        border-radius: 12px;
+        padding: 30px 20px 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-decoration: none;
+
+        &:first-child {
+            width: 380px;
+            margin: 0;
+            margin-right: 5px;
+        }
+    }
+
+    &__item-title {
+        width: 100%;
+        color: #fff;
+        font-family: 'Museo Sans 900 Black';
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 5px;
+    }
+
+    &__item-label {
+        width: 100%;
+        font-size: 18px;
+        line-height: 22px;
+        color: rgba(255, 255, 255, 0.75);
+    }
+}

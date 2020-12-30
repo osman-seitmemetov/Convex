@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0; user-scalable=0;">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Корзина</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon.png" sizes="50x50">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" defer integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    @include('html/header.html')
+    @include('html/mobile-menu.html')
+
+    <!-- Main -->
+    <main class="main">
+
+        <!-- Cart -->
+        <section class="cart">
+            <div class="container">
+
+                <!-- Cart left -->
+                <div class="cart__left">
+                    <div class="cart__head">
+                        <h1 class="cart__title">Корзина</h1>
+                        <button class="cart__clean">Очистить корзину</button>
+                    </div>
+
+                    <div class="cart__items">
+
+                        <!-- Cart item -->
+                        <div class="cart__item">
+                            <div class="cart__item-left">
+                                <img src="img/m&m.png" alt="m&m" class="cart__item-img">
+
+                                <div class="cart__item-title">
+                                    M&M’s шоколадные конфеты 130гр
+
+                                    <div class="cart__item-count">Осталось: 2 шт.</div>
+                                </div>
+                            </div>
+
+                            <div class="counter">
+                                <button class="counter__minus">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.99658 13H20.0001C20.5524 13 21.0001 12.5523 21.0001 12C21.0001 11.4477 20.5524 11 20.0001 11H3.99658C3.4443 11 2.99658 11.4477 2.99658 12C2.99658 12.5523 3.4443 13 3.99658 13Z"/>
+                                    </svg>
+                                </button>
+
+                                <input type="text" class="counter__input" value="2">
+
+                                <button class="counter__plus">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.8834 3.00673L12 3C12.5128 3 12.9355 3.38604 12.9933 3.88338L13 4V11H20C20.5128 11 20.9355 11.386 20.9933 11.8834L21 12C21 12.5128 20.614 12.9355 20.1166 12.9933L20 13H13V20C13 20.5128 12.614 20.9355 12.1166 20.9933L12 21C11.4872 21 11.0645 20.614 11.0067 20.1166L11 20V13H4C3.48716 13 3.06449 12.614 3.00673 12.1166L3 12C3 11.4872 3.38604 11.0645 3.88338 11.0067L4 11H11V4C11 3.48716 11.386 3.06449 11.8834 3.00673L12 3L11.8834 3.00673Z"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="cart__item-right">
+                                <div class="cart__item-price">
+                                    820 тг.
+
+                                    <span>410 тг./шт.</span>
+                                </div>
+
+                                <button class="cart__item-close">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.2097 4.3871L4.29289 4.29289C4.65338 3.93241 5.22061 3.90468 5.6129 4.2097L5.70711 4.29289L12 10.585L18.2929 4.29289C18.6834 3.90237 19.3166 3.90237 19.7071 4.29289C20.0976 4.68342 20.0976 5.31658 19.7071 5.70711L13.415 12L19.7071 18.2929C20.0676 18.6534 20.0953 19.2206 19.7903 19.6129L19.7071 19.7071C19.3466 20.0676 18.7794 20.0953 18.3871 19.7903L18.2929 19.7071L12 13.415L5.70711 19.7071C5.31658 20.0976 4.68342 20.0976 4.29289 19.7071C3.90237 19.3166 3.90237 18.6834 4.29289 18.2929L10.585 12L4.29289 5.70711C3.93241 5.34662 3.90468 4.77939 4.2097 4.3871L4.29289 4.29289L4.2097 4.3871Z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div><!-- /.cart__item -->
+
+                        <!-- Cart item -->
+                        <div class="cart__item">
+                            <div class="cart__item-left">
+                                <img src="img/m&m.png" alt="m&m" class="cart__item-img">
+
+                                <div class="cart__item-title">
+                                    M&M’s шоколадные конфеты 130гр
+
+                                    <div class="cart__item-count">Осталось: 2 шт.</div>
+                                </div>
+                            </div>
+
+                            <div class="counter">
+                                <button class="counter__minus">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.99658 13H20.0001C20.5524 13 21.0001 12.5523 21.0001 12C21.0001 11.4477 20.5524 11 20.0001 11H3.99658C3.4443 11 2.99658 11.4477 2.99658 12C2.99658 12.5523 3.4443 13 3.99658 13Z"/>
+                                    </svg>
+                                </button>
+
+                                <input type="text" class="counter__input" value="1">
+
+                                <button class="counter__plus">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.8834 3.00673L12 3C12.5128 3 12.9355 3.38604 12.9933 3.88338L13 4V11H20C20.5128 11 20.9355 11.386 20.9933 11.8834L21 12C21 12.5128 20.614 12.9355 20.1166 12.9933L20 13H13V20C13 20.5128 12.614 20.9355 12.1166 20.9933L12 21C11.4872 21 11.0645 20.614 11.0067 20.1166L11 20V13H4C3.48716 13 3.06449 12.614 3.00673 12.1166L3 12C3 11.4872 3.38604 11.0645 3.88338 11.0067L4 11H11V4C11 3.48716 11.386 3.06449 11.8834 3.00673L12 3L11.8834 3.00673Z"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="cart__item-right">
+                                <div class="cart__item-price">
+                                    410 тг.
+
+                                    <span>410 тг./шт.</span>
+                                </div>
+
+                                <button class="cart__item-close">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.2097 4.3871L4.29289 4.29289C4.65338 3.93241 5.22061 3.90468 5.6129 4.2097L5.70711 4.29289L12 10.585L18.2929 4.29289C18.6834 3.90237 19.3166 3.90237 19.7071 4.29289C20.0976 4.68342 20.0976 5.31658 19.7071 5.70711L13.415 12L19.7071 18.2929C20.0676 18.6534 20.0953 19.2206 19.7903 19.6129L19.7071 19.7071C19.3466 20.0676 18.7794 20.0953 18.3871 19.7903L18.2929 19.7071L12 13.415L5.70711 19.7071C5.31658 20.0976 4.68342 20.0976 4.29289 19.7071C3.90237 19.3166 3.90237 18.6834 4.29289 18.2929L10.585 12L4.29289 5.70711C3.93241 5.34662 3.90468 4.77939 4.2097 4.3871L4.29289 4.29289L4.2097 4.3871Z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div><!-- /.cart__item -->
+
+                        <!-- Cart item -->
+                        <div class="cart__item">
+                            <div class="cart__item-left">
+                                <img src="img/m&m.png" alt="m&m" class="cart__item-img">
+
+                                <div class="cart__item-title">
+                                    M&M’s шоколадные конфеты 130гр
+
+                                    <div class="cart__item-count">Осталось: 2 шт.</div>
+                                </div>
+                            </div>
+
+                            <div class="counter">
+                                <button class="counter__minus">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.99658 13H20.0001C20.5524 13 21.0001 12.5523 21.0001 12C21.0001 11.4477 20.5524 11 20.0001 11H3.99658C3.4443 11 2.99658 11.4477 2.99658 12C2.99658 12.5523 3.4443 13 3.99658 13Z"/>
+                                    </svg>
+                                </button>
+
+                                <input type="text" class="counter__input" value="1">
+
+                                <button class="counter__plus">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.8834 3.00673L12 3C12.5128 3 12.9355 3.38604 12.9933 3.88338L13 4V11H20C20.5128 11 20.9355 11.386 20.9933 11.8834L21 12C21 12.5128 20.614 12.9355 20.1166 12.9933L20 13H13V20C13 20.5128 12.614 20.9355 12.1166 20.9933L12 21C11.4872 21 11.0645 20.614 11.0067 20.1166L11 20V13H4C3.48716 13 3.06449 12.614 3.00673 12.1166L3 12C3 11.4872 3.38604 11.0645 3.88338 11.0067L4 11H11V4C11 3.48716 11.386 3.06449 11.8834 3.00673L12 3L11.8834 3.00673Z"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="cart__item-right">
+                                <div class="cart__item-price">
+                                    410 тг.
+
+                                    <span>410 тг./шт.</span>
+                                </div>
+
+                                <button class="cart__item-close">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.2097 4.3871L4.29289 4.29289C4.65338 3.93241 5.22061 3.90468 5.6129 4.2097L5.70711 4.29289L12 10.585L18.2929 4.29289C18.6834 3.90237 19.3166 3.90237 19.7071 4.29289C20.0976 4.68342 20.0976 5.31658 19.7071 5.70711L13.415 12L19.7071 18.2929C20.0676 18.6534 20.0953 19.2206 19.7903 19.6129L19.7071 19.7071C19.3466 20.0676 18.7794 20.0953 18.3871 19.7903L18.2929 19.7071L12 13.415L5.70711 19.7071C5.31658 20.0976 4.68342 20.0976 4.29289 19.7071C3.90237 19.3166 3.90237 18.6834 4.29289 18.2929L10.585 12L4.29289 5.70711C3.93241 5.34662 3.90468 4.77939 4.2097 4.3871L4.29289 4.29289L4.2097 4.3871Z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div><!-- /.cart__item -->
+                    </div>
+                </div><!-- /.cart__left -->
+
+                <!-- Cart right -->
+                <div class="cart__right">
+                    <form action="cart-registration.html" class="cart__form cart__result">
+                        <button type="submit" class="cart__form-submit">
+                            Оформить заказ
+                        </button>
+
+                        <button type="button" class="cart__form-promocode">
+                            Использовать промокод
+                        </button>
+
+                        <div class="cart__form-data">
+                            Количество единиц:
+
+                            <span>12</span>
+                        </div>
+
+                        <div class="cart__form-data">
+                            Итоговый вес:
+
+                            <span>2 239 г.</span>
+                        </div>
+
+                        <div class="cart__form-data">
+                            Тип заказа:
+
+                            <span>бандероль</span>
+                        </div>
+
+                        <div class="cart__form-data">
+                            Сумма заказа:
+
+                            <span>34 000 тг.</span>
+                        </div>
+
+                        <div class="cart__form-data">
+                            Промокод:
+
+                            <span style="color: #EE4029;">-3 000 тг.</span>
+                        </div>
+
+                        <div class="cart__form-data">
+                            Cтоимость доставки:
+
+                            <span>1 500 тг.</span>
+                        </div>
+
+                        <div class="cart__form-result">
+                            Итого:
+
+                            <div class="cart__form-sum">32 500 тг.</div>
+                        </div>
+                    </form>
+
+                    <div class="cart__right-label">Минимальная сумма заказа: 4 000 тг.</div>
+                </div><!-- /.cart__right -->
+
+            </div><!-- /.container -->
+        </section><!-- /.cart -->
+
+        <!-- Products -->
+        <section class="products">
+            <div class="container">
+                <div class="products__head">
+                    <h2 class="products__title">Свежие акции</h2>
+                    <a href="#" class="products__link">Cмотреть все</a>
+                </div>
+
+                <div class="products-wrapper">
+                    <div class="products__buttons">
+                        <div class="swiper-button-next products__button-next"></div>
+                        <div class="swiper-button-prev products__button-prev"></div>
+                    </div>
+
+                    <div class="swiper-container products__slider">
+                        <div class="swiper-wrapper">
+                            @include('html/product.html')
+                            @include('html/product.html')
+                            @include('html/product.html')
+                            @include('html/product.html')
+                            @include('html/product.html')
+                            @include('html/product.html')
+                            @include('html/product.html')
+
+                            <a href="#" class="swiper-slide product product-showall" style="background-image: url('img/product-bg.png');">
+                                <img src="img/icons/arrow-top-icon.svg" class="product-showall__icon">
+                                <div class="product-showall__title">Смотреть все</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.products -->
+    </main><!-- /.main -->
+
+    @include('html/footer.html')
+</body>
+</html>

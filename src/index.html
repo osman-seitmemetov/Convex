@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Главная</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon.png" sizes="50x50">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" defer integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <!-- Includes -->
+	@include('html/header.html')
+    @include('html/mobile-menu.html')
+
+    <!-- Main -->
+    <main class="main">
+        <!-- Banner -->
+        <section class="banner">
+            <div class="container">
+                <div class="banner__slider swiper-container">
+                    <div class="swiper-wrapper">
+
+                        <!-- Banner slider -->
+                        <div class="swiper-slide banner__slide">
+                            <div class="banner__slide-usp">
+                                <div class="banner__slide-usp-inner">
+                                    <h2 class="h1">Всегда свежие молочные продукты</h2>
+                                    <p class="banner__slide-text">Только качественные товары, за которыми мы всегда следим</p>
+                                </div>
+
+                                <a href="#" class="banner__slide-link">Подробнее</a>
+                            </div>
+
+                            <div class="banner__slide-img" style="background-image: url('img/slider.jpg');"></div>
+                        </div><!-- /.banner__slide -->
+
+                        <!-- Banner slider -->
+                        <div class="swiper-slide banner__slide">
+                            <div class="banner__slide-usp">
+                                <div class="banner__slide-usp-inner">
+                                    <h2 class="h1">Всегда свежие молочные продукты</h2>
+                                    <p class="banner__slide-text">Только качественные товары, за которыми мы всегда следим</p>
+                                </div>
+
+                                <a href="#" class="banner__slide-link">Подробнее</a>
+                            </div>
+
+                            <div class="banner__slide-img" style="background-image: url('img/slider.jpg');"></div>
+                        </div><!-- /.banner__slide -->
+
+                        <!-- Banner slider -->
+                        <div class="swiper-slide banner__slide">
+                            <div class="banner__slide-usp">
+                                <div class="banner__slide-usp-inner">
+                                    <h2 class="h1">Всегда свежие молочные продукты</h2>
+                                    <p class="banner__slide-text">Только качественные товары, за которыми мы всегда следим</p>
+                                </div>
+
+                                <a href="#" class="banner__slide-link">Подробнее</a>
+                            </div>
+
+                            <div class="banner__slide-img" style="background-image: url('img/slider.jpg');"></div>
+                        </div><!-- /.banner__slide -->
+
+                        <!-- Banner slider -->
+                        <div class="swiper-slide banner__slide">
+                            <div class="banner__slide-usp">
+                                <div class="banner__slide-usp-inner">
+                                    <h2 class="h1">Всегда свежие молочные продукты</h2>
+                                    <p class="banner__slide-text">Только качественные товары, за которыми мы всегда следим</p>
+                                </div>
+
+                                <a href="#" class="banner__slide-link">Подробнее</a>
+                            </div>
+
+                            <div class="banner__slide-img" style="background-image: url('img/slider.jpg');"></div>
+                        </div><!-- /.banner__slide -->
+
+                    </div>
+
+                    <div class="swiper-button-next banner__button-next"></div>
+                    <div class="swiper-button-prev banner__button-prev"></div>
+                </div>
+            </div><!-- /.container -->
+        </section><!-- /.banner -->
+
+        <!-- Propositions -->
+        <section class="propos">
+            <div class="container">
+
+                <!-- Propos item -->
+                <a href="#" class="propos__item" style="background: url('img/plov.png') 27px 15px no-repeat, linear-gradient(175.37deg, #FA6A6A -9.92%, #E43F3F 96.25%);">
+                    <div class="propos__item-title">Горячие блюда</div>
+                    <p class="propos__item-label">Вкуснейшие блюда из 4 ресторанов</p>
+                </a><!-- /.propos__item -->
+
+                <!-- Propos item -->
+                <a href="#" class="propos__item" style="background: url('img/m_m.png') 26px 9px no-repeat, linear-gradient(171.27deg, #A8CBFF -6.86%, #7BB0FF 93.34%);">
+                    <div class="propos__item-title">Новинки</div>
+                    <p class="propos__item-label">Новые позиции</p>
+                </a><!-- /.propos__item -->
+
+                <!-- Propos item -->
+                <a href="#" class="propos__item" style="background: url('img/percent.png') 60px 25px no-repeat, linear-gradient(166.25deg, #BBB0FF -21.04%, #8470FF 90.17%);">
+                    <div class="propos__item-title">Акции</div>
+                    <p class="propos__item-label">Лучшие цены</p>
+                </a><!-- /.propos__item -->
+
+                <!-- Propos item -->
+                <a href="#" class="propos__item" style="background: url('img/packet.png') -15px 0 no-repeat, linear-gradient(180.1deg, #FFD37D -7.02%, #FDC352 99.91%);">
+                    <div class="propos__item-title">Комплекты</div>
+                    <p class="propos__item-label">Все в одном</p>
+                </a><!-- /.propos__item -->
+
+            </div>
+        </section><!-- /.propos -->
+
+        <section class="products">
+            <div class="container">
+                <div class="products__head">
+                    <h2 class="products__title">Акции</h2>
+                    <a href="#" class="products__link">Cмотреть все</a>
+                </div>
+
+                <div class="products-wrapper">
+                    <div class="products__buttons">
+                        <div class="swiper-button-next products__button-next"></div>
+                        <div class="swiper-button-prev products__button-prev"></div>
+                    </div>
+
+                    <div class="swiper-container products__slider">
+                        <div class="swiper-wrapper">
+                            @include('html/product.html')
+                            @include('html/product.html')
+                            @include('html/product.html')
+                            @include('html/product.html')
+                            @include('html/product.html')
+                            @include('html/product.html')
+                            @include('html/product.html')
+
+                            <a href="#" class="swiper-slide product product-showall" style="background-image: url('img/product-bg.png');">
+                                <img src="img/icons/arrow-top-icon.svg" class="product-showall__icon">
+                                <div class="product-showall__title">Смотреть все</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="container">
+                <div class="products__head">
+                    <h2 class="products__title">Новинки</h2>
+                    <a href="#" class="products__link">Cмотреть все</a>
+                </div>
+
+                <div class="products-wrapper">
+                    <div class="products__buttons">
+                        <div class="swiper-button-next products__button-next"></div>
+                        <div class="swiper-button-prev products__button-prev"></div>
+                    </div>
+
+                    <div class="swiper-container products__slider">
+                        <div class="swiper-wrapper">
+                            @include('html/product.html')
+                            @include('html/product.html')
+                            @include('html/product.html')
+                            @include('html/product.html')
+                            @include('html/product.html')
+                            @include('html/product.html')
+                            @include('html/product.html')
+
+                            <a href="#" class="swiper-slide product product-showall" style="background-image: url('img/product-bg.png');">
+                                <img src="img/icons/arrow-top-icon.svg" class="product-showall__icon">
+                                <div class="product-showall__title">Смотреть все</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="container">
+                <div class="products__head">
+                    <h2 class="products__title">Популярные товары</h2>
+                    <a href="#" class="products__link">Cмотреть все</a>
+                </div>
+
+                <div class="products__items--four">
+                    @include('html/product.html')
+                    @include('html/product.html')
+                    @include('html/product.html')
+                    @include('html/product.html')
+                    @include('html/product.html')
+                    @include('html/product.html')
+                    @include('html/product.html')
+                    @include('html/product.html')
+                </div>
+            </div>
+        </section>
+	</main> <!-- /.main -->
+
+	@include('html/footer.html')
+</body>
+</html>

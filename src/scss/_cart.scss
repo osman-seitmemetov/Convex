@@ -1,0 +1,286 @@
+.cart {
+    margin-top: 37px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+
+    &__left {
+        width: 738px;
+    }
+
+    &__head {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        font-family: 'Museo Sans 700 Bold';
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+    &__clean {
+        font-size: 16px;
+        line-height: 100%;
+        color: #ABABAB;
+        padding: 0;
+        height: fit-content;
+        border: none;
+        background: none;
+        outline: none;
+        cursor: pointer;
+        margin-bottom: 7px;
+        transition: .2s;
+
+        &:hover {
+            color: var(--color-mine-shaft);
+        }
+    }
+
+    &__items {
+        width: 100%;
+    }
+
+    &__item {
+        width: 100%;
+        min-width: 657px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 28px;
+        border-bottom: 1px solid #F0F0F0;
+        padding-bottom: 40px;
+    }
+
+    &__item-left {
+        display: flex;
+    }
+
+    &__item-right {
+        display: flex;
+    }
+
+    &__item-img {
+        margin-top: 5px;
+        margin-right: 18px;
+        width: 79px;
+        height: 63px;
+        object-fit: contain;
+        object-position: center;
+        margin-left: 4px;
+    }
+
+    &__item-title {
+        width: 280px;
+        font-size: 18px;
+        line-height: 22px;
+        margin-right: 36px;
+        margin-top: 4px;
+    }
+
+    &__item-count {
+        font-size: 14px;
+        line-height: 100%;
+        color: #ABABAB;
+        margin-top: 10px;
+    }
+
+    &__item-price {
+        font-size: 24px;
+        line-height: 29px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 51px;
+        margin-top: 3px;
+
+        span {
+            font-size: 14px;
+            line-height: 100%;
+            color: #ABABAB;
+            margin-top: 26px;
+        }
+    }
+
+    &__item-close {
+        padding: 0;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background: none;
+        outline: none;
+        cursor: pointer;
+        margin-top: 8px;
+        margin-right: -10px;
+
+        svg {
+            width: 20px;
+            height: 20px;
+            fill: #ABABAB;
+            transition: .2s;
+        }
+
+        &:hover > svg {
+            fill: var(--color-mine-shaft);
+        }
+    }
+
+    .counter {
+        margin-top: 1px;
+        margin-left: -61px;
+    }
+
+	&__right {
+        position: sticky;
+        top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 24px;
+        height: fit-content;
+	}
+
+	&__form {
+        width: 380px;
+        border: 1px solid var(--color-gallery);
+        border-radius: 12px;
+        padding: 20px;
+    }
+
+    &__result {
+        width: 380px;
+        border: 1px solid var(--color-gallery);
+        border-radius: 12px;
+        padding: 20px;
+    }
+
+	&__form-submit {
+        width: 100%;
+        height: 58px;
+        background-color: var(--color-emerald);
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        font-family: 'Museo Sans 700 Bold';
+        font-size: 18px;
+        line-height: 22px;
+        color: #fff;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: .5s;
+
+        &:hover {
+            background-color: var(--color-emerald-hover);
+        }
+
+        &:active {
+            background-color: var(--color-emerald-pressed);
+        }
+	}
+
+	&__form-promocode {
+        width: 100%;
+        height: 58px;
+        border: 1px solid #46C578;
+        border-radius: 10px;
+        background: none;
+        outline: none;
+        font-family: 'Museo Sans 700 Bold';
+        font-size: 18px;
+        line-height: 22px;
+        color: var(--color-emerald);
+        margin-bottom: 30px;
+        cursor: pointer;
+	}
+
+	&__form-data {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        font-family: 'Museo Sans 300 Light';
+        font-size: 16px;
+        line-height: 100%;
+        color: var(--color-raven);
+	}
+
+	&__form-result {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        align-items: flex-end;
+        font-family: 'Museo Sans 700 Bold';
+        font-size: 16px;
+        line-height: 100%;
+	}
+
+	&__form-sum {
+        line-height: 100%;
+        font-size: 24px;
+	}
+
+	&__right-label {
+        margin-top: 10px;
+        font-size: 18px;
+        line-height: 100%;
+        color: #ABABAB;
+	}
+}
+
+.counter {
+    width: 128px;
+    height: 40px;
+    border: 1px solid var(--color-emerald);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    &__minus {
+        width: 44px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background: none;
+        outline: none;
+        cursor: pointer;
+
+        svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--color-emerald);
+        }
+    }
+
+    &__input {
+        width: 40px;
+        height: 100%;
+        border: none;
+        text-align: center;
+        outline: none;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    &__plus {
+        width: 44px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background: none;
+        outline: none;
+        cursor: pointer;
+
+        svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--color-emerald);
+        }
+    }
+}
