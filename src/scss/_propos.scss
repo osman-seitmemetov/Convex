@@ -1,32 +1,58 @@
 .propos {
-    width: 100%;
-    margin-bottom: 80px;
+    @media (min-width: $screen-lg) {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+        width: 200%;
+        margin-bottom: 60px;
+    }
 
     &__item {
-        width: 250px;
-        height: 260px;
-        margin-left: 15px;
+        margin-right: 15px;
         border-radius: 12px;
-        padding: 30px 20px 30px 20px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         text-decoration: none;
 
+        @media (min-width: $screen-lg) {
+            width: 250px;
+            height: 260px;
+            padding: 30px 20px 30px 20px;
+        }
+
+        @media (max-width: $screen-xs-max) {
+            width: 158px !important;
+            height: 158px;
+            padding: 10px;
+        }
+
         &:first-child {
             width: 380px;
-            margin: 0;
-            margin-right: 5px;
+        }
+
+        &:last-child {
+            margin-right: 0;
         }
     }
 
     &__item-title {
         width: 100%;
         color: #fff;
-        font-family: 'Museo Sans 900 Black';
-        font-size: 24px;
-        line-height: 29px;
+        font-family: "Museo Sans 900 Black";
         margin-bottom: 5px;
+
+        @media (min-width: $screen-lg) {
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        @media (max-width: $screen-xs-max) {
+            font-size: 14px;
+            line-height: 17px;
+        }
     }
 
     &__item-label {
@@ -34,5 +60,15 @@
         font-size: 18px;
         line-height: 22px;
         color: rgba(255, 255, 255, 0.75);
+
+        @media (min-width: $screen-lg) {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        @media (max-width: $screen-xs-max) {
+            font-size: 10px;
+            line-height: 12px;
+        }
     }
 }

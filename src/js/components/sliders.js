@@ -23,12 +23,21 @@ let productSlider = document.querySelectorAll('.products__slider');
 
 productSlider.forEach(el => {
     new Swiper(el, {
-        slidesPerView: 4,
-        spaceBetween: 60,
         navigation: {
             nextEl: '.products__button-next',
             prevEl: '.products__button-prev',
         },
+        breakpoints: {
+            320: {
+                slidesPerView: 2,
+                freeMode: true,
+            },
+
+            992: {
+                slidesPerView: 4,
+                spaceBetween: 60,
+            }
+        }
     });
 });
 
