@@ -45,6 +45,12 @@ p {
     padding: 0;
 }
 
+.footer-hidden {
+    @include breakpoint(sm-max) {
+        display: none;
+    }
+}
+
 img {
     max-width: 100%;
 }
