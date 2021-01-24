@@ -1,0 +1,399 @@
+.cart {
+    margin-top: 37px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint(lg-max) {
+        flex-direction: column;
+    }
+
+    &__left {
+        width: 100%;
+
+        @include breakpoint(lg-max) {
+            width: 100%;
+        }
+    }
+
+    &__head {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 50px;
+
+        @include breakpoint(sm-max) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__title {
+        margin: 0;
+    }
+
+    &__clean {
+        font-size: 16px;
+        line-height: 100%;
+        color: var(--color-silver-chalice);
+        padding: 0;
+        height: fit-content;
+        border: none;
+        background: none;
+        outline: none;
+        cursor: pointer;
+        margin-bottom: 7px;
+        transition: 0.2s;
+
+        @include breakpoint(sm-max) {
+            font-weight: 300;
+            font-size: 14px;
+        }
+
+        &:hover {
+            color: var(--color-mine-shaft);
+        }
+    }
+
+    &__items {
+        width: 100%;
+    }
+
+    &__item {
+        width: 100%;
+        // max-width: 657px;
+        display: flex;
+        margin-bottom: 28px;
+        border-bottom: 1px solid var(--color-gallery);
+        padding-bottom: 40px;
+    }
+
+    &__item-data {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        @include breakpoint(sm-max) {
+            flex-direction: column;
+        }
+    }
+
+    &__item-left {
+        display: flex;
+    }
+
+    &__item-right {
+        display: flex;
+    }
+
+    &__item-img {
+        margin-top: 5px;
+        margin-right: 18px;
+        width: 79px;
+        height: 63px;
+        object-fit: contain;
+        object-position: center;
+        margin-left: 4px;
+
+        @include breakpoint(sm-max) {
+            width: 77px;
+            height: 95px;
+            object-fit: cover;
+        }
+    }
+
+    &__item-title {
+        width: 280px;
+        font-size: 18px;
+        line-height: 22px;
+        margin-right: 26px;
+        margin-top: 4px;
+
+        @include breakpoint(sm-max) {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+
+    &__item-count {
+        font-size: 14px;
+        line-height: 100%;
+        color: var(--color-silver-chalice);
+        margin-top: 10px;
+
+        @include breakpoint(sm-max) {
+            margin-top: 5px;
+        }
+    }
+
+    &__item-price {
+        font-size: 24px;
+        line-height: 29px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 51px;
+        margin-top: 3px;
+
+        @include breakpoint(sm-max) {
+            flex-direction: column-reverse;
+            margin-right: 0;
+            font-weight: 600;
+        }
+
+        span {
+            font-size: 14px;
+            line-height: 100%;
+            color: var(--color-silver-chalice);
+            margin-top: 26px;
+
+            @include breakpoint(sm-max) {
+                margin: 0 0 2px 0;
+                font-weight: 400;
+                text-align: right;
+            }
+        }
+    }
+
+    &__item-close {
+        padding: 0;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background: none;
+        outline: none;
+        cursor: pointer;
+        margin-top: 8px;
+        margin-right: -10px;
+
+        @include breakpoint(sm-max) {
+            margin-right: 0;
+        }
+
+        svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--color-silver-chalice);
+            transition: 0.2s;
+        }
+
+        &:hover > svg {
+            fill: var(--color-mine-shaft);
+        }
+    }
+
+    .counter {
+        margin-top: 1px;
+    }
+
+    &__item-bottom--mobile {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 290px;
+
+        @include breakpoint(lg-max) {
+            width: 100%;
+            max-width: 300px;
+        }
+
+        @include breakpoint(sm-max) {
+            min-width: 100%;
+            align-items: flex-end;
+        }
+    }
+
+    &__right {
+        position: sticky;
+        top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 24px;
+        height: fit-content;
+        margin-left: 40px;
+
+        @include breakpoint(lg-max) {
+            width: 100%;
+            position: static;
+            margin-left: 0;
+        }
+    }
+
+    &__form {
+        width: 380px;
+        border: 1px solid var(--color-gallery);
+        border-radius: 12px;
+        padding: 20px;
+
+        @include breakpoint(lg-max) {
+            width: 100%;
+        }
+    }
+
+    &__result {
+        width: 380px;
+        border: 1px solid var(--color-gallery);
+        border-radius: 12px;
+        padding: 20px;
+
+        @include breakpoint(lg-max) {
+            width: 100%;
+        } ///////////////////////////////////////////////////////////////////////////////////////
+    }
+
+    &__form-submit {
+        width: 100%;
+        height: 58px;
+        background-color: var(--color-emerald);
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        font-family: "Museo Sans Cyrl";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: var(--color-white);
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover {
+            background-color: var(--color-emerald-hover);
+        }
+
+        &:active {
+            background-color: var(--color-emerald-pressed);
+        }
+    }
+
+    &__form-promocode {
+        width: 100%;
+        height: 58px;
+        border: 1px solid var(--color-emerald);
+        border-radius: 10px;
+        background: none;
+        outline: none;
+        font-family: "Museo Sans Cyrl";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: var(--color-emerald);
+        margin-bottom: 30px;
+        cursor: pointer;
+    }
+
+    &__form-data {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        font-family: "Museo Sans Cyrl";
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 100%;
+        color: var(--color-raven);
+    }
+
+    &__form-result {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        align-items: flex-end;
+        font-family: "Museo Sans Cyrl";
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+    }
+
+    &__form-sum {
+        line-height: 100%;
+        font-size: 24px;
+    }
+
+    &__right-label {
+        margin-top: 10px;
+        font-size: 18px;
+        line-height: 100%;
+        text-align: center;
+        color: var(--color-silver-chalice);
+    }
+}
+
+.counter {
+    width: 128px;
+    height: 40px;
+    border: 1px solid var(--color-emerald);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint(sm-max) {
+        width: 78px;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    &__minus {
+        width: calc(100% / 3);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background: none;
+        outline: none;
+        cursor: pointer;
+        padding: 0;
+
+        svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--color-emerald);
+
+            @include breakpoint(sm-max) {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+
+    &__input {
+        width: calc(100% / 3);
+        height: 100%;
+        border: none;
+        text-align: center;
+        outline: none;
+        font-size: 20px;
+        line-height: 24px;
+
+        @include breakpoint(sm-max) {
+            font-size: 16px;
+        }
+    }
+
+    &__plus {
+        width: calc(100% / 3);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background: none;
+        outline: none;
+        cursor: pointer;
+        padding: 0;
+
+        svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--color-emerald);
+
+            @include breakpoint(sm-max) {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}

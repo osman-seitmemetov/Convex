@@ -1,0 +1,120 @@
+.input {
+    margin-bottom: 20px;
+
+    &__title {
+        font-family: "Museo Sans Cyrl";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    &__field {
+        width: 100%;
+        height: 50px;
+        border: 1px solid var(--color-wistful);
+        border-radius: 10px;
+        outline: none;
+        padding: 0 15px;
+        font-family: "Museo Sans Cyrl";
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 100%;
+        color: var(--color-mine-shaft);
+        margin-top: 10px;
+
+        &::placeholder {
+            font-family: "Museo Sans Cyrl";
+        font-weight: 300;
+            font-size: 16px;
+            line-height: 100%;
+            color: var(--color-wistful);
+        }
+    }
+
+    &__text-area {
+        width: 100%;
+        height: 235px;
+        resize: none;
+        border: 1px solid var(--color-wistful);
+        border-radius: 10px;
+        outline: none;
+        padding: 17px 15px 17px 15px;
+        font-family: "Museo Sans Cyrl";
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 100%;
+        color: var(--color-mine-shaft);
+        margin-top: 10px;
+
+        &::placeholder {
+            font-family: "Museo Sans Cyrl";
+        font-weight: 300;
+            font-size: 16px;
+            line-height: 100%;
+            color: var(--color-wistful);
+        }
+    }
+
+    &__selects {
+        width: 100%;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__field--hidden {
+        display: none;
+    }
+
+    &__error-log {
+        margin-top: 10px;
+        font-family: "Museo Sans Cyrl";
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 100%;
+        color: var(--color-coral-red);
+        display: none;
+    }
+
+    &__checkbox {
+        margin-top: 10px;
+
+        .checkbox-item__title {
+            font-family: "Museo Sans Cyrl";
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 100%;
+        }
+    }
+
+    &--hidden {
+        display: none;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.input--disabled {
+    .input__title {
+        color: var(--color-wistful);
+    }
+
+    .input__field {
+        &:disabled {
+            background-color: var(--color-white);
+            color: var(--color-wistful);
+        }
+    }
+}
+
+.input--error {
+    .input__field {
+        border: 1px solid var(--color-coral-red);
+    }
+
+    .input__error-log {
+        display: flex;
+    }
+}

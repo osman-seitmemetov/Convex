@@ -1,0 +1,47 @@
+.payment {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	max-width: 760px;
+
+	&__item {
+		height: 180px;
+		border: 1px solid var(--color-wistful);
+		border-radius: 10px;
+		background-color: transparent;
+		padding: 23px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__item--active {
+		background: rgba(70, 197, 120, 0.2);
+		border: 1px solid var(--color-emerald);
+	}
+
+	&__item-icons {
+		margin-bottom: 5px;
+	}
+
+	&__item-icon {
+		width: 50px;
+		height: 32px;
+
+		&:nth-child(2) {
+			margin-left: 5px;
+		}
+	}
+
+	&__item-title {
+		font-family: "Museo Sans Cyrl";
+        font-weight: 300;
+		font-size: 14px;
+		line-height: 17px;
+		text-align: center;
+		color: var(--color-mine-shaft);
+		width: 100%;
+		min-height: 34px;
+	}
+}

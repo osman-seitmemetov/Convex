@@ -7,7 +7,7 @@
     <title>Контакты</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="img/favicon.png" sizes="50x50">
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon.png">
@@ -68,37 +68,46 @@
                     </svg>
                 </div>
 
-                <form action="/" class="contacts__form">
+                <form action="/" class="contacts__form form">
                     <div class="h1">Форма обратной связи</div>
 
-                    <div class="contacts__form-input input">
+                    <div class="form__input input">
                         <div class="input__title">Фамилия и имя*</div>
                         <input type="text" placeholder="Введите вашу фамилию и имя" class="input__field">
                     </div>
 
-                    <div class="contacts__form-input input">
+                    <div class="form__input input">
                         <div class="input__title">Телефон*</div>
                         <input type="tel" placeholder="Введите ваш номер телефона" class="input__field">
                     </div>
 
-                    <div class="contacts__form-input input">
+                    <div class="form__input input">
                         <div class="input__title">Email*</div>
                         <input type="email" placeholder="Введите вашу почту" class="input__field">
                     </div>
 
-                    <div class="contacts__form-input input">
+                    <div class="form__input input">
                         <div class="input__title">Ваше сообщение*</div>
                         <textarea cols="" rows="" type="text" placeholder="Напишите нам" class="input__text-area"></textarea>
                     </div>
 
-                    <!-- <input type="file" name="" id="" value="Прикрепить файл"> -->
-                    <div class="contacts__form-attached">Прикрепить файл</div>
+                    <div class="form__add">
+                        <input class="form__add-input" type="file" name="" id="add-file" multiple>
 
-                    <div class="contacts__form-recaptha" style="background-image: url('img/recaptcha.png');"></div>
+                        <label class="form__add-label" for="add-file">
+                            <svg class="form__add-icon">
+                                <use xlink:href="img/sprite.svg#attach-icon"></use>
+                            </svg>
 
-                    <div class="contacts__form-buttons">
-                        <button class="contacts__form-submit" type="submit">Отправить</button>
-                        <button class="contacts__form-reset" type="reset">Отмена</button>
+                            <span class="form__add-title">Прикрепить файл</span>
+                        </label>
+                    </div>
+
+                    <div class="form__recaptha" style="background-image: url('img/recaptcha.png');"></div>
+
+                    <div class="form__buttons">
+                        <button class="form__submit btn" type="submit">Отправить</button>
+                        <button class="form__reset" type="reset">Отмена</button>
                     </div>
                 </form>
             </div>
@@ -106,5 +115,25 @@
     </main>
 
     @include('html/footer.html')
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <script>
+        let inputs = document.querySelectorAll('.form__add-input');
+        Array.prototype.forEach.call(inputs, function (input) {
+            let label = input.nextElementSibling,
+                labelVal = label.querySelector('.form__add-title').innerText;
+
+            input.addEventListener('change', function (e) {
+                let countFiles = '';
+                if (this.files && this.files.length >= 1)
+                countFiles = this.files.length;
+
+                if (countFiles)
+                label.querySelector('.form__add-title').innerText = 'Выбрано файлов: ' + countFiles;
+                else
+                label.querySelector('.form__add-title').innerText = labelVal;
+            });
+        });
+    </script>
 </body>
 </html>

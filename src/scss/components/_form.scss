@@ -1,0 +1,173 @@
+.form {
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+
+    &__submit {
+        margin-top: 10px;
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        border: 0;
+        background-color: var(--color-emerald);
+        color: var(--color-white);
+        font-family: "Museo Sans Cyrl";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    &__reset {
+        padding: 0;
+        border: none;
+        background: none;
+        font-size: 18px;
+        line-height: 100%;
+        cursor: pointer;
+        margin-left: 40px;
+        color: var(--color-emerald);
+        outline: none;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+
+        .form__submit {
+            width: 173px;
+        }
+    }
+
+    &__input {
+        width: 100%;
+    }
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        border: 2px solid var(--color-emerald);
+        background: none;
+        color: var(--color-emerald);
+        font-family: "Museo Sans Cyrl";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        outline: none;
+    }
+
+    &__separator {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: "Museo Sans Cyrl";
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__label {
+        font-family: "Museo Sans Cyrl";
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 120%;
+        color: var(--color-wistful);
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__checkbox {
+        width: 100%;
+        margin-bottom: 20px;
+
+        .checkbox-item {
+            align-items: flex-start;
+        }
+
+        .checkbox-item__title {
+            font-family: "Museo Sans Cyrl";
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 120%;
+            color: var(--color-black);
+            padding-top: 3px;
+        }
+    }
+
+    &__warning {
+        width: 100%;
+        padding: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--color-coral-red);
+        box-shadow: 0px 4.5288px 9.95858px rgba(0, 0, 0, 0.0174206);
+        border-radius: 10px;
+    }
+
+    &__warning-title {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 100%;
+        color: var(--color-black);
+    }
+
+    &__warning-text {
+        font-family: "Museo Sans Cyrl";
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 100%;
+        text-align: center;
+        color: var(--color-black);
+    }
+
+    &__recaptha {
+        width: 380px;
+        height: 102px;
+        background-repeat: no-repeat;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 10px 0 20px 0;
+    }
+
+    &__add {
+        max-width: fit-content;
+        margin: -5px 0 20px 0;
+        position: relative;
+        cursor: pointer;
+    }
+
+    &__add-input {
+        display: none;
+    }
+
+    &__add-label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__add-title {
+        font-family: "Museo Sans Cyrl";
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 100%;
+        color: var(--color-mine-shaft);
+    }
+
+    &__add-icon {
+        width: 16px;
+        height: 16px;
+        margin-right: 7px;
+    }
+}

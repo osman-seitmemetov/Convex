@@ -1,0 +1,25 @@
+.cart-payment {
+    flex-direction: column;
+    align-items: center;
+    padding: 37px 0 150px 0;
+
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__btn {
+        width: 380px;
+        height: 50px;
+        margin-top: 30px;
+        font-family: "Museo Sans Cyrl";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}

@@ -7,7 +7,7 @@
 	<title>Страница не найдена</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="img/favicon.png" sizes="50x50">
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon.png">
@@ -23,6 +23,18 @@
     @include('html/header.html')
     @include('html/mobile-menu.html')
 
-    section.
+    <section class="not-found">
+        <div class="container">
+            <div class="not-found__left">
+                <h1 class="not-found__title">Упс, что-то пошло не так</h1>
+                <div class="not-found__text">Мы не можем найти страницу, которую вы ищете</div>
+                <a href="/" class="not-found__link">Вернуться на главную</a>
+            </div>
+
+            <svg class="not-found__img">
+                <use xlink:href="img/sprite.svg#404"></use>
+            </svg>
+        </div>
+    </section>
 </body>
 </html>

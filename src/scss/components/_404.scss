@@ -1,0 +1,47 @@
+.not-found {
+    width: 100%;
+    height: calc(100vh - 193px);
+    padding-bottom: 100px;
+    justify-content: space-between;
+    align-items: center;
+
+    &__left {
+    }
+
+    &__title {
+        font-family: "Museo Sans Cyrl";
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 100%;
+        color: var(--color-black);
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        font-size: 24px;
+        line-height: 100%;
+        color: var(--color-black);
+        margin-bottom: 30px;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
+        height: 50px;
+        background-color: var(--color-emerald);
+        border-radius: 10px;
+        font-family: "Museo Sans Cyrl";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: var(--color-white);
+    }
+
+    &__img {
+        width: 500px;
+        height: 375px;
+    }
+}

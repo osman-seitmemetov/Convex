@@ -24,7 +24,7 @@ const tiny = require('gulp-tinypng-compress');
 // DEV
 //svg sprite
 const svgSprites = () => {
-  return src('./src/img/**/**.svg')
+  return src('./src/img/**.svg')
     .pipe(svgSprite({
       mode: {
         stack: {
@@ -74,6 +74,8 @@ const fontsStyle = (done) => {
 
   fs.writeFile(srcFonts, '', cb);
   fs.readdir(appFonts, function (err, items) {
+    fs.appendFile(srcFonts, '@import "./mixins/font-face";\r\n', cb);
+
     if (items) {
       let c_fontname;
       for (var i = 0; i < items.length; i++) {
@@ -183,7 +185,9 @@ const tinypng = () => {
     .pipe(tiny({
       key: '9JGFXhzcvJn1G7PvGRBmZMspkDDtGpwV',
       sigFile: './app/img/.tinypng-sigs',
-      log: true
+      log: true,
+      parallel: true,
+      parallelMax: 100,
     }))
     .pipe(dest('./app/img'))
 }

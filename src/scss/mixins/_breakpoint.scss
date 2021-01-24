@@ -1,11 +1,47 @@
-@mixin desktop {
-	@media (min-width: (1025px)) {
-		@content;
-	}
-}
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xs-max: 575px;
+$screen-sm-max: 767px;
+$screen-md-max: 991px;
+$screen-lg-max: 1199px;
 
-@mixin mobile {
-	@media (max-width: (1024px)) {
-		@content;
+
+@mixin breakpoint($point) {
+	@if $point == xs {
+		@media (min-width: 320px) {@content;}
+	}
+
+	@else if $point == sm {
+		@media (min-width: 576px) {@content;}
+	}
+
+	@else if $point == md {
+		@media (min-width: 768px) {@content;}
+	}
+
+	@else if $point == lg {
+		@media (min-width: 992px) {@content;}
+	}
+
+	@else if $point == xl {
+		@media (min-width: 1200px) {@content;}
+	}
+
+	@else if $point == xs-max {
+		@media (max-width: 575px) {@content;}
+	}
+
+	@else if $point == sm-max {
+		@media (max-width: 767px) {@content;}
+	}
+
+	@else if $point == md-max {
+		@media (max-width: 991px) {@content;}
+	}
+
+	@else if $point == lg-max {
+		@media (max-width: 1199px) {@content;}
 	}
 }

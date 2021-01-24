@@ -1,81 +1,262 @@
+@import './mixins/visually-hidden';
+@import './mixins/stop-scroll';
+
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+* {
+    @include breakpoint(md-max) {
+        cursor: default;
+    }
 }
 
 body {
-  margin: 0;
-  font-family: "asd", sans-serif;
-  background-color: var(--color-white);
+    margin: 0;
+    background-color: var(--color-white);
+    width: 100%;
+    transform: none;
+    font-family: "Museo Sans Cyrl";
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-mine-shaft);
+    // overflow-x: hidden;
+}
+
+.main {
+    width: 100%;
+    transform: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
 }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
+    color: var(--color-mine-shaft);
 }
 
 ul {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 button {
-  cursor: pointer;
+    cursor: pointer;
+    outline: none;
+}
+
+button[disabled] {
+    background: #bdbdbd;
+    cursor: default;
+
+    &:hover {
+        background: #bdbdbd;
+    }
+}
+
+.btn {
+    background-color: var(--color-emerald);
+    border-radius: 10px;
+    color: var(--color-white);
+    transition: 0.5s;
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+    max-width: 380px;
+
+    &:hover {
+        background-color: var(--color-emerald-hover);
+    }
+
+    &:active {
+        background-color: var(--color-emerald-pressed);
+    }
+}
+
+.search-bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(48, 48, 48, 0.4);
+    width: 100%;
+    height: calc(100vh - 97px);
+    z-index: 3;
+    display: none;
+}
+
+.search-bg--active {
+    display: flex;
+}
+
+.h1 {
+    font-family: "Museo Sans Cyrl";
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--color-mine-shaft);
+    margin-bottom: 20px;
+}
+
+.title {
+    font-family: "Museo Sans Cyrl";
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 30px;
+    color: var(--color-black);
+
+    @media (max-width: $screen-sm-max) {
+        font-size: 24px;
+        line-height: 100%;
+    }
+}
+
+.breadcrumbs {
+    margin-top: 20px;
+    font-family: "Museo Sans 500 Medium";
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--color-wistful);
+    text-decoration: none;
+
+    a {
+        color: var(--color-wistful);
+    }
+}
+
+.form-additional {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+
+    &__link {
+        font-family: "Museo Sans Cyrl";
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 100%;
+    }
+}
+
+.checkbox-item--form {
+    margin: 0;
+
+    .checkbox-item__title {
+        font-family: "Museo Sans Cyrl";
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 100%;
+    }
+}
+
+.mobile-menu {
+    width: 100%;
+    height: 57px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 0;
+    z-index: 20;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 33px 0 29px;
+    background-color: var(--color-white);
+    box-shadow: 0px -27px 355px rgba(0, 0, 0, 0.0174206), 0px -12.8911px 132.878px rgba(0, 0, 0, 0.025),
+        0px -5.0507px 49.0332px rgba(0, 0, 0, 0.0325794), 0px -1.56836px 16.6433px rgba(0, 0, 0, 0.05);
+
+    @include breakpoint(md-max) {
+        display: flex;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__item-icon {
+        fill: var(--color-wistful);
+    }
+
+    &__item-label {
+        margin-top: 5px;
+        font-family: "Museo Sans Cyrl";
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 100%;
+        text-align: center;
+        color: var(--color-wistful);
+    }
 }
 
 .is-outer {
-  position: relative !important; // stylelint-disable-line declaration-no-important
-  left: -9999px !important; // stylelint-disable-line declaration-no-important
+    position: relative !important; // stylelint-disable-line declaration-no-important
+    left: -9999px !important; // stylelint-disable-line declaration-no-important
 }
 
 .site-container {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .stop-scroll {
-  @include stop-scroll;
+    @include stop-scroll;
 }
 
 .is-hidden {
-  display: none !important; // stylelint-disable-line declaration-no-important
+    display: none !important; // stylelint-disable-line declaration-no-important
 }
 
 .for-mobile {
-  display: none;
+    display: none;
 
-  @include mobile {
-    display: block;
-  }
+    // @include mobile {
+    //     display: block;
+    // }
 }
 
 .error {
-  border: 2px #ff4019 solid !important; // stylelint-disable-line declaration-no-important
+    border: 2px #ff4019 solid !important; // stylelint-disable-line declaration-no-important
 }
 
 .visually-hidden {
-  @include visually-hidden;
-}
-
-.btn--reset {
-  border: none;
-  background: transparent;
-  cursor: pointer;
+    @include visually-hidden;
 }
 
 .container {
-  margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1200px;
+    display: flex;
+    width: 100%;
+    max-width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+    flex-direction: inherit;
+    justify-content: inherit;
+    align-items: inherit;
 }
 
+
 .js-focus-visible :focus:not(.focus-visible) {
-  outline: none;
+    outline: none;
 }

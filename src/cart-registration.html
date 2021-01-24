@@ -7,7 +7,7 @@
     <title>Оформление заказа</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="img/favicon.png" sizes="50x50">
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon.png">
@@ -28,14 +28,14 @@
             <div class="container">
                 <h1 class="title">Оформление заказа</h1>
 
-                <form action="cart-payment.html" class="cart-registration__form">
-                    <div class="cart-registration__form-input input">
+                <form action="cart-payment.html" class="form">
+                    <div class="form__input input">
                         <div class="input__title">Адрес</div>
                         <input type="text" placeholder="Алматы" class="input__field">
                         <input type="text" placeholder="ЕЦ-166/4" class="input__field">
                     </div>
 
-                    <div class="cart-registration__form-input input">
+                    <div class="form__input input">
                         <div class="input__title">Данные получателя</div>
                         <input type="text" placeholder="Логин" class="input__field">
 
@@ -43,14 +43,17 @@
                         <input type="text" placeholder="Фамилия" class="input__field input__field--hidden">
                     </div>
 
-                    <div class="cart-registration__form-input input input--hidden">
+                    <div class="form__input input input--hidden">
                         <div class="input__title">Дата рождения*</div>
 
                         <div class="input__selects">
                             <div class="select">
                                 <div class="select__head">
                                     <span class="select__current">День</span>
-                                    <img src="img/icons/arrow-down-icon.svg" class="select__icon">
+
+                                    <svg class="select__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.86177 5.52827C3.12212 5.26792 3.54423 5.26792 3.80458 5.52827L7.99984 9.72353L12.1951 5.52827C12.4554 5.26792 12.8776 5.26792 13.1379 5.52827C13.3983 5.78862 13.3983 6.21073 13.1379 6.47108L8.47124 11.1377C8.21089 11.3981 7.78878 11.3981 7.52843 11.1377L2.86177 6.47108C2.60142 6.21073 2.60142 5.78862 2.86177 5.52827Z" fill="#303030"/>
+                                    </svg>
                                 </div>
 
                                 <div class="select__body swiper-container">
@@ -99,7 +102,10 @@
                             <div class="select">
                                 <div class="select__head">
                                     <span class="select__current">Месяц</span>
-                                    <img src="img/icons/arrow-down-icon.svg" class="select__icon">
+
+                                    <svg class="select__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.86177 5.52827C3.12212 5.26792 3.54423 5.26792 3.80458 5.52827L7.99984 9.72353L12.1951 5.52827C12.4554 5.26792 12.8776 5.26792 13.1379 5.52827C13.3983 5.78862 13.3983 6.21073 13.1379 6.47108L8.47124 11.1377C8.21089 11.3981 7.78878 11.3981 7.52843 11.1377L2.86177 6.47108C2.60142 6.21073 2.60142 5.78862 2.86177 5.52827Z" fill="#303030"/>
+                                    </svg>
                                 </div>
 
                                 <div class="select__body swiper-container">
@@ -129,7 +135,10 @@
                             <div class="select">
                                 <div class="select__head">
                                     <span class="select__current">Год</span>
-                                    <img src="img/icons/arrow-down-icon.svg" class="select__icon">
+
+                                    <svg class="select__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.86177 5.52827C3.12212 5.26792 3.54423 5.26792 3.80458 5.52827L7.99984 9.72353L12.1951 5.52827C12.4554 5.26792 12.8776 5.26792 13.1379 5.52827C13.3983 5.78862 13.3983 6.21073 13.1379 6.47108L8.47124 11.1377C8.21089 11.3981 7.78878 11.3981 7.52843 11.1377L2.86177 6.47108C2.60142 6.21073 2.60142 5.78862 2.86177 5.52827Z" fill="#303030"/>
+                                    </svg>
                                 </div>
 
                                 <div class="select__body swiper-container">
@@ -176,20 +185,22 @@
                         </div>
                     </div>
 
-                    <label class="checkbox-item" for="Логин">
-                        <input class="checkbox-item__input" id="Логин" type="checkbox">
-                        <div class="checkbox"></div>
-                        <span class="checkbox-item__title">Не знаю логин</span>
-                    </label>
+                    <div class="form__checkbox">
+                        <label class="checkbox-item" for="Логин">
+                            <input class="checkbox-item__input" id="Логин" type="checkbox">
+                            <div class="checkbox"></div>
+                            <span class="checkbox-item__title">Не знаю логин</span>
+                        </label>
+                    </div>
 
-                    <div class="cart-registration__form-input input">
+                    <div class="form__input input">
                         <div class="input__title">Дата доставки</div>
                         <input type="text" placeholder="дд.мм.гггг." class="input__field">
                     </div>
 
-                    <div class="warning">
-                        <div class="warning__title">Внимание!</div>
-                        <div class="warning__text">Дата доставки может быть изменена администратором</div>
+                    <div class="form__warning">
+                        <div class="form__warning-title">Внимание!</div>
+                        <div class="form__warning-text">Дата доставки может быть изменена администратором</div>
                     </div>
 
                     <div class="cart__result">
@@ -200,13 +211,15 @@
                         </div>
                     </div>
 
-                    <label class="checkbox-item" for="Подтверждение">
-                        <input class="checkbox-item__input" id="Подтверждение" type="checkbox">
-                        <div class="checkbox"></div>
-                        <span class="checkbox-item__title">Я подтверждаю, что ознакомлен и согласен с условиями <span> публичной оферты</span> электронного магазина Convex</span>
-                    </label>
+                    <div class="form__checkbox">
+                        <label class="checkbox-item" for="Подтверждение">
+                            <input class="checkbox-item__input" id="Подтверждение" type="checkbox">
+                            <div class="checkbox"></div>
+                            <span class="checkbox-item__title">Я подтверждаю, что ознакомлен и согласен с условиями <span> публичной оферты</span> электронного магазина Convex</span>
+                        </label>
+                    </div>
 
-                    <button type="submit" class="cart-registration__form-submit">Выбрать вариант оплаты</button>
+                    <button type="submit" class="form__submit btn">Выбрать вариант оплаты</button>
                 </form>
             </div>
         </section>
