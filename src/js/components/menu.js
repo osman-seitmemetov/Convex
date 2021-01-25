@@ -1,4 +1,9 @@
 // Adaptive menu
+
+let menuItems = document.querySelectorAll('.header__categories-item');
+console.log(menuItems[menuItems.length-2])
+
+
 // const nextAll = element => {
 //     const nextElements = [];
 

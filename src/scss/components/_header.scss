@@ -512,6 +512,8 @@
         align-items: center;
         justify-content: space-between;
         height: 96px;
+        position: relative;
+        z-index: 3;
 
         @media (max-width: $screen-xs-max) {
             display: none;
