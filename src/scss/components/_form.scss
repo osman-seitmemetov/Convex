@@ -3,7 +3,6 @@
     max-width: 380px;
     display: flex;
     flex-direction: column;
-    // align-items: center;
 
     &__submit {
         margin-top: 10px;
@@ -20,6 +19,7 @@
     }
 
     &__reset {
+        margin-top: 10px;
         padding: 0;
         border: none;
         background: none;
@@ -169,5 +169,14 @@
         width: 16px;
         height: 16px;
         margin-right: 7px;
+    }
+
+    &__text {
+        margin-bottom: 20px;
+        width: 100%;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 100%;
+        text-align: center;
     }
 }

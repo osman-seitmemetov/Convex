@@ -69,29 +69,6 @@ const cb = () => {}
 let srcFonts = './src/scss/_fonts.scss';
 let appFonts = './app/fonts/';
 
-const fontsStyle = (done) => {
-  let file_content = fs.readFileSync(srcFonts);
-
-  fs.writeFile(srcFonts, '', cb);
-  fs.readdir(appFonts, function (err, items) {
-    fs.appendFile(srcFonts, '@import "./mixins/font-face";\r\n', cb);
-
-    if (items) {
-      let c_fontname;
-      for (var i = 0; i < items.length; i++) {
-        let fontname = items[i].split('.');
-        fontname = fontname[0];
-        if (c_fontname != fontname) {
-          fs.appendFile(srcFonts, '@include font-face("' + fontname + '", "' + fontname + '", 400);\r\n', cb);
-        }
-        c_fontname = fontname;
-      }
-    }
-  })
-
-  done();
-}
-
 const styles = () => {
   return src('./src/scss/**/*.scss')
     .pipe(sourcemaps.init())
@@ -163,7 +140,7 @@ const watchFiles = () => {
   watch('./src/img/**.png', imgToApp);
   watch('./src/img/**.svg', svgSprites);
   watch('./src/fonts/**', fonts);
-  watch('./src/fonts/**', fontsStyle);
+  watch('./src/fonts/**');
 }
 
 const clean = () => {
@@ -175,9 +152,9 @@ exports.styles = styles;
 exports.scripts = scripts;
 exports.watchFiles = watchFiles;
 exports.fonts = fonts;
-exports.fontsStyle = fontsStyle;
+// exports.fontsStyle = fontsStyle;
 
-exports.default = series(clean, parallel(htmlInclude, scripts, fonts, resources, imgToApp, svgSprites), fontsStyle, styles, watchFiles);
+exports.default = series(clean, parallel(htmlInclude, scripts, fonts, resources, imgToApp, svgSprites), styles, watchFiles);
 
 // BUILD
 const tinypng = () => {
@@ -241,7 +218,7 @@ const scriptsBuild = () => {
 
 exports.tinypng = tinypng;
 
-exports.build = series(clean, parallel(htmlInclude, scriptsBuild, fonts, resources, imgToApp, svgSprites), fontsStyle, stylesBuild, tinypng);
+exports.build = series(clean, parallel(htmlInclude, scriptsBuild, fonts, resources, imgToApp, svgSprites), stylesBuild, tinypng);
 
 
 // deploy

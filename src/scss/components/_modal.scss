@@ -1,0 +1,142 @@
+.modal {
+    border: 0;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+
+    @include breakpoint(sm-max) {
+        max-width: none;
+        min-width: fit-content;
+        border-radius: 0;
+    }
+
+    &__close {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        padding: 0;
+        border: 0;
+        background: transparent;
+
+        @include breakpoint(sm-max) {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+            fill: var(--color-black);
+
+            path {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    &__head {
+        width: 100%;
+        border-bottom: 1px solid var(--color-silver);
+        padding: 35px 15px 25px 15px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        @include breakpoint(sm-max) {
+            padding: 20px 15px;
+            justify-content: flex-start;
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 100%;
+        text-align: center;
+        color: var(--color-black);
+
+        @include breakpoint(sm-max) {
+            font-size: 20px;
+            text-align: left;
+        }
+    }
+
+    &__form {
+        width: 100%;
+        max-width: 500px !important;
+        padding: 35px 60px;
+
+        @include breakpoint(sm-max) {
+            padding: 35px 15px;
+        }
+    }
+
+    &__form--faq {
+        max-width: 600px !important;
+    }
+}
+
+.modal--faq {
+    max-width: 600px;
+}
+
+.hystmodal {
+    &__window {
+        margin: 115px 0;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+
+        @include breakpoint(sm-max) {
+            width: 100%;
+            height: 100vh;
+        }
+    }
+}
+
+.hystmodal--popup {
+    .hystmodal__window {
+        @include breakpoint(sm-max) {
+            padding: 0 15px;
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+        }
+    }
+
+    .modal {
+        @include breakpoint(sm-max) {
+            max-width: auto;
+            border-radius: 20px;
+        }
+
+        &__form {
+            padding: 35px 50px;
+        }
+
+        &__head {
+            padding: 35px 15px 25px 15px;
+            justify-content: center;
+        }
+
+        &__close {
+            @include breakpoint(sm-max) {
+                display: none;
+            }
+        }
+
+        &__title {
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+}

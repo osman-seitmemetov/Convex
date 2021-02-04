@@ -34,7 +34,7 @@
                         122 200 тг
                     </div>
 
-                    <button type="button" class="account-sidebar__balance-btn">Запросить перевод</button>
+                    <button data-hystmodal="#convicted-transfer-modal" type="button" class="account-sidebar__balance-btn">Запросить перевод</button>
                 </div>
 
                 <nav class="account-sidebar__nav">
@@ -297,6 +297,11 @@
     <div class="footer-hidden">
         @include('html/footer.html')
     </div>
+
+    @include('html/convicted-transfer-modal.html')
+    @include('html/convicted-transfer-popup-modal.html')
+    @include('html/password-modal.html')
+    @include('html/password-popup-modal.html')
 </body>
 
 </html>

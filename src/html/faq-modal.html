@@ -1,0 +1,78 @@
+<div class="hystmodal" id="faq-modal" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <div class="modal modal--faq">
+                <div class="modal__head">
+                    <div class="modal__title">Задать вопрос</div>
+
+                    <button data-hystclose class="modal__close" type="button">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.2097 4.3871L4.29289 4.29289C4.65338 3.93241 5.22061 3.90468 5.6129 4.2097L5.70711 4.29289L12 10.585L18.2929 4.29289C18.6834 3.90237 19.3166 3.90237 19.7071 4.29289C20.0976 4.68342 20.0976 5.31658 19.7071 5.70711L13.415 12L19.7071 18.2929C20.0676 18.6534 20.0953 19.2206 19.7903 19.6129L19.7071 19.7071C19.3466 20.0676 18.7794 20.0953 18.3871 19.7903L18.2929 19.7071L12 13.415L5.70711 19.7071C5.31658 20.0976 4.68342 20.0976 4.29289 19.7071C3.90237 19.3166 3.90237 18.6834 4.29289 18.2929L10.585 12L4.29289 5.70711C3.93241 5.34662 3.90468 4.77939 4.2097 4.3871L4.29289 4.29289L4.2097 4.3871Z"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <form action="/" class="modal__form modal__form--faq form" method="dialog">
+                    <div class="form__input input">
+                        <div class="input__title">Фамилия и имя*</div>
+                        <input type="text" inputmode="text" placeholder="Введите вашу фамилию и имя" class="input__field">
+                    </div>
+
+                    <div class="form__input input">
+                        <div class="input__title">Телефон*</div>
+                        <input type="tel" inputmode="tel" placeholder="Введите ваш номер телефона" class="input__field">
+                    </div>
+
+                    <div class="form__input input">
+                        <div class="input__title">Email*</div>
+                        <input type="email" inputmode="email" placeholder="Введите вашу почту" class="input__field">
+                    </div>
+
+                    <div class="form__input input">
+                        <div class="input__title">Ваше сообщение*</div>
+                        <textarea cols="" rows="" inputmode="text" type="text" placeholder="Напишите нам" class="input__text-area"></textarea>
+                    </div>
+
+                    <div class="form__add">
+                        <input class="form__add-input" type="file" id="add-file" multiple>
+
+                        <label class="form__add-label" for="add-file">
+                            <svg class="form__add-icon">
+                                <use xlink:href="img/sprite.svg#attach-icon"></use>
+                            </svg>
+
+                            <span class="form__add-title">Прикрепить файл</span>
+                        </label>
+                    </div>
+
+                    <div class="form__recaptha" style="background-image: url('./img/recaptcha.png');"></div>
+
+                    <div class="form__buttons">
+                        <button data-hystclose class="form__submit btn" type="submit">Отправить</button>
+                        <button data-hystclose class="form__reset" type="reset">Отмена</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<script>
+    let inputs = document.querySelectorAll('.form__add-input');
+    Array.prototype.forEach.call(inputs, function (input) {
+        let label = input.nextElementSibling,
+            labelVal = label.querySelector('.form__add-title').innerText;
+
+        input.addEventListener('change', function (e) {
+            let countFiles = '';
+            if (this.files && this.files.length >= 1)
+            countFiles = this.files.length;
+
+            if (countFiles)
+            label.querySelector('.form__add-title').innerText = 'Выбрано файлов: ' + countFiles;
+            else
+            label.querySelector('.form__add-title').innerText = labelVal;
+        });
+    });
+</script>

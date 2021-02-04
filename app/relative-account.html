@@ -84,15 +84,6 @@
                     </svg>
                 </div>
 
-                <!-- <div class="header__login-mobile">
-                    <span>Вход/</span>
-                    Регистрация
-
-                    <svg>
-						<use xlink:href="img/sprite.svg#user-icon"></use>
-                    </svg>
-                </div> -->
-
                 <div class="header__auth">
                     <button type="button" class="header__auth-btn">
                         Малахов Виктор
@@ -107,7 +98,7 @@
                             <div class="auth-dropdown__head-balance">Ваш баланс: 140 000тг</div>
 
                             <div class="auth-dropdown__head-actions">
-                                <button class="auth-dropdown__head-action">Cделать перевод</button>
+                                <button data-hystmodal="#relative-transfer-modal" class="auth-dropdown__head-action">Cделать перевод</button>
                                 <a href="account-balance.html" class="auth-dropdown__head-action">Пополнить баланс</a>
                             </div>
                         </div>
@@ -157,7 +148,7 @@
                                 Баланс
                             </a>
 
-                            <a class="auth-dropdown__link auth-dropdown__link--btn">
+                            <a data-hystmodal="#password-modal" class="auth-dropdown__link auth-dropdown__link--btn">
                                 <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8.00008 1.33301C9.47284 1.33301 10.6667 2.52692 10.6667 3.99967V5.33301H11.8334C12.6618 5.33301 13.3334 6.00458 13.3334 6.83301V13.1663C13.3334 13.9948 12.6618 14.6663 11.8334 14.6663H4.16675C3.33832 14.6663 2.66675 13.9948 2.66675 13.1663V6.83301C2.66675 6.00458 3.33832 5.33301 4.16675 5.33301H5.33341V3.99967C5.33341 2.52692 6.52732 1.33301 8.00008 1.33301ZM11.8334 6.33301H4.16675C3.89061 6.33301 3.66675 6.55687 3.66675 6.83301V13.1663C3.66675 13.4425 3.89061 13.6663 4.16675 13.6663H11.8334C12.1096 13.6663 12.3334 13.4425 12.3334 13.1663V6.83301C12.3334 6.55687 12.1096 6.33301 11.8334 6.33301ZM8.00016 8.99967C8.55245 8.99967 9.00016 9.44739 9.00016 9.99967C9.00016 10.552 8.55245 10.9997 8.00016 10.9997C7.44788 10.9997 7.00016 10.552 7.00016 9.99967C7.00016 9.44739 7.44788 8.99967 8.00016 8.99967ZM8.00008 2.33301C7.07961 2.33301 6.33341 3.0792 6.33341 3.99967V5.33301H9.66675V3.99967C9.66675 3.0792 8.92056 2.33301 8.00008 2.33301Z"/>
                                 </svg>
@@ -250,7 +241,7 @@
                         122 200 тг
                     </div>
 
-                    <button type="button" class="account-sidebar__balance-btn">Сделать перевод</button>
+                    <button id="transfer" type="button" class="account-sidebar__balance-btn">Сделать перевод</button>
                 </div>
 
                 <nav class="account-sidebar__nav">
@@ -402,6 +393,133 @@
 	</div>
 </footer>
     </div>
+
+    <div class="hystmodal hystmodal--popup" id="account-popup-modal" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <div class="modal">
+                <div class="modal__head">
+                    <div class="modal__title">Внимание</div>
+
+                    <button data-hystclose class="modal__close" type="button">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.2097 4.3871L4.29289 4.29289C4.65338 3.93241 5.22061 3.90468 5.6129 4.2097L5.70711 4.29289L12 10.585L18.2929 4.29289C18.6834 3.90237 19.3166 3.90237 19.7071 4.29289C20.0976 4.68342 20.0976 5.31658 19.7071 5.70711L13.415 12L19.7071 18.2929C20.0676 18.6534 20.0953 19.2206 19.7903 19.6129L19.7071 19.7071C19.3466 20.0676 18.7794 20.0953 18.3871 19.7903L18.2929 19.7071L12 13.415L5.70711 19.7071C5.31658 20.0976 4.68342 20.0976 4.29289 19.7071C3.90237 19.3166 3.90237 18.6834 4.29289 18.2929L10.585 12L4.29289 5.70711C3.93241 5.34662 3.90468 4.77939 4.2097 4.3871L4.29289 4.29289L4.2097 4.3871Z"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <form action="/" class="modal__form form" method="dialog">
+                    <div class="form__text">Ваш профиль был обновлен</div>
+                    <button data-hystclose type="submit" class="form__submit">Продолжить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="hystmodal hystmodal--popup" id="password-popup-modal" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <div class="modal">
+                <div class="modal__head">
+                    <div class="modal__title">Внимание</div>
+
+                    <button data-hystclose class="modal__close" type="button">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.2097 4.3871L4.29289 4.29289C4.65338 3.93241 5.22061 3.90468 5.6129 4.2097L5.70711 4.29289L12 10.585L18.2929 4.29289C18.6834 3.90237 19.3166 3.90237 19.7071 4.29289C20.0976 4.68342 20.0976 5.31658 19.7071 5.70711L13.415 12L19.7071 18.2929C20.0676 18.6534 20.0953 19.2206 19.7903 19.6129L19.7071 19.7071C19.3466 20.0676 18.7794 20.0953 18.3871 19.7903L18.2929 19.7071L12 13.415L5.70711 19.7071C5.31658 20.0976 4.68342 20.0976 4.29289 19.7071C3.90237 19.3166 3.90237 18.6834 4.29289 18.2929L10.585 12L4.29289 5.70711C3.93241 5.34662 3.90468 4.77939 4.2097 4.3871L4.29289 4.29289L4.2097 4.3871Z"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <form action="/" class="modal__form form" method="dialog">
+                    <div class="form__text">Ваш пароль был изменен</div>
+
+                    <button data-hystclose type="submit" class="form__submit">Продолжить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="hystmodal" id="password-modal" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <div class="modal">
+                <div class="modal__head">
+                    <div class="modal__title">Изменить пароль</div>
+
+                    <button data-hystclose class="modal__close" type="button">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.2097 4.3871L4.29289 4.29289C4.65338 3.93241 5.22061 3.90468 5.6129 4.2097L5.70711 4.29289L12 10.585L18.2929 4.29289C18.6834 3.90237 19.3166 3.90237 19.7071 4.29289C20.0976 4.68342 20.0976 5.31658 19.7071 5.70711L13.415 12L19.7071 18.2929C20.0676 18.6534 20.0953 19.2206 19.7903 19.6129L19.7071 19.7071C19.3466 20.0676 18.7794 20.0953 18.3871 19.7903L18.2929 19.7071L12 13.415L5.70711 19.7071C5.31658 20.0976 4.68342 20.0976 4.29289 19.7071C3.90237 19.3166 3.90237 18.6834 4.29289 18.2929L10.585 12L4.29289 5.70711C3.93241 5.34662 3.90468 4.77939 4.2097 4.3871L4.29289 4.29289L4.2097 4.3871Z"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <form action="/" class="modal__form form" method="dialog">
+                    <div class="form__input input">
+                        <div class="input__title">Старый пароль</div>
+                        <input type="text" placeholder="Введите старый пароль" class="input__field">
+                        <div class="input__error-log">Неверный формат телефона</div>
+                    </div>
+
+                    <div class="form__input input">
+                        <div class="input__title">Новый пароль</div>
+                        <input type="text" placeholder="Введите новый пароль" class="input__field">
+                        <div class="input__error-log">Неверный формат телефона</div>
+                    </div>
+
+                    <div class="form__input input">
+                        <div class="input__title">Повторите новый пароль</div>
+                        <input type="text" placeholder="Повторите новый пароль" class="input__field">
+                        <div class="input__error-log">Неверный формат телефона</div>
+                    </div>
+
+                    <button data-hystmodal="#password-popup-modal" type="submit" class="form__submit">Изменить пароль</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="hystmodal" id="relative-transfer-modal" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <div class="modal">
+                <div class="modal__head">
+                    <div class="modal__title">Перевод средств</div>
+
+                    <button data-hystclose class="modal__close" type="button">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.2097 4.3871L4.29289 4.29289C4.65338 3.93241 5.22061 3.90468 5.6129 4.2097L5.70711 4.29289L12 10.585L18.2929 4.29289C18.6834 3.90237 19.3166 3.90237 19.7071 4.29289C20.0976 4.68342 20.0976 5.31658 19.7071 5.70711L13.415 12L19.7071 18.2929C20.0676 18.6534 20.0953 19.2206 19.7903 19.6129L19.7071 19.7071C19.3466 20.0676 18.7794 20.0953 18.3871 19.7903L18.2929 19.7071L12 13.415L5.70711 19.7071C5.31658 20.0976 4.68342 20.0976 4.29289 19.7071C3.90237 19.3166 3.90237 18.6834 4.29289 18.2929L10.585 12L4.29289 5.70711C3.93241 5.34662 3.90468 4.77939 4.2097 4.3871L4.29289 4.29289L4.2097 4.3871Z"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <form action="/" class="modal__form form" method="dialog">
+                    <div class="form__input input">
+                        <div class="input__title">Логин</div>
+                        <input type="text" placeholder="Введите логин" class="input__field">
+                        <div class="input__error-log">Неверный формат телефона</div>
+                    </div>
+
+                    <div class="form__input input">
+                        <div class="input__title">Сумма перевода</div>
+                        <input type="text" placeholder="Введите сумму перевода" class="input__field">
+                        <div class="input__error-log">Неверный формат телефона</div>
+                    </div>
+
+                    <div class="form__checkbox">
+                        <label class="checkbox-item" for="Подтверждение">
+                            <input class="checkbox-item__input" id="Подтверждение" type="checkbox">
+                            <div class="checkbox"></div>
+                            <span class="checkbox-item__title">Я подтверждаю, что ознакомлен и согласен с условиями <span> публичной оферты</span> электронного магазина Convex</span>
+                        </label>
+                    </div>
+
+                    <button data-hystclose type="submit" class="form__submit">Получить код подтверждения</button>
+                    <span class="form__label">Мы отправим вам SMS с кодом подтверждения</span>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 
 </html>

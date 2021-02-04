@@ -1,0 +1,54 @@
+<div class="hystmodal" id="convicted-transfer-modal" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <div class="modal">
+                <div class="modal__head">
+                    <div class="modal__title">Запросить перевод</div>
+
+                    <button data-hystclose class="modal__close" type="button">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.2097 4.3871L4.29289 4.29289C4.65338 3.93241 5.22061 3.90468 5.6129 4.2097L5.70711 4.29289L12 10.585L18.2929 4.29289C18.6834 3.90237 19.3166 3.90237 19.7071 4.29289C20.0976 4.68342 20.0976 5.31658 19.7071 5.70711L13.415 12L19.7071 18.2929C20.0676 18.6534 20.0953 19.2206 19.7903 19.6129L19.7071 19.7071C19.3466 20.0676 18.7794 20.0953 18.3871 19.7903L18.2929 19.7071L12 13.415L5.70711 19.7071C5.31658 20.0976 4.68342 20.0976 4.29289 19.7071C3.90237 19.3166 3.90237 18.6834 4.29289 18.2929L10.585 12L4.29289 5.70711C3.93241 5.34662 3.90468 4.77939 4.2097 4.3871L4.29289 4.29289L4.2097 4.3871Z"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <form action="/" class="modal__form form" method="dialog">
+                    <div class="form__input input">
+                        <div class="input__title">Выберите номер для запроса</div>
+
+                        <div class="select">
+                            <div class="select__head">
+                                <span class="select__current">Выберите номер</span>
+
+                                <svg class="select__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.86177 5.52827C3.12212 5.26792 3.54423 5.26792 3.80458 5.52827L7.99984 9.72353L12.1951 5.52827C12.4554 5.26792 12.8776 5.26792 13.1379 5.52827C13.3983 5.78862 13.3983 6.21073 13.1379 6.47108L8.47124 11.1377C8.21089 11.3981 7.78878 11.3981 7.52843 11.1377L2.86177 6.47108C2.60142 6.21073 2.60142 5.78862 2.86177 5.52827Z" fill="#303030"/>
+                                </svg>
+                            </div>
+
+                            <div class="select__body swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="select__title">Выберите номер</div>
+
+                                        <div class="select__item">+7 700 231 43 14</div>
+                                        <div class="select__item">+7 700 231 43 21</div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form__input input">
+                        <div class="input__title">Сумма для пополнения в тенге</div>
+                        <input type="text" placeholder="Введите сумму" class="input__field">
+                        <div class="input__error-log">Неверный формат телефона</div>
+                    </div>
+
+                    <button data-hystmodal="#convicted-transfer-popup-modal" type="submit" class="form__submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

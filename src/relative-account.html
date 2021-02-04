@@ -34,7 +34,7 @@
                         122 200 тг
                     </div>
 
-                    <button type="button" class="account-sidebar__balance-btn">Сделать перевод</button>
+                    <button id="transfer" type="button" class="account-sidebar__balance-btn">Сделать перевод</button>
                 </div>
 
                 <nav class="account-sidebar__nav">
@@ -130,6 +130,11 @@
     <div class="footer-hidden">
         @include('html/footer.html')
     </div>
+
+    @include('html/account-popup-modal.html')
+    @include('html/password-popup-modal.html')
+    @include('html/password-modal.html')
+    @include('html/relative-transfer-modal.html')
 </body>
 
 </html>

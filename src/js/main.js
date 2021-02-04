@@ -1,4 +1,5 @@
-import './vendor/focus-visible.min.js';
+import './vendor/focus-visible.min';
+import './vendor/hystmodal.min';
 import './components/magic-line';
 import './components/search';
 import './components/sliders';
@@ -13,6 +14,10 @@ import {disableScroll, enableScroll} from './functions/stop-scroll';
 
 const TabItemSelector = '.account-head__tab';
 const ContentItemSelector = '.account-tab-content';
+
+const myModal = new HystModal({
+    linkAttributeName: "data-hystmodal",
+});
 
 class TabsManager {
     constructor(navNode){

@@ -1,33 +1,39 @@
 .account {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 0 150px 0;
+
+    @include breakpoint(sm-max) {
+        flex-direction: column;
+        padding: 30px 0 90px 0;
+    }
 
     &__right {
         width: 100%;
         max-width: 850px;
     }
-
-    @media (min-width: $screen-lg) {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 50px 0 150px 0;
-    }
-
-    @media (max-width: $screen-xs-max) {
-        flex-direction: column;
-        padding: 30px 0 90px 0;
-    }
 }
 
 .account-sidebar {
-    @media (min-width: $screen-lg) {
-        width: 280px;
-        margin-right: 50px;
+    width: 280px;
+    margin-right: 50px;
+
+    @include breakpoint(sm-max) {
+        margin: auto;
+        width: 100%;
+        max-width: 380px;
     }
 
-    @media (max-width: $screen-xs-max) {
-        width: 100%;
-        margin-right: 0;
-    }
+    // @media (min-width: $screen-lg) {
+    //     width: 280px;
+    //     margin-right: 50px;
+    // }
+
+    // @media (max-width: $screen-xs-max) {
+    //     width: 100%;
+    //     margin-right: 0;
+    // }
 
     &__balance {
         width: 100%;
@@ -129,6 +135,12 @@
 .profile {
     width: 100%;
     max-width: 790px;
+
+    @include breakpoint(sm-max) {
+        margin: auto;
+        width: 100%;
+        max-width: 380px;
+    }
 
     &__title {
         font-family: "Museo Sans Cyrl";
