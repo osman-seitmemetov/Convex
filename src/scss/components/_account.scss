@@ -16,41 +16,27 @@
 }
 
 .account-sidebar {
-    width: 280px;
+    min-width: 280px;
     margin-right: 50px;
 
     @include breakpoint(sm-max) {
         margin: auto;
         width: 100%;
         max-width: 380px;
+        min-width: fit-content;
     }
-
-    // @media (min-width: $screen-lg) {
-    //     width: 280px;
-    //     margin-right: 50px;
-    // }
-
-    // @media (max-width: $screen-xs-max) {
-    //     width: 100%;
-    //     margin-right: 0;
-    // }
 
     &__balance {
         width: 100%;
         padding: 20px 26px;
         background-color: var(--color-emerald);
         border-radius: 10px;
+        margin-bottom: 40px;
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        @media (min-width: $screen-lg) {
-            width: 280px;
-            margin-right: 50px;
-            margin-bottom: 40px;
-        }
-
-        @media (max-width: $screen-xs-max) {
+        @include breakpoint(sm-max) {
             width: 100%;
             margin-right: 0;
             margin-bottom: 35px;
@@ -88,13 +74,10 @@
     }
 
     &__nav {
+        display: flex;
         flex-direction: column;
 
-        @media (min-width: $screen-lg) {
-            display: flex;
-        }
-
-        @media (max-width: $screen-xs-max) {
+        @include breakpoint(sm-max) {
             display: none;
         }
     }
@@ -144,16 +127,13 @@
 
     &__title {
         font-family: "Museo Sans Cyrl";
+        font-size: 18px;
         font-weight: 700;
         line-height: 100%;
         margin-bottom: 30px;
+        color: var(--color-mine-shaft);
 
-        @media (min-width: $screen-lg) {
-            font-size: 18px;
-            color: var(--color-mine-shaft);
-        }
-
-        @media (max-width: $screen-xs-max) {
+        @include breakpoint(sm-max) {
             font-size: 24px;
             width: 100%;
             text-align: center;
@@ -199,11 +179,7 @@
         line-height: 100%;
         color: var(--color-emerald);
 
-        @media (min-width: $screen-lg) {
-            width: 278px;
-        }
-
-        @media (max-width: $screen-xs-max) {
+        @include breakpoint(md-max) {
             width: 100%;
         }
     }
