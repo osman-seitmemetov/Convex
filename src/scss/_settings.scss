@@ -9,6 +9,7 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
+    -webkit-tap-highlight-color: transparent;
 
     // @include breakpoint(md-max) {
     //     cursor: default;
@@ -101,7 +102,7 @@ button[disabled] {
 }
 
 .search-bg {
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
@@ -220,6 +221,14 @@ button[disabled] {
     flex-direction: inherit;
     justify-content: inherit;
     align-items: inherit;
+
+    @include breakpoint(lg-max) {
+        padding: 0 50px;
+    }
+
+    @include breakpoint(sm-max) {
+        padding: 0 15px;
+    }
 }
 
 

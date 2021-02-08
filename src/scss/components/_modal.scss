@@ -98,7 +98,7 @@
 
         @include breakpoint(sm-max) {
             width: 100%;
-            height: 100vh;
+            min-height: 100vh;
         }
     }
 }
@@ -139,4 +139,58 @@
             text-align: center;
         }
     }
+}
+
+.menu {
+    width: 100%;
+    background-color: var(--color-white);
+
+    &__head {
+        position: relative;
+        width: 100%;
+        display: flex;
+        padding: 15px 15px 0 15px;
+        margin-bottom: 30px;
+
+        .modal__close {
+            top: 36px;
+        }
+    }
+
+    &__contacts-phone {
+        align-items: flex-start !important;
+    }
+
+    .account-menu {
+        width: 100%;
+        padding: 0 15px;
+
+        &__head {
+            padding: 20px 0;
+        }
+
+        &__nav {
+            padding: 30px 0;
+        }
+
+        .socials {
+            margin-top: 5px;
+            margin-bottom: 60px;
+        }
+    }
+
+    .menu {
+        &__contacts {
+            margin-top: 30px;
+        }
+    }
+}
+
+.hystmodal--menu {
+    top: 100vh;
+    transition: .4s;
+}
+
+.hystmodal--active {
+   top: 0;
 }

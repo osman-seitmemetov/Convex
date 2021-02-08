@@ -192,6 +192,11 @@
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
 
+    @include breakpoint(sm-max) {
+        margin: auto;
+        max-width: 380px;
+    }
+
     &__item {
         padding: 25px;
         background-color: var(--color-white-lilac);
@@ -225,6 +230,10 @@
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 0;
         grid-row-gap: 20px;
+
+        @include breakpoint(md-max) {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 
     &__item-info {
@@ -262,6 +271,10 @@
     line-height: 100%;
     display: flex;
 
+    @include breakpoint(md-max) {
+        justify-content: space-between;
+    }
+
     span {
         font-family: "Museo Sans Cyrl";
         font-weight: 700;
@@ -293,6 +306,11 @@
 .ordering {
     display: flex;
     justify-content: space-between;
+
+    @include breakpoint(lg-max) {
+        flex-direction: column;
+        justify-content: unset;
+    }
 
     &__left {
         width: 100%;
