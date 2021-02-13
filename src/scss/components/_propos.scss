@@ -1,85 +1,97 @@
 .propos {
-    @media (min-width: $screen-lg) {
-        width: 100%;
-        margin-bottom: 80px;
-    }
+    width: 100%;
+    margin-bottom: 80px;
 
-    @media (max-width: $screen-sm-max) {
-        width: 200%;
+    @include breakpoint(sm-max) {
         margin-bottom: 60px;
     }
 
-    &__container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+    &__slider {
+        width: 100%;
+        height: fit-content;
 
-        @media (min-width: $screen-xl) {
-            grid-gap: 17px;
+        @include breakpoint(lg-max) {
+            border-radius: 12px;
         }
 
-        @media (max-width: $screen-lg-max) {
-            grid-gap: 40px;
+        @include breakpoint(md-max) {
+            border-radius: 0;
         }
 
-        @media (max-width: $screen-sm-max) {
-            grid-gap: 15px;
+        @include breakpoint(sm-max) {
+            overflow: visible;
+        }
+    }
+
+    .swiper-wrapper {
+
+        @include breakpoint(lg-max) {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-column-gap: 15px;
+            grid-row-gap: 0;
+        }
+
+        @include breakpoint(md-max) {
+            width: 100%;
+            display: flex;
+            grid-gap: 0;
         }
     }
 
     &__item {
-        // margin-right: 15px;
+        width: 210px !important;
+        height: 200px;
+        padding: 30px 20px 30px 20px;
         border-radius: 12px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         text-decoration: none;
 
-        @media (min-width: $screen-xl) {
-            height: 260px;
-            padding: 30px 20px 30px 20px;
-        }
-
-        @media (max-width: $screen-lg-max) {
-            height: 171px;
+        @include breakpoint(lg-max) {
             padding: 15px 10px;
+            max-height: 171px;
+            width: 93% !important;
+            max-width: 240px;
         }
 
-        @media (max-width: $screen-sm-max) {
-            width: 158px !important;
-            height: 158px;
+        @include breakpoint(sm-max) {
+            max-width: 138px;
+            max-height: 138px;
             padding: 10px;
         }
 
         &:first-child {
+            width: 340px !important;
 
-            @media (min-width: $screen-xl) {
-                width: 380px;
+            @include breakpoint(lg-max) {
+                width: 93% !important;
+                max-width: 240px;
             }
-        }
 
-        &:last-child {
-            margin-right: 0;
+            @include breakpoint(sm-max) {
+                max-width: 138px;
+                max-height: 138px;
+            }
         }
     }
 
     &__item-title {
         width: 100%;
         color: var(--color-white);
-        font-family: "Museo Sans Cyrl";
         font-weight: 900;
         margin-bottom: 5px;
+        font-size: 24px;
+        line-height: 29px;
 
-        @media (min-width: $screen-xl) {
-            font-size: 24px;
-            line-height: 29px;
-        }
-
-        @media (max-width: $screen-lg-max) {
+        @include breakpoint(lg-max) {
             font-size: 18px;
             line-height: 22px;
         }
 
-        @media (max-width: $screen-sm-max) {
+        @include breakpoint(sm-max) {
             font-size: 14px;
             line-height: 17px;
         }
@@ -91,19 +103,9 @@
         line-height: 22px;
         color: rgba(255, 255, 255, 0.75);
 
-        @media (min-width: $screen-lg) {
-            font-size: 18px;
-            line-height: 22px;
-        }
-
-        @media (max-width: $screen-lg-max) {
+        @include breakpoint(lg-max) {
             font-size: 10px;
             line-height: 12px;
         }
-
-        // @media (max-width: $screen-sm-max) {
-        //     font-size: 10px;
-        //     line-height: 12px;
-        // }
     }
 }

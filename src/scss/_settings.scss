@@ -5,6 +5,18 @@ html {
     box-sizing: border-box;
 }
 
+.html--crop-x {
+    @include breakpoint(sm-max) {
+        overflow-x: hidden;
+    }
+
+    body {
+        @include breakpoint(sm-max) {
+            overflow-x: hidden;
+        }
+    }
+}
+
 *,
 *::before,
 *::after {
@@ -25,7 +37,6 @@ body {
     font-weight: 400;
     font-style: normal;
     color: var(--color-mine-shaft);
-    // overflow-x: hidden;
 }
 
 .body--crop {
@@ -71,6 +82,7 @@ ul {
 button {
     cursor: pointer;
     outline: none;
+    padding: 0;
 }
 
 button[disabled] {

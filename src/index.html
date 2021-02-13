@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="html--crop-x">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -88,11 +88,25 @@
     <main class="main">
         <!-- Banner -->
         <section class="banner">
-            <div class="container">
+            <div class="banner__container container">
+                <div class="banner__buttons">
+                    <div class="swiper-button-next banner__button-next">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C6.90237 12.3166 6.90237 11.6834 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
+                        </svg>
+                    </div>
+
+                    <div class="swiper-button-prev banner__button-prev">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C6.90237 12.3166 6.90237 11.6834 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
+                        </svg>
+                    </div>
+                </div>
+
                 <div class="banner__slider swiper-container">
                     <div class="swiper-wrapper">
 
-                        <!-- Banner slider -->
+                        <!-- Banner slide -->
                         <div class="swiper-slide banner__slide">
                             <div class="banner__slide-usp">
                                 <div class="banner__slide-usp-inner">
@@ -106,11 +120,11 @@
                             <div class="banner__slide-img" style="background-image: url('img/slider.jpg');"></div>
                         </div><!-- /.banner__slide -->
 
-                        <!-- Banner slider -->
+                        <!-- Banner slide -->
                         <div class="swiper-slide banner__slide">
                             <div class="banner__slide-usp">
                                 <div class="banner__slide-usp-inner">
-                                    <h2 class="h1">Всегда свежие молочные продукты</h2>
+                                    <h2 class="banner__slide-title">Всегда свежие молочные продукты</h2>
                                     <p class="banner__slide-text">Только качественные товары, за которыми мы всегда следим</p>
                                 </div>
 
@@ -120,11 +134,11 @@
                             <div class="banner__slide-img" style="background-image: url('img/slider.jpg');"></div>
                         </div><!-- /.banner__slide -->
 
-                        <!-- Banner slider -->
+                        <!-- Banner slide -->
                         <div class="swiper-slide banner__slide">
                             <div class="banner__slide-usp">
                                 <div class="banner__slide-usp-inner">
-                                    <h2 class="h1">Всегда свежие молочные продукты</h2>
+                                    <h2 class="banner__slide-title">Всегда свежие молочные продукты</h2>
                                     <p class="banner__slide-text">Только качественные товары, за которыми мы всегда следим</p>
                                 </div>
 
@@ -134,11 +148,11 @@
                             <div class="banner__slide-img" style="background-image: url('img/slider.jpg');"></div>
                         </div><!-- /.banner__slide -->
 
-                        <!-- Banner slider -->
+                        <!-- Banner slide -->
                         <div class="swiper-slide banner__slide">
                             <div class="banner__slide-usp">
                                 <div class="banner__slide-usp-inner">
-                                    <h2 class="h1">Всегда свежие молочные продукты</h2>
+                                    <h2 class="banner__slide-title">Всегда свежие молочные продукты</h2>
                                     <p class="banner__slide-text">Только качественные товары, за которыми мы всегда следим</p>
                                 </div>
 
@@ -147,45 +161,38 @@
 
                             <div class="banner__slide-img" style="background-image: url('img/slider.jpg');"></div>
                         </div><!-- /.banner__slide -->
-
                     </div>
-
-                    <div class="swiper-button-next banner__button-next"></div>
-                    <div class="swiper-button-prev banner__button-prev"></div>
                 </div>
             </div><!-- /.container -->
         </section><!-- /.banner -->
 
-        <!-- Propositions -->
         <section class="propos">
-            <div class="container propos__container">
+            <div class="container">
+                <div class="swiper-container propos__slider">
+                    <div class="swiper-wrapper">
+                        <a href="#" class="propos__item swiper-slide" style="background: url('img/plov.png') 27px 15px no-repeat, linear-gradient(175.37deg, #FA6A6A -9.92%, #E43F3F 96.25%);">
+                            <div class="propos__item-title">Горячие блюда</div>
+                            <p class="propos__item-label">Вкуснейшие блюда из 4 ресторанов</p>
+                        </a>
 
-                <!-- Propos item -->
-                <a href="#" class="propos__item" style="background: url('img/plov.png') 27px 15px no-repeat, linear-gradient(175.37deg, #FA6A6A -9.92%, #E43F3F 96.25%);">
-                    <div class="propos__item-title">Горячие блюда</div>
-                    <p class="propos__item-label">Вкуснейшие блюда из 4 ресторанов</p>
-                </a><!-- /.propos__item -->
+                        <a href="#" class="propos__item swiper-slide" style="background: url('img/m_m.png') 26px 9px no-repeat, linear-gradient(171.27deg, #A8CBFF -6.86%, #7BB0FF 93.34%);">
+                            <div class="propos__item-title">Новинки</div>
+                            <p class="propos__item-label">Новые позиции</p>
+                        </a>
 
-                <!-- Propos item -->
-                <a href="#" class="propos__item" style="background: url('img/m_m.png') 26px 9px no-repeat, linear-gradient(171.27deg, #A8CBFF -6.86%, #7BB0FF 93.34%);">
-                    <div class="propos__item-title">Новинки</div>
-                    <p class="propos__item-label">Новые позиции</p>
-                </a><!-- /.propos__item -->
+                        <a href="#" class="propos__item swiper-slide" style="background: url('img/percent.png') 60px 25px no-repeat, linear-gradient(166.25deg, #BBB0FF -21.04%, #8470FF 90.17%);">
+                            <div class="propos__item-title">Акции</div>
+                            <p class="propos__item-label">Лучшие цены</p>
+                        </a>
 
-                <!-- Propos item -->
-                <a href="#" class="propos__item" style="background: url('img/percent.png') 60px 25px no-repeat, linear-gradient(166.25deg, #BBB0FF -21.04%, #8470FF 90.17%);">
-                    <div class="propos__item-title">Акции</div>
-                    <p class="propos__item-label">Лучшие цены</p>
-                </a><!-- /.propos__item -->
-
-                <!-- Propos item -->
-                <a href="#" class="propos__item" style="background: url('img/packet.png') -15px 0 no-repeat, linear-gradient(180.1deg, #FFD37D -7.02%, #FDC352 99.91%);">
-                    <div class="propos__item-title">Комплекты</div>
-                    <p class="propos__item-label">Все в одном</p>
-                </a><!-- /.propos__item -->
-
+                        <a href="#" class="propos__item swiper-slide" style="background: url('img/packet.png') -15px 0 no-repeat, linear-gradient(180.1deg, #FFD37D -7.02%, #FDC352 99.91%);">
+                            <div class="propos__item-title">Комплекты</div>
+                            <p class="propos__item-label">Все в одном</p>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </section><!-- /.propos -->
+        </section>
 
         <section class="products">
             <div class="container">
@@ -196,8 +203,17 @@
 
                 <div class="products-wrapper">
                     <div class="products__buttons">
-                        <div class="swiper-button-next products__button-next"></div>
-                        <div class="swiper-button-prev products__button-prev"></div>
+                        <div class="swiper-button-next products__button-next">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C6.90237 12.3166 6.90237 11.6834 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
+                            </svg>
+                        </div>
+
+                        <div class="swiper-button-prev products__button-prev">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C6.90237 12.3166 6.90237 11.6834 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
+                            </svg>
+                        </div>
                     </div>
 
                     <div class="swiper-container products__slider">
@@ -210,9 +226,13 @@
                             @include('html/product.html')
                             @include('html/product.html')
 
-                            <a href="#" class="swiper-slide product product-showall" style="background-image: url('img/product-bg.png');">
-                                <img src="img/icons/arrow-top-icon.svg" class="product-showall__icon">
-                                <div class="product-showall__title">Смотреть все</div>
+                            <a href="#" class="swiper-slide product-card product-card--showall" style="background-image: url('img/product-bg.png');">
+                                <svg class="product-card--showall__icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25 17.019L25 26.5C25 27.3284 25.6716 28 26.5 28C27.3284 28 28 27.3284 28 26.5L28 13.5C28 12.6716 27.3284 12 26.5 12L13.5 12C12.6716 12 12 12.6716 12 13.5C12 14.3284 12.6716 15 13.5 15L22.7773 15L12.4341 25.4444C11.8511 26.033 11.8557 26.9828 12.4444 27.5657C13.033 28.1486 13.9827 28.144 14.5657 27.5554L25 17.019Z"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 40C8.95431 40 -3.91405e-07 31.0457 -8.74228e-07 20C-1.35705e-06 8.95431 8.9543 -3.91405e-07 20 -8.74228e-07C31.0457 -1.35705e-06 40 8.9543 40 20C40 31.0457 31.0457 40 20 40ZM3 20C3 29.3888 10.6112 37 20 37C29.3888 37 37 29.3888 37 20C37 10.6112 29.3888 3 20 3C10.6112 3 3 10.6112 3 20Z"/>
+                                </svg>
+
+                                <div class="product-card--showall__title">Смотреть все</div>
                             </a>
                         </div>
                     </div>
@@ -229,8 +249,17 @@
 
                 <div class="products-wrapper">
                     <div class="products__buttons">
-                        <div class="swiper-button-next products__button-next"></div>
-                        <div class="swiper-button-prev products__button-prev"></div>
+                        <div class="swiper-button-next products__button-next">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C6.90237 12.3166 6.90237 11.6834 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
+                            </svg>
+                        </div>
+
+                        <div class="swiper-button-prev products__button-prev">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C6.90237 12.3166 6.90237 11.6834 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
+                            </svg>
+                        </div>
                     </div>
 
                     <div class="swiper-container products__slider">
@@ -243,9 +272,13 @@
                             @include('html/product.html')
                             @include('html/product.html')
 
-                            <a href="#" class="swiper-slide product product-showall" style="background-image: url('img/product-bg.png');">
-                                <img src="img/icons/arrow-top-icon.svg" class="product-showall__icon">
-                                <div class="product-showall__title">Смотреть все</div>
+                            <a href="#" class="swiper-slide product-card product-card--showall" style="background-image: url('img/product-bg.png');">
+                                <svg class="product-card--showall__icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25 17.019L25 26.5C25 27.3284 25.6716 28 26.5 28C27.3284 28 28 27.3284 28 26.5L28 13.5C28 12.6716 27.3284 12 26.5 12L13.5 12C12.6716 12 12 12.6716 12 13.5C12 14.3284 12.6716 15 13.5 15L22.7773 15L12.4341 25.4444C11.8511 26.033 11.8557 26.9828 12.4444 27.5657C13.033 28.1486 13.9827 28.144 14.5657 27.5554L25 17.019Z"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 40C8.95431 40 -3.91405e-07 31.0457 -8.74228e-07 20C-1.35705e-06 8.95431 8.9543 -3.91405e-07 20 -8.74228e-07C31.0457 -1.35705e-06 40 8.9543 40 20C40 31.0457 31.0457 40 20 40ZM3 20C3 29.3888 10.6112 37 20 37C29.3888 37 37 29.3888 37 20C37 10.6112 29.3888 3 20 3C10.6112 3 3 10.6112 3 20Z"/>
+                                </svg>
+
+                                <div class="product-card--showall__title">Смотреть все</div>
                             </a>
                         </div>
                     </div>
@@ -262,8 +295,17 @@
 
                 <div class="products-wrapper">
                     <div class="products__buttons">
-                        <div class="swiper-button-next products__button-next"></div>
-                        <div class="swiper-button-prev products__button-prev"></div>
+                        <div class="swiper-button-next products__button-next">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C6.90237 12.3166 6.90237 11.6834 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
+                            </svg>
+                        </div>
+
+                        <div class="swiper-button-prev products__button-prev">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C6.90237 12.3166 6.90237 11.6834 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
+                            </svg>
+                        </div>
                     </div>
 
                     <div class="swiper-container products__slider">
@@ -276,9 +318,13 @@
                             @include('html/product.html')
                             @include('html/product.html')
 
-                            <a href="#" class="swiper-slide product product-showall" style="background-image: url('img/product-bg.png');">
-                                <img src="img/icons/arrow-top-icon.svg" class="product-showall__icon">
-                                <div class="product-showall__title">Смотреть все</div>
+                            <a href="#" class="swiper-slide product-card product-card--showall" style="background-image: url('img/product-bg.png');">
+                                <svg class="product-card--showall__icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25 17.019L25 26.5C25 27.3284 25.6716 28 26.5 28C27.3284 28 28 27.3284 28 26.5L28 13.5C28 12.6716 27.3284 12 26.5 12L13.5 12C12.6716 12 12 12.6716 12 13.5C12 14.3284 12.6716 15 13.5 15L22.7773 15L12.4341 25.4444C11.8511 26.033 11.8557 26.9828 12.4444 27.5657C13.033 28.1486 13.9827 28.144 14.5657 27.5554L25 17.019Z"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 40C8.95431 40 -3.91405e-07 31.0457 -8.74228e-07 20C-1.35705e-06 8.95431 8.9543 -3.91405e-07 20 -8.74228e-07C31.0457 -1.35705e-06 40 8.9543 40 20C40 31.0457 31.0457 40 20 40ZM3 20C3 29.3888 10.6112 37 20 37C29.3888 37 37 29.3888 37 20C37 10.6112 29.3888 3 20 3C10.6112 3 3 10.6112 3 20Z"/>
+                                </svg>
+
+                                <div class="product-card--showall__title">Смотреть все</div>
                             </a>
                         </div>
                     </div>

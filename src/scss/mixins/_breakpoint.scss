@@ -26,7 +26,7 @@ $screen-lg-max: 1199px;
 	}
 
 	@else if $point == xl {
-		@media (min-width: 1200px) {@content;}
+		@media (min-width: 1440px) {@content;}
 	}
 
 	@else if $point == xs-max {
@@ -42,6 +42,6 @@ $screen-lg-max: 1199px;
 	}
 
 	@else if $point == lg-max {
-		@media (max-width: 1199px) {@content;}
+		@media (max-width: 1439px) {@content;}
 	}
 }

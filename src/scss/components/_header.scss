@@ -507,7 +507,7 @@
         position: relative;
         z-index: 3;
 
-        @media (max-width: $screen-xs-max) {
+        @include breakpoint(sm-max) {
             display: none;
         }
     }
