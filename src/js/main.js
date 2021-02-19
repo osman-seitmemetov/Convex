@@ -12,6 +12,7 @@ import {resizeContent} from './functions/resize';
 import {scrollTo} from './functions/smooth-scroll';
 import {disableScroll, enableScroll} from './functions/stop-scroll';
 
+
 const TabItemSelector = '.account-head__tab';
 const ContentItemSelector = '.account-tab-content';
 
@@ -78,14 +79,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let tabs = new TabsManager(document.querySelector('.account-tabs-area'));
 
     // choice
-    let inputField = document.querySelectorAll('.input__field');
-    let input = document.querySelectorAll('.input');
-    let checkbox = document.querySelector('.checkbox-item__input');
+    // let inputField = document.querySelectorAll('.input__field');
+    // let input = document.querySelectorAll('.input');
+    // let checkbox = document.querySelector('.checkbox-item__input');
 
-    checkbox.addEventListener('click', () => {
-        inputField[2].classList.toggle('input__field--hidden');
-        inputField[3].classList.toggle('input__field--hidden');
-        inputField[4].classList.toggle('input__field--hidden');
-        input[2].classList.toggle('input--hidden')
-    });
+    // checkbox.addEventListener('click', () => {
+    //     inputField[2].classList.toggle('input__field--hidden');
+    //     inputField[3].classList.toggle('input__field--hidden');
+    //     inputField[4].classList.toggle('input__field--hidden');
+    //     input[2].classList.toggle('input--hidden')
+    // });
 });

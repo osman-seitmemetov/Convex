@@ -87,12 +87,12 @@ let selectSwiper = new Swiper('.select__body', {
     mousewheel: true,
 });
 
-let scrollbar = new Swiper('.ordering__right-items', {
+let accountScrollbar = new Swiper('.ordering__right-items', {
     direction: 'vertical',
     slidesPerView: 'auto',
     freeMode: true,
     scrollbar: {
-        el: '.swiper-scrollbar',
+        el: '.swiper-scrollbar.ordering__right-scrollbar',
     },
-    mousewheel: true,
+    mousewheel: true
 });

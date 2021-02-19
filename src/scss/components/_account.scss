@@ -12,6 +12,29 @@
     &__right {
         width: 100%;
         max-width: 850px;
+
+        @include breakpoint(sm-max) {
+            margin: auto;
+            max-width: 380px;
+        }
+    }
+
+    &__title {
+        display: none;
+        font-family: "Museo Sans Cyrl";
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 100%;
+        margin-bottom: 30px;
+        color: var(--color-mine-shaft);
+
+        @include breakpoint(sm-max) {
+            display: block;
+            font-size: 24px;
+            width: 100%;
+            text-align: center;
+            color: var(--color-black);
+        }
     }
 }
 
@@ -119,38 +142,17 @@
     width: 100%;
     max-width: 790px;
 
-    @include breakpoint(sm-max) {
-        margin: auto;
-        width: 100%;
-        max-width: 380px;
-    }
-
-    &__title {
-        font-family: "Museo Sans Cyrl";
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 100%;
-        margin-bottom: 30px;
-        color: var(--color-mine-shaft);
-
-        @include breakpoint(sm-max) {
-            font-size: 24px;
-            width: 100%;
-            text-align: center;
-            color: var(--color-black);
-        }
+    .account__title {
+        display: block;
     }
 
     &__inputs {
         display: grid;
         grid-row-gap: 20px;
         grid-column-gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
 
-        @media (min-width: $screen-lg) {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        @media (max-width: $screen-xs-max) {
+        @include breakpoint(md-max) {
             grid-template-columns: repeat(1, 1fr);
         }
     }
@@ -191,11 +193,6 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
-
-    @include breakpoint(sm-max) {
-        margin: auto;
-        max-width: 380px;
-    }
 
     &__item {
         padding: 25px;
@@ -307,7 +304,7 @@
     display: flex;
     justify-content: space-between;
 
-    @include breakpoint(lg-max) {
+    @include breakpoint(md-max) {
         flex-direction: column;
         justify-content: unset;
     }
@@ -316,6 +313,17 @@
         width: 100%;
         max-width: 350px;
         margin-right: 40px;
+
+        @include breakpoint(lg-max) {
+            min-width: 280px;
+        }
+
+        @include breakpoint(md-max) {
+            max-width: 100%;
+            margin-bottom: 60px;
+            margin-right: 0;
+            min-width: fit-content;
+        }
     }
 
     &__left-link {
@@ -410,9 +418,17 @@
     &__right {
         width: 100%;
         max-width: 460px;
-        max-height: 430px;
+        max-height: 385px;
         overflow: hidden;
         padding-right: 14px;
+        margin-top: 45px;
+
+        @include breakpoint(md-max) {
+            max-width: 100%;
+            margin-bottom: 60px;
+            margin-right: 0;
+            margin-top: 0;
+        }
     }
 
     &__right-items {
@@ -453,6 +469,11 @@
         width: 100px;
         height: 72px;
         margin-right: 5px;
+
+        @include breakpoint(sm-max) {
+            width: 64px;
+            height: 55px;
+        }
     }
 
     &__right-item-title {
@@ -460,13 +481,27 @@
         line-height: 17px;
         color: var(--color-black);
         max-width: 181px;
+
+        @include breakpoint(sm-max) {
+            font-size: 12px;
+            line-height: 14px;
+        }
     }
 
     &__right-item-price {
-        font-family: "Museo Sans Cyrl";
         font-weight: 700;
         font-size: 20px;
         line-height: 100%;
+
+        @include breakpoint(lg-max) {
+            display: none;
+        }
+
+        @include breakpoint(md-max) {
+            display: block;
+            font-size: 16px;
+            font-weight: 400;
+        }
     }
 }
 
@@ -598,6 +633,10 @@
         padding: 0;
         background: none;
         border: none;
+
+        @include breakpoint(lg-max) {
+            display: none;
+        }
     }
 }
 

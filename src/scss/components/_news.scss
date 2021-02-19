@@ -3,7 +3,16 @@
     flex-direction: column;
     padding: 100px 0;
 
+    @include breakpoint(sm-max) {
+        padding: 30px 0 60px 0;
+    }
+
     &__title {
+        @include breakpoint(sm-max) {
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 29px;
+        }
     }
 
     &__items {
@@ -13,10 +22,28 @@
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 140px;
         grid-row-gap: 60px;
+
+        @include breakpoint(lg-max) {
+            grid-column-gap: 30px;
+            grid-row-gap: 50px;
+        }
+
+        @include breakpoint(md-max) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include breakpoint(sm-max) {
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 30px;
+        }
     }
 
     &__item {
         display: flex;
+
+        @include breakpoint(md-max) {
+            flex-direction: column;
+        }
     }
 
     &__item-img {
@@ -24,6 +51,24 @@
         height: 180px;
         margin-right: 20px;
         border-radius: 10px;
+        object-fit: cover;
+        object-position: center;
+
+        @include breakpoint(lg-max) {
+            width: 209px;
+            height: 150px;
+        }
+
+        @include breakpoint(md-max) {
+            width: 250px;
+            height: 180px;
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+
+        @include breakpoint(sm-max) {
+            height: 112px;
+        }
     }
 
     &__item-right {
@@ -31,6 +76,11 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        @include breakpoint(md-max) {
+            max-width: 250px;
+            height: fit-content;
+        }
     }
 
     &__item-title {
@@ -38,6 +88,19 @@
         font-size: 18px;
         line-height: 150%;
         color: var(--color-black);
+
+        @include breakpoint(lg-max) {
+            font-size: 15px;
+        }
+
+        @include breakpoint(md-max) {
+            margin-bottom: 10px;
+        }
+
+        @include breakpoint(sm-max) {
+            font-size: 12px;
+            line-height: 14px;
+        }
     }
 
     &__item-bottom {
@@ -45,6 +108,12 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+
+        @include breakpoint(sm-max) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
     }
 
     &__item-date {
@@ -53,6 +122,11 @@
         font-size: 14px;
         line-height: 17px;
         color: var(--color-wistful);
+
+        @include breakpoint(lg-max) {
+            font-size: 10px;
+            line-height: 12px;
+        }
     }
 
     &__item-link {
@@ -61,5 +135,11 @@
         font-size: 14px;
         line-height: 100%;
         color: var(--color-emerald);
+
+        @include breakpoint(sm-max) {
+            font-size: 12px;
+            line-height: 14px;
+            margin-top: 5px;
+        }
     }
 }

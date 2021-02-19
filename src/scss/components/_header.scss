@@ -533,6 +533,7 @@
         align-items: center;
         transition: 0.5s;
         position: relative;
+        overflow: hidden;
 
         &:last-child {
             margin-right: 0;
@@ -546,12 +547,35 @@
             transition: 0.5s;
         }
 
+        &:after {
+            content: "";
+            width: 100%;
+            height: 25px;
+            position: absolute;
+            top: 15px;
+            opacity: 0;
+        }
+
         &:hover {
             color: var(--color-emerald);
+            overflow: visible;
+
+            svg {
+                fill: var(--color-emerald);
+            }
+
+            .header__categories-dropdown {
+                opacity: 1;
+            }
+        }
+
+        &:hover:after {
+            opacity: 1;
         }
 
         &:hover > svg {
             fill: var(--color-emerald);
+            transform: rotate(180deg);
         }
     }
 
@@ -575,23 +599,12 @@
         top: 27px;
         filter: drop-shadow(0px 0px 20px rgba(48, 48, 48, 0.15));
         background-color: var(--color-white);
-        // border-radius: 15px;
-        border-radius: 15px 0px 0px 15px;
-        display: none;
+        border-radius: 15px;
+        transition: 0.3s;
+        opacity: 0;
         flex-direction: column;
         width: 180px;
-    }
-
-    &__categories-item--active {
-        color: var(--color-emerald);
-
-        svg {
-            fill: var(--color-emerald);
-        }
-
-        .header__categories-dropdown {
-            display: flex;
-        }
+        cursor: default;
     }
 
     &__categories-dropdown-inner {
@@ -630,10 +643,10 @@
 
         &:hover {
             color: var(--color-emerald);
-        }
 
-        &:hover > svg {
-            fill: var(--color-emerald);
+            svg {
+                fill: var(--color-emerald);
+            }
         }
 
         &:last-child {
@@ -667,12 +680,21 @@
         padding: 20px 15px;
         display: flex;
         flex-direction: column;
-        overflow: hidden;
         cursor: default;
+
+        &::after {
+            content: "";
+            width: 15px;
+            height: 100%;
+            background-color: var(--color-white);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -15px;
+        }
     }
 
     &__categories-subdropdown-item {
-        font-family: "Museo Sans Cyrl";
         font-weight: 400;
         font-size: 16px;
         line-height: 100%;

@@ -2,73 +2,155 @@
     justify-content: space-between;
     padding: 100px 0 150px 0;
 
+    @include breakpoint(md-max) {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    @include breakpoint(sm-max) {
+        padding: 30px 0;
+    }
+
     &__info {
         width: 580px;
+        min-width: 440px;
+        margin-right: 50px;
+
+        @include breakpoint(md-max) {
+            margin-right: 0;
+            min-width: min-content;
+        }
+
+        @include breakpoint(sm-max) {
+            width: 100%;
+            max-width: 380px;
+            margin: 0 auto;
+        }
     }
 
     &__info-text {
-        font-family: 'Museo Sans Cyrl';
         font-weight: 400;
         font-size: 18px;
         line-height: 150%;
         color: var(--color-mine-shaft);
         margin-bottom: 35px;
+
+        @include breakpoint(sm-max) {
+            font-size: 14px;
+            line-height: 17px;
+            color: var(--color-black);
+            margin-bottom: 30px;
+        }
     }
 
     &__info-img {
-        width: 280px;
-        height: 240px;
+        width: 380px;
         margin-top: 14px;
+
+        @include breakpoint(sm-max) {
+            display: none;
+        }
+    }
+
+    &__info-img--mobile {
+        display: none;
+
+        @include breakpoint(sm-max) {
+            width: 100%;
+            max-width: 380px;
+            display: block;
+            margin-bottom: 30px;
+            height: auto;
+        }
+    }
+
+    &__info-title {
+        @include breakpoint(sm-max) {
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 30px;
+        }
     }
 
     &__form {
         max-width: 480px;
     }
-}
 
-.phone {
-    margin-bottom: 30px;
+    &__phone {
+        margin-bottom: 30px;
 
-    svg {
+        @include breakpoint(sm-max) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__phone-icon {
         width: 18px;
         height: 18px;
         fill: var(--color-emerald);
+
+        @include breakpoint(sm-max) {
+            width: 16px;
+            height: 16px;
+        }
     }
 
-    &__number {
+    &__phone-number {
         color: var(--color-emerald);
         margin-left: 10px;
-        font-family: "Museo Sans Cyrl";
         font-weight: 700;
         font-size: 18px;
         line-height: 100%;
+
+        @include breakpoint(sm-max) {
+            font-size: 16px;
+            margin-left: 4px;
+        }
     }
 
-    &__inner {
+    &__phone-inner {
         display: flex;
         align-items: center;
     }
 
-    &__date {
+    &__phone-date {
         margin-left: 10px;
-        font-family: "Museo Sans Cyrl";
         font-weight: 700;
         font-size: 14px;
         line-height: 100%;
+
+        @include breakpoint(sm-max) {
+            font-size: 10px;
+            line-height: 120%;
+        }
 
         span {
             color: var(--color-coral-red);
         }
     }
 
-    &__desc {
+    &__phone-desc {
         margin-top: 9px;
         margin-left: 28px;
-        font-family: 'Museo Sans Cyrl';
         font-weight: 400;
         font-size: 14px;
         line-height: 17px;
         color: var(--color-wistful);
+
+        @include breakpoint(sm-max) {
+            font-size: 10px;
+            line-height: 12px;
+            margin-left: 20px;
+        }
+    }
+
+    &__form {
+        @include breakpoint(md-max) {
+            margin-top: 50px;
+        }
+
+        @include breakpoint(sm-max) {
+            display: none;
+        }
     }
 }
-

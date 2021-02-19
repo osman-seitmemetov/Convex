@@ -1,5 +1,5 @@
-@import './mixins/visually-hidden';
-@import './mixins/stop-scroll';
+@import "./mixins/visually-hidden";
+@import "./mixins/stop-scroll";
 
 html {
     box-sizing: border-box;
@@ -70,6 +70,7 @@ img {
 }
 
 a {
+    font-family: inherit;
     text-decoration: none;
     color: var(--color-mine-shaft);
 }
@@ -113,6 +114,45 @@ button[disabled] {
     }
 }
 
+.floating-button {
+    display: none;
+    background-color: var(--color-emerald);
+    border-radius: 10px;
+    position: fixed;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 30px);
+    max-width: 380px;
+    height: 50px;
+    z-index: 10;
+    text-decoration: none;
+    border: 0;
+    color: var(--color-white);
+    transition: 0.5s;
+    text-align: center;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    box-shadow: 0px 0px 212px rgba(0, 0, 0, 0.0147844), 0px 0px 63.9118px rgba(0, 0, 0, 0.0360409),
+        0px 0px 26.5457px rgba(0, 0, 0, 0.0634089), 0px 0px 9.60106px rgba(0, 0, 0, 0.09);
+
+    @include breakpoint(sm-max) {
+        display: flex;
+    }
+
+    &:hover {
+        background-color: var(--color-emerald-hover);
+    }
+
+    &:active {
+        background-color: var(--color-emerald-pressed);
+    }
+}
+
 .search-bg {
     position: fixed;
     left: 0;
@@ -146,7 +186,7 @@ button[disabled] {
     margin-bottom: 30px;
     color: var(--color-black);
 
-    @media (max-width: $screen-sm-max) {
+    @include breakpoint(sm-max) {
         font-size: 24px;
         line-height: 100%;
     }
@@ -154,13 +194,22 @@ button[disabled] {
 
 .breadcrumbs {
     margin-top: 20px;
-    font-family: "Museo Sans 500 Medium";
     font-size: 14px;
     line-height: 17px;
     color: var(--color-wistful);
     text-decoration: none;
+    white-space: wrap;
 
-    a {
+    @include breakpoint(sm-max) {
+        font-size: 12px;
+        line-height: 150%;
+    }
+
+    &__container {
+        display: block !important;
+    }
+
+    &__item {
         color: var(--color-wistful);
     }
 }
@@ -242,7 +291,6 @@ button[disabled] {
         padding: 0 15px;
     }
 }
-
 
 .js-focus-visible :focus:not(.focus-visible) {
     outline: none;

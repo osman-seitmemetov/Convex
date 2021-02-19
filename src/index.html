@@ -7,10 +7,10 @@
 	<title>Главная</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/favicon.png" sizes="50x50">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon.png">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./img/favicon.png" sizes="50x50">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon.png">
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.min.css">
@@ -21,7 +21,7 @@
 </head>
 <body>
     <!-- Includes -->
-	@include('html/header.html')
+	@include('./html/header.html')
 
     <section class="mobile-menu">
         <div class="mobile-menu__item">
@@ -39,7 +39,7 @@
         </div>
 
         <div class="mobile-menu__item">
-            <a href="cart.html" class="mobile-menu__link mobile-menu__link--notify">
+            <a href="./cart.html" class="mobile-menu__link mobile-menu__link--notify">
 
                 <div class="mobile-menu__link-icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -117,7 +117,7 @@
                                 <a href="#" class="banner__slide-link">Подробнее</a>
                             </div>
 
-                            <div class="banner__slide-img" style="background-image: url('img/slider.jpg');"></div>
+                            <div class="banner__slide-img" style="background-image: url('./img/slider.jpg');"></div>
                         </div><!-- /.banner__slide -->
 
                         <!-- Banner slide -->
@@ -131,7 +131,7 @@
                                 <a href="#" class="banner__slide-link">Подробнее</a>
                             </div>
 
-                            <div class="banner__slide-img" style="background-image: url('img/slider.jpg');"></div>
+                            <div class="banner__slide-img" style="background-image: url('./img/slider.jpg');"></div>
                         </div><!-- /.banner__slide -->
 
                         <!-- Banner slide -->
@@ -145,7 +145,7 @@
                                 <a href="#" class="banner__slide-link">Подробнее</a>
                             </div>
 
-                            <div class="banner__slide-img" style="background-image: url('img/slider.jpg');"></div>
+                            <div class="banner__slide-img" style="background-image: url('./img/slider.jpg');"></div>
                         </div><!-- /.banner__slide -->
 
                         <!-- Banner slide -->
@@ -159,7 +159,7 @@
                                 <a href="#" class="banner__slide-link">Подробнее</a>
                             </div>
 
-                            <div class="banner__slide-img" style="background-image: url('img/slider.jpg');"></div>
+                            <div class="banner__slide-img" style="background-image: url('./img/slider.jpg');"></div>
                         </div><!-- /.banner__slide -->
                     </div>
                 </div>
@@ -170,22 +170,22 @@
             <div class="container">
                 <div class="swiper-container propos__slider">
                     <div class="swiper-wrapper">
-                        <a href="#" class="propos__item swiper-slide" style="background: url('img/plov.png') 27px 15px no-repeat, linear-gradient(175.37deg, #FA6A6A -9.92%, #E43F3F 96.25%);">
+                        <a href="#" class="propos__item swiper-slide" style="background: url('./img/plov.png') 27px 15px no-repeat, linear-gradient(175.37deg, #FA6A6A -9.92%, #E43F3F 96.25%);">
                             <div class="propos__item-title">Горячие блюда</div>
                             <p class="propos__item-label">Вкуснейшие блюда из 4 ресторанов</p>
                         </a>
 
-                        <a href="#" class="propos__item swiper-slide" style="background: url('img/m_m.png') 26px 9px no-repeat, linear-gradient(171.27deg, #A8CBFF -6.86%, #7BB0FF 93.34%);">
+                        <a href="#" class="propos__item swiper-slide" style="background: url('./img/m_m.png') 26px 9px no-repeat, linear-gradient(171.27deg, #A8CBFF -6.86%, #7BB0FF 93.34%);">
                             <div class="propos__item-title">Новинки</div>
                             <p class="propos__item-label">Новые позиции</p>
                         </a>
 
-                        <a href="#" class="propos__item swiper-slide" style="background: url('img/percent.png') 60px 25px no-repeat, linear-gradient(166.25deg, #BBB0FF -21.04%, #8470FF 90.17%);">
+                        <a href="#" class="propos__item swiper-slide" style="background: url('./img/percent.png') 60px 25px no-repeat, linear-gradient(166.25deg, #BBB0FF -21.04%, #8470FF 90.17%);">
                             <div class="propos__item-title">Акции</div>
                             <p class="propos__item-label">Лучшие цены</p>
                         </a>
 
-                        <a href="#" class="propos__item swiper-slide" style="background: url('img/packet.png') -15px 0 no-repeat, linear-gradient(180.1deg, #FFD37D -7.02%, #FDC352 99.91%);">
+                        <a href="#" class="propos__item swiper-slide" style="background: url('./img/packet.png') -15px 0 no-repeat, linear-gradient(180.1deg, #FFD37D -7.02%, #FDC352 99.91%);">
                             <div class="propos__item-title">Комплекты</div>
                             <p class="propos__item-label">Все в одном</p>
                         </a>
@@ -218,15 +218,15 @@
 
                     <div class="swiper-container products__slider">
                         <div class="swiper-wrapper products__slides">
-                            @include('html/product.html')
-                            @include('html/product.html')
-                            @include('html/product.html')
-                            @include('html/product.html')
-                            @include('html/product.html')
-                            @include('html/product.html')
-                            @include('html/product.html')
+                            @include('./html/product.html')
+                            @include('./html/product.html')
+                            @include('./html/product.html')
+                            @include('./html/product.html')
+                            @include('./html/product.html')
+                            @include('./html/product.html')
+                            @include('./html/product.html')
 
-                            <a href="#" class="swiper-slide product-card product-card--showall" style="background-image: url('img/product-bg.png');">
+                            <a href="#" class="swiper-slide product-card product-card--showall" style="background-image: url('./img/product-bg.png');">
                                 <svg class="product-card--showall__icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M25 17.019L25 26.5C25 27.3284 25.6716 28 26.5 28C27.3284 28 28 27.3284 28 26.5L28 13.5C28 12.6716 27.3284 12 26.5 12L13.5 12C12.6716 12 12 12.6716 12 13.5C12 14.3284 12.6716 15 13.5 15L22.7773 15L12.4341 25.4444C11.8511 26.033 11.8557 26.9828 12.4444 27.5657C13.033 28.1486 13.9827 28.144 14.5657 27.5554L25 17.019Z"/>
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M20 40C8.95431 40 -3.91405e-07 31.0457 -8.74228e-07 20C-1.35705e-06 8.95431 8.9543 -3.91405e-07 20 -8.74228e-07C31.0457 -1.35705e-06 40 8.9543 40 20C40 31.0457 31.0457 40 20 40ZM3 20C3 29.3888 10.6112 37 20 37C29.3888 37 37 29.3888 37 20C37 10.6112 29.3888 3 20 3C10.6112 3 3 10.6112 3 20Z"/>
@@ -264,15 +264,15 @@
 
                     <div class="swiper-container products__slider">
                         <div class="swiper-wrapper">
-                            @include('html/product.html')
-                            @include('html/product.html')
-                            @include('html/product.html')
-                            @include('html/product.html')
-                            @include('html/product.html')
-                            @include('html/product.html')
-                            @include('html/product.html')
+                            @include('./html/product.html')
+                            @include('./html/product.html')
+                            @include('./html/product.html')
+                            @include('./html/product.html')
+                            @include('./html/product.html')
+                            @include('./html/product.html')
+                            @include('./html/product.html')
 
-                            <a href="#" class="swiper-slide product-card product-card--showall" style="background-image: url('img/product-bg.png');">
+                            <a href="#" class="swiper-slide product-card product-card--showall" style="background-image: url('./img/product-bg.png');">
                                 <svg class="product-card--showall__icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M25 17.019L25 26.5C25 27.3284 25.6716 28 26.5 28C27.3284 28 28 27.3284 28 26.5L28 13.5C28 12.6716 27.3284 12 26.5 12L13.5 12C12.6716 12 12 12.6716 12 13.5C12 14.3284 12.6716 15 13.5 15L22.7773 15L12.4341 25.4444C11.8511 26.033 11.8557 26.9828 12.4444 27.5657C13.033 28.1486 13.9827 28.144 14.5657 27.5554L25 17.019Z"/>
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M20 40C8.95431 40 -3.91405e-07 31.0457 -8.74228e-07 20C-1.35705e-06 8.95431 8.9543 -3.91405e-07 20 -8.74228e-07C31.0457 -1.35705e-06 40 8.9543 40 20C40 31.0457 31.0457 40 20 40ZM3 20C3 29.3888 10.6112 37 20 37C29.3888 37 37 29.3888 37 20C37 10.6112 29.3888 3 20 3C10.6112 3 3 10.6112 3 20Z"/>
@@ -310,15 +310,15 @@
 
                     <div class="swiper-container products__slider">
                         <div class="swiper-wrapper">
-                            @include('html/product.html')
-                            @include('html/product.html')
-                            @include('html/product.html')
-                            @include('html/product.html')
-                            @include('html/product.html')
-                            @include('html/product.html')
-                            @include('html/product.html')
+                            @include('./html/product.html')
+                            @include('./html/product.html')
+                            @include('./html/product.html')
+                            @include('./html/product.html')
+                            @include('./html/product.html')
+                            @include('./html/product.html')
+                            @include('./html/product.html')
 
-                            <a href="#" class="swiper-slide product-card product-card--showall" style="background-image: url('img/product-bg.png');">
+                            <a href="#" class="swiper-slide product-card product-card--showall" style="background-image: url('./img/product-bg.png');">
                                 <svg class="product-card--showall__icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M25 17.019L25 26.5C25 27.3284 25.6716 28 26.5 28C27.3284 28 28 27.3284 28 26.5L28 13.5C28 12.6716 27.3284 12 26.5 12L13.5 12C12.6716 12 12 12.6716 12 13.5C12 14.3284 12.6716 15 13.5 15L22.7773 15L12.4341 25.4444C11.8511 26.033 11.8557 26.9828 12.4444 27.5657C13.033 28.1486 13.9827 28.144 14.5657 27.5554L25 17.019Z"/>
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M20 40C8.95431 40 -3.91405e-07 31.0457 -8.74228e-07 20C-1.35705e-06 8.95431 8.9543 -3.91405e-07 20 -8.74228e-07C31.0457 -1.35705e-06 40 8.9543 40 20C40 31.0457 31.0457 40 20 40ZM3 20C3 29.3888 10.6112 37 20 37C29.3888 37 37 29.3888 37 20C37 10.6112 29.3888 3 20 3C10.6112 3 3 10.6112 3 20Z"/>
@@ -340,20 +340,20 @@
                 </div>
 
                 <div class="products__items--four">
-                    @include('html/product.html')
-                    @include('html/product.html')
-                    @include('html/product.html')
-                    @include('html/product.html')
-                    @include('html/product.html')
-                    @include('html/product.html')
-                    @include('html/product.html')
-                    @include('html/product.html')
+                    @include('./html/product.html')
+                    @include('./html/product.html')
+                    @include('./html/product.html')
+                    @include('./html/product.html')
+                    @include('./html/product.html')
+                    @include('./html/product.html')
+                    @include('./html/product.html')
+                    @include('./html/product.html')
                 </div>
             </div>
         </section> -->
 	</main> <!-- /.main -->
 
-    @include('html/footer.html')
-    @include('html/menu.html')
+    @include('./html/footer.html')
+    @include('./html/menu.html')
 </body>
 </html>

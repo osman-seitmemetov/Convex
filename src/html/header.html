@@ -2,7 +2,7 @@
     <div class="container header__container">
         <div class="header__top">
             <div class="header__top-left">
-                <a href="index.html" class="logo logo--centered">
+                <a href="./index.html" class="logo logo--centered">
                     <svg width="85" height="35" viewBox="0 0 85 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M75.5124 17.0355L75.3331 16.3613L74.7168 16.9123L75.5124 17.0355Z" fill="#00622B"/>
                         <path d="M67.5529 9.14898L69.4149 12.8878L71.3758 14.5441L75.2192 15.9425L73.6094 9.9304L79.9236 9.73598L80.1178 16.6229L84.9996 14.9367L84.8708 8.50216L77.4024 8.62928L73.5926 9.86123L73.5328 9.64438L72.2853 7.44967L70.7614 7.4721L70.9033 6.73742L71.4935 6.03825L69.5867 6.47944L68.9723 4.93342L67.8611 4.39315L68.1804 3.52387L68.9368 4.33333L69.4261 2.58168L71.6597 2.01898L72.2087 3.11073L74.3079 0.895456L74.3284 0L72.6551 0.0112166L71.204 1.23569L70.2067 0.106557L67.8499 0.508484L66.8078 3.55939L67.9993 6.0476L65.7881 8.85174L67.5529 9.14898Z" fill="#00622B"/>
@@ -28,12 +28,12 @@
             <form action="search.html" class="header__top-center">
                 <div class="header__search">
                     <svg class="header__search-icon header__search-icon--hidden">
-						<use xlink:href="img/sprite.svg#search-icon"></use>
+						<use xlink:href="./img/sprite.svg#search-icon"></use>
                     </svg>
 
                     <span class="header__search-placeholder">
                         <svg>
-                            <use xlink:href="img/sprite.svg#search-icon"></use>
+                            <use xlink:href="./img/sprite.svg#search-icon"></use>
                         </svg>
 
                         Поиск товаров
@@ -42,10 +42,10 @@
                     <input type="text">
 
                     <div class="header__search-dropdown header__search-dropdown--hidden">
-                        <a href="search.html" class="header__search-dropdown-item">Консервы</a>
-                        <a href="search.html" class="header__search-dropdown-item">Консервированные каши</a>
-                        <a href="search.html" class="header__search-dropdown-item">Консервы фруктовые</a>
-                        <a href="search.html" class="header__search-dropdown-item">Консервы овощные</a>
+                        <a href="./search.html" class="header__search-dropdown-item">Консервы</a>
+                        <a href="./search.html" class="header__search-dropdown-item">Консервированные каши</a>
+                        <a href="./search.html" class="header__search-dropdown-item">Консервы фруктовые</a>
+                        <a href="./search.html" class="header__search-dropdown-item">Консервы овощные</a>
                     </div>
                 </div>
             </form>
@@ -56,30 +56,30 @@
                     Нур-Султан
 
                     <svg>
-                        <use xlink:href="img/sprite.svg#location-icon"></use>
+                        <use xlink:href="./img/sprite.svg#location-icon"></use>
                     </svg>
                 </div>
 
-                <div href="login.html" class="header__login-mobile">
+                <div href="./login.html" class="header__login-mobile">
                     <span>Вход/</span>
                     Регистрация
 
                     <svg>
-						<use xlink:href="img/sprite.svg#user-icon"></use>
+						<use xlink:href="./img/sprite.svg#user-icon"></use>
                     </svg>
 
                     <div class="header__login-dropdown">
-                        <a href="relative-login.html" class="header__login-link">Как родственник</a>
-                        <a href="convicted-login.html" class="header__login-link">Как заключенный</a>
+                        <a href="./relative-login.html" class="header__login-link">Как родственник</a>
+                        <a href="./convicted-login.html" class="header__login-link">Как заключенный</a>
                     </div>
                 </div>
 
-                <div href="login.html" class="header__login">
+                <div class="header__login">
                     Войти
 
                     <div class="header__login-dropdown">
-                        <a href="relative-login.html" class="header__login-link">Как родственник</a>
-                        <a href="convicted-login.html" class="header__login-link">Как заключенный</a>
+                        <a href="./relative-login.html" class="header__login-link">Как родственник</a>
+                        <a href="./convicted-login.html" class="header__login-link">Как заключенный</a>
                     </div>
                 </div>
             </div>
@@ -96,43 +96,59 @@
                         </svg>
 
                         <div class="header__categories-dropdown">
-                            <div class="header__categories-dropdown-items">
-                                <a href="#" class="header__categories-dropdown-item">
-                                    Разное
+                            <div class="header__categories-dropdown-inner">
+                                <div class="header__categories-dropdown-items">
+                                    <a href="#" class="header__categories-dropdown-item">
+                                        Разное
 
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52876 13.1381C5.26841 12.8777 5.26841 12.4556 5.52876 12.1953L9.72402 8.00001L5.52876 3.80475C5.26841 3.5444 5.26841 3.12229 5.52876 2.86194C5.78911 2.60159 6.21122 2.60159 6.47157 2.86194L11.1382 7.52861C11.3986 7.78896 11.3986 8.21107 11.1382 8.47142L6.47157 13.1381C6.21122 13.3984 5.78911 13.3984 5.52876 13.1381Z"/>
-                                    </svg>
-                                </a>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52876 13.1381C5.26841 12.8777 5.26841 12.4556 5.52876 12.1953L9.72402 8.00001L5.52876 3.80475C5.26841 3.5444 5.26841 3.12229 5.52876 2.86194C5.78911 2.60159 6.21122 2.60159 6.47157 2.86194L11.1382 7.52861C11.3986 7.78896 11.3986 8.21107 11.1382 8.47142L6.47157 13.1381C6.21122 13.3984 5.78911 13.3984 5.52876 13.1381Z"/>
+                                        </svg>
 
-                                <a href="#" class="header__categories-dropdown-item">
-                                    Сигареты
-                                </a>
+                                        <div class="header__categories-subdropdown">
+                                            <a href="#" class="header__categories-subdropdown-item">
+                                                Карты Тарлан
+                                            </a>
 
-                                <a href="#" class="header__categories-dropdown-item">
-                                    Канцтовары
+                                            <a href="#" class="header__categories-subdropdown-item">
+                                                Газеты, Журналы
+                                            </a>
 
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52876 13.1381C5.26841 12.8777 5.26841 12.4556 5.52876 12.1953L9.72402 8.00001L5.52876 3.80475C5.26841 3.5444 5.26841 3.12229 5.52876 2.86194C5.78911 2.60159 6.21122 2.60159 6.47157 2.86194L11.1382 7.52861C11.3986 7.78896 11.3986 8.21107 11.1382 8.47142L6.47157 13.1381C6.21122 13.3984 5.78911 13.3984 5.52876 13.1381Z"/>
-                                    </svg>
-                                </a>
+                                            <a href="#" class="header__categories-subdropdown-item">
+                                                Средства защиты от комаров
+                                            </a>
+                                        </div>
+                                    </a>
 
-                                <a href="#" class="header__categories-dropdown-item">
-                                    Одежда
+                                    <a href="#" class="header__categories-dropdown-item">
+                                        Сигареты
+                                    </a>
 
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52876 13.1381C5.26841 12.8777 5.26841 12.4556 5.52876 12.1953L9.72402 8.00001L5.52876 3.80475C5.26841 3.5444 5.26841 3.12229 5.52876 2.86194C5.78911 2.60159 6.21122 2.60159 6.47157 2.86194L11.1382 7.52861C11.3986 7.78896 11.3986 8.21107 11.1382 8.47142L6.47157 13.1381C6.21122 13.3984 5.78911 13.3984 5.52876 13.1381Z"/>
-                                    </svg>
-                                </a>
+                                    <a href="#" class="header__categories-dropdown-item">
+                                        Канцтовары
 
-                                <a href="#" class="header__categories-dropdown-item">
-                                    Комплект
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52876 13.1381C5.26841 12.8777 5.26841 12.4556 5.52876 12.1953L9.72402 8.00001L5.52876 3.80475C5.26841 3.5444 5.26841 3.12229 5.52876 2.86194C5.78911 2.60159 6.21122 2.60159 6.47157 2.86194L11.1382 7.52861C11.3986 7.78896 11.3986 8.21107 11.1382 8.47142L6.47157 13.1381C6.21122 13.3984 5.78911 13.3984 5.52876 13.1381Z"/>
+                                        </svg>
+                                    </a>
+
+                                    <a href="#" class="header__categories-dropdown-item">
+                                        Одежда
+
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52876 13.1381C5.26841 12.8777 5.26841 12.4556 5.52876 12.1953L9.72402 8.00001L5.52876 3.80475C5.26841 3.5444 5.26841 3.12229 5.52876 2.86194C5.78911 2.60159 6.21122 2.60159 6.47157 2.86194L11.1382 7.52861C11.3986 7.78896 11.3986 8.21107 11.1382 8.47142L6.47157 13.1381C6.21122 13.3984 5.78911 13.3984 5.52876 13.1381Z"/>
+                                        </svg>
+                                    </a>
+
+                                    <a href="#" class="header__categories-dropdown-item">
+                                        Комплект
+                                    </a>
+                                </div>
+
+                                <a href="#" class="header__categories-dropdown-link">
+                                    Все категории
                                 </a>
                             </div>
-
-                            <a href="#" class="header__categories-dropdown-link">
-                                Все категории
-                            </a>
                         </div>
                     </div>
 
@@ -336,43 +352,59 @@
                         </svg>
 
                         <div class="header__categories-dropdown">
-                            <div class="header__categories-dropdown-items">
-                                <a href="#" class="header__categories-dropdown-item">
-                                    Разное
+                            <div class="header__categories-dropdown-inner">
+                                <div class="header__categories-dropdown-items">
+                                    <a href="#" class="header__categories-dropdown-item">
+                                        Разное
 
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52876 13.1381C5.26841 12.8777 5.26841 12.4556 5.52876 12.1953L9.72402 8.00001L5.52876 3.80475C5.26841 3.5444 5.26841 3.12229 5.52876 2.86194C5.78911 2.60159 6.21122 2.60159 6.47157 2.86194L11.1382 7.52861C11.3986 7.78896 11.3986 8.21107 11.1382 8.47142L6.47157 13.1381C6.21122 13.3984 5.78911 13.3984 5.52876 13.1381Z"/>
-                                    </svg>
-                                </a>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52876 13.1381C5.26841 12.8777 5.26841 12.4556 5.52876 12.1953L9.72402 8.00001L5.52876 3.80475C5.26841 3.5444 5.26841 3.12229 5.52876 2.86194C5.78911 2.60159 6.21122 2.60159 6.47157 2.86194L11.1382 7.52861C11.3986 7.78896 11.3986 8.21107 11.1382 8.47142L6.47157 13.1381C6.21122 13.3984 5.78911 13.3984 5.52876 13.1381Z"/>
+                                        </svg>
 
-                                <a href="#" class="header__categories-dropdown-item">
-                                    Сигареты
-                                </a>
+                                        <div class="header__categories-subdropdown">
+                                            <a href="#" class="header__categories-subdropdown-item">
+                                                Карты Тарлан
+                                            </a>
 
-                                <a href="#" class="header__categories-dropdown-item">
-                                    Канцтовары
+                                            <a href="#" class="header__categories-subdropdown-item">
+                                                Газеты, Журналы
+                                            </a>
 
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52876 13.1381C5.26841 12.8777 5.26841 12.4556 5.52876 12.1953L9.72402 8.00001L5.52876 3.80475C5.26841 3.5444 5.26841 3.12229 5.52876 2.86194C5.78911 2.60159 6.21122 2.60159 6.47157 2.86194L11.1382 7.52861C11.3986 7.78896 11.3986 8.21107 11.1382 8.47142L6.47157 13.1381C6.21122 13.3984 5.78911 13.3984 5.52876 13.1381Z"/>
-                                    </svg>
-                                </a>
+                                            <a href="#" class="header__categories-subdropdown-item">
+                                                Средства защиты от комаров
+                                            </a>
+                                        </div>
+                                    </a>
 
-                                <a href="#" class="header__categories-dropdown-item">
-                                    Одежда
+                                    <a href="#" class="header__categories-dropdown-item">
+                                        Сигареты
+                                    </a>
 
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52876 13.1381C5.26841 12.8777 5.26841 12.4556 5.52876 12.1953L9.72402 8.00001L5.52876 3.80475C5.26841 3.5444 5.26841 3.12229 5.52876 2.86194C5.78911 2.60159 6.21122 2.60159 6.47157 2.86194L11.1382 7.52861C11.3986 7.78896 11.3986 8.21107 11.1382 8.47142L6.47157 13.1381C6.21122 13.3984 5.78911 13.3984 5.52876 13.1381Z"/>
-                                    </svg>
-                                </a>
+                                    <a href="#" class="header__categories-dropdown-item">
+                                        Канцтовары
 
-                                <a href="#" class="header__categories-dropdown-item">
-                                    Комплект
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52876 13.1381C5.26841 12.8777 5.26841 12.4556 5.52876 12.1953L9.72402 8.00001L5.52876 3.80475C5.26841 3.5444 5.26841 3.12229 5.52876 2.86194C5.78911 2.60159 6.21122 2.60159 6.47157 2.86194L11.1382 7.52861C11.3986 7.78896 11.3986 8.21107 11.1382 8.47142L6.47157 13.1381C6.21122 13.3984 5.78911 13.3984 5.52876 13.1381Z"/>
+                                        </svg>
+                                    </a>
+
+                                    <a href="#" class="header__categories-dropdown-item">
+                                        Одежда
+
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52876 13.1381C5.26841 12.8777 5.26841 12.4556 5.52876 12.1953L9.72402 8.00001L5.52876 3.80475C5.26841 3.5444 5.26841 3.12229 5.52876 2.86194C5.78911 2.60159 6.21122 2.60159 6.47157 2.86194L11.1382 7.52861C11.3986 7.78896 11.3986 8.21107 11.1382 8.47142L6.47157 13.1381C6.21122 13.3984 5.78911 13.3984 5.52876 13.1381Z"/>
+                                        </svg>
+                                    </a>
+
+                                    <a href="#" class="header__categories-dropdown-item">
+                                        Комплект
+                                    </a>
+                                </div>
+
+                                <a href="#" class="header__categories-dropdown-link">
+                                    Все категории
                                 </a>
                             </div>
-
-                            <a href="#" class="header__categories-dropdown-link">
-                                Все категории
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -450,7 +482,7 @@
 
                     <div class="header__categories-dropdown">
                         <div class="header__categories-dropdown-inner">
-                            <div class="header__categories-dropdown-items menu-sub">
+                            <div class="header__categories-dropdown-items">
                                 <a href="#" class="header__categories-dropdown-item menu-sub-item">
                                     Разное
 
@@ -483,20 +515,6 @@
                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52876 13.1381C5.26841 12.8777 5.26841 12.4556 5.52876 12.1953L9.72402 8.00001L5.52876 3.80475C5.26841 3.5444 5.26841 3.12229 5.52876 2.86194C5.78911 2.60159 6.21122 2.60159 6.47157 2.86194L11.1382 7.52861C11.3986 7.78896 11.3986 8.21107 11.1382 8.47142L6.47157 13.1381C6.21122 13.3984 5.78911 13.3984 5.52876 13.1381Z"/>
                                     </svg>
-
-                                    <div class="header__categories-subdropdown">
-                                        <a href="#" class="header__categories-subdropdown-item">
-                                            Карты Тарлан
-                                        </a>
-
-                                        <a href="#" class="header__categories-subdropdown-item">
-                                            Газеты, Журналы
-                                        </a>
-
-                                        <a href="#" class="header__categories-subdropdown-item">
-                                            Средства защиты от комаров
-                                        </a>
-                                    </div>
                                 </a>
 
                                 <a href="#" class="header__categories-dropdown-item menu-sub-item">
@@ -505,20 +523,6 @@
                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52876 13.1381C5.26841 12.8777 5.26841 12.4556 5.52876 12.1953L9.72402 8.00001L5.52876 3.80475C5.26841 3.5444 5.26841 3.12229 5.52876 2.86194C5.78911 2.60159 6.21122 2.60159 6.47157 2.86194L11.1382 7.52861C11.3986 7.78896 11.3986 8.21107 11.1382 8.47142L6.47157 13.1381C6.21122 13.3984 5.78911 13.3984 5.52876 13.1381Z"/>
                                     </svg>
-
-                                    <div class="header__categories-subdropdown">
-                                        <a href="#" class="header__categories-subdropdown-item">
-                                            Карты Тарлан
-                                        </a>
-
-                                        <a href="#" class="header__categories-subdropdown-item">
-                                            Газеты, Журналы
-                                        </a>
-
-                                        <a href="#" class="header__categories-subdropdown-item">
-                                            Средства защиты от комаров
-                                        </a>
-                                    </div>
                                 </a>
 
                                 <a href="#" class="header__categories-dropdown-item menu-sub-item">
@@ -534,7 +538,7 @@
                 </div>
             </div>
 
-            <a href="cart.html" class="header__cart menu-more">
+            <a href="./cart.html" class="header__cart menu-more">
                 <div class="header__cart-price">
                     <span>Корзина</span>
                     2 400 г.
@@ -545,7 +549,7 @@
                 </div>
 
                 <svg>
-                    <use xlink:href="img/sprite.svg#cart-icon"></use>
+                    <use xlink:href="./img/sprite.svg#cart-icon"></use>
                 </svg>
             </a>
         </div>

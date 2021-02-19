@@ -7,10 +7,10 @@
 	<title>Главная</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/favicon.png" sizes="50x50">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon.png">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./img/favicon.png" sizes="50x50">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon.png">
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.min.css">
@@ -25,7 +25,7 @@
     <div class="container header__container">
         <div class="header__top">
             <div class="header__top-left">
-                <a href="index.html" class="logo logo--centered">
+                <a href="./index.html" class="logo logo--centered">
                     <svg width="85" height="35" viewBox="0 0 85 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M75.5124 17.0355L75.3331 16.3613L74.7168 16.9123L75.5124 17.0355Z" fill="#00622B"/>
                         <path d="M67.5529 9.14898L69.4149 12.8878L71.3758 14.5441L75.2192 15.9425L73.6094 9.9304L79.9236 9.73598L80.1178 16.6229L84.9996 14.9367L84.8708 8.50216L77.4024 8.62928L73.5926 9.86123L73.5328 9.64438L72.2853 7.44967L70.7614 7.4721L70.9033 6.73742L71.4935 6.03825L69.5867 6.47944L68.9723 4.93342L67.8611 4.39315L68.1804 3.52387L68.9368 4.33333L69.4261 2.58168L71.6597 2.01898L72.2087 3.11073L74.3079 0.895456L74.3284 0L72.6551 0.0112166L71.204 1.23569L70.2067 0.106557L67.8499 0.508484L66.8078 3.55939L67.9993 6.0476L65.7881 8.85174L67.5529 9.14898Z" fill="#00622B"/>
@@ -51,12 +51,12 @@
             <form action="search.html" class="header__top-center">
                 <div class="header__search">
                     <svg class="header__search-icon header__search-icon--hidden">
-						<use xlink:href="img/sprite.svg#search-icon"></use>
+						<use xlink:href="./img/sprite.svg#search-icon"></use>
                     </svg>
 
                     <span class="header__search-placeholder">
                         <svg>
-                            <use xlink:href="img/sprite.svg#search-icon"></use>
+                            <use xlink:href="./img/sprite.svg#search-icon"></use>
                         </svg>
 
                         Поиск товаров
@@ -65,10 +65,10 @@
                     <input type="text">
 
                     <div class="header__search-dropdown header__search-dropdown--hidden">
-                        <a href="search.html" class="header__search-dropdown-item">Консервы</a>
-                        <a href="search.html" class="header__search-dropdown-item">Консервированные каши</a>
-                        <a href="search.html" class="header__search-dropdown-item">Консервы фруктовые</a>
-                        <a href="search.html" class="header__search-dropdown-item">Консервы овощные</a>
+                        <a href="./search.html" class="header__search-dropdown-item">Консервы</a>
+                        <a href="./search.html" class="header__search-dropdown-item">Консервированные каши</a>
+                        <a href="./search.html" class="header__search-dropdown-item">Консервы фруктовые</a>
+                        <a href="./search.html" class="header__search-dropdown-item">Консервы овощные</a>
                     </div>
                 </div>
             </form>
@@ -79,30 +79,30 @@
                     Нур-Султан
 
                     <svg>
-                        <use xlink:href="img/sprite.svg#location-icon"></use>
+                        <use xlink:href="./img/sprite.svg#location-icon"></use>
                     </svg>
                 </div>
 
-                <div href="login.html" class="header__login-mobile">
+                <div href="./login.html" class="header__login-mobile">
                     <span>Вход/</span>
                     Регистрация
 
                     <svg>
-						<use xlink:href="img/sprite.svg#user-icon"></use>
+						<use xlink:href="./img/sprite.svg#user-icon"></use>
                     </svg>
 
                     <div class="header__login-dropdown">
-                        <a href="relative-login.html" class="header__login-link">Как родственник</a>
-                        <a href="convicted-login.html" class="header__login-link">Как заключенный</a>
+                        <a href="./relative-login.html" class="header__login-link">Как родственник</a>
+                        <a href="./convicted-login.html" class="header__login-link">Как заключенный</a>
                     </div>
                 </div>
 
-                <div href="login.html" class="header__login">
+                <div class="header__login">
                     Войти
 
                     <div class="header__login-dropdown">
-                        <a href="relative-login.html" class="header__login-link">Как родственник</a>
-                        <a href="convicted-login.html" class="header__login-link">Как заключенный</a>
+                        <a href="./relative-login.html" class="header__login-link">Как родственник</a>
+                        <a href="./convicted-login.html" class="header__login-link">Как заключенный</a>
                     </div>
                 </div>
             </div>
@@ -119,43 +119,59 @@
                         </svg>
 
                         <div class="header__categories-dropdown">
-                            <div class="header__categories-dropdown-items">
-                                <a href="#" class="header__categories-dropdown-item">
-                                    Разное
+                            <div class="header__categories-dropdown-inner">
+                                <div class="header__categories-dropdown-items">
+                                    <a href="#" class="header__categories-dropdown-item">
+                                        Разное
 
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52876 13.1381C5.26841 12.8777 5.26841 12.4556 5.52876 12.1953L9.72402 8.00001L5.52876 3.80475C5.26841 3.5444 5.26841 3.12229 5.52876 2.86194C5.78911 2.60159 6.21122 2.60159 6.47157 2.86194L11.1382 7.52861C11.3986 7.78896 11.3986 8.21107 11.1382 8.47142L6.47157 13.1381C6.21122 13.3984 5.78911 13.3984 5.52876 13.1381Z"/>
-                                    </svg>
-                                </a>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52876 13.1381C5.26841 12.8777 5.26841 12.4556 5.52876 12.1953L9.72402 8.00001L5.52876 3.80475C5.26841 3.5444 5.26841 3.12229 5.52876 2.86194C5.78911 2.60159 6.21122 2.60159 6.47157 2.86194L11.1382 7.52861C11.3986 7.78896 11.3986 8.21107 11.1382 8.47142L6.47157 13.1381C6.21122 13.3984 5.78911 13.3984 5.52876 13.1381Z"/>
+                                        </svg>
 
-                                <a href="#" class="header__categories-dropdown-item">
-                                    Сигареты
-                                </a>
+                                        <div class="header__categories-subdropdown">
+                                            <a href="#" class="header__categories-subdropdown-item">
+                                                Карты Тарлан
+                                            </a>
 
-                                <a href="#" class="header__categories-dropdown-item">
-                                    Канцтовары
+                                            <a href="#" class="header__categories-subdropdown-item">
+                                                Газеты, Журналы
+                                            </a>
 
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52876 13.1381C5.26841 12.8777 5.26841 12.4556 5.52876 12.1953L9.72402 8.00001L5.52876 3.80475C5.26841 3.5444 5.26841 3.12229 5.52876 2.86194C5.78911 2.60159 6.21122 2.60159 6.47157 2.86194L11.1382 7.52861C11.3986 7.78896 11.3986 8.21107 11.1382 8.47142L6.47157 13.1381C6.21122 13.3984 5.78911 13.3984 5.52876 13.1381Z"/>
-                                    </svg>
-                                </a>
+                                            <a href="#" class="header__categories-subdropdown-item">
+                                                Средства защиты от комаров
+                                            </a>
+                                        </div>
+                                    </a>
 
-                                <a href="#" class="header__categories-dropdown-item">
-                                    Одежда
+                                    <a href="#" class="header__categories-dropdown-item">
+                                        Сигареты
+                                    </a>
 
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52876 13.1381C5.26841 12.8777 5.26841 12.4556 5.52876 12.1953L9.72402 8.00001L5.52876 3.80475C5.26841 3.5444 5.26841 3.12229 5.52876 2.86194C5.78911 2.60159 6.21122 2.60159 6.47157 2.86194L11.1382 7.52861C11.3986 7.78896 11.3986 8.21107 11.1382 8.47142L6.47157 13.1381C6.21122 13.3984 5.78911 13.3984 5.52876 13.1381Z"/>
-                                    </svg>
-                                </a>
+                                    <a href="#" class="header__categories-dropdown-item">
+                                        Канцтовары
 
-                                <a href="#" class="header__categories-dropdown-item">
-                                    Комплект
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52876 13.1381C5.26841 12.8777 5.26841 12.4556 5.52876 12.1953L9.72402 8.00001L5.52876 3.80475C5.26841 3.5444 5.26841 3.12229 5.52876 2.86194C5.78911 2.60159 6.21122 2.60159 6.47157 2.86194L11.1382 7.52861C11.3986 7.78896 11.3986 8.21107 11.1382 8.47142L6.47157 13.1381C6.21122 13.3984 5.78911 13.3984 5.52876 13.1381Z"/>
+                                        </svg>
+                                    </a>
+
+                                    <a href="#" class="header__categories-dropdown-item">
+                                        Одежда
+
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52876 13.1381C5.26841 12.8777 5.26841 12.4556 5.52876 12.1953L9.72402 8.00001L5.52876 3.80475C5.26841 3.5444 5.26841 3.12229 5.52876 2.86194C5.78911 2.60159 6.21122 2.60159 6.47157 2.86194L11.1382 7.52861C11.3986 7.78896 11.3986 8.21107 11.1382 8.47142L6.47157 13.1381C6.21122 13.3984 5.78911 13.3984 5.52876 13.1381Z"/>
+                                        </svg>
+                                    </a>
+
+                                    <a href="#" class="header__categories-dropdown-item">
+                                        Комплект
+                                    </a>
+                                </div>
+
+                                <a href="#" class="header__categories-dropdown-link">
+                                    Все категории
                                 </a>
                             </div>
-
-                            <a href="#" class="header__categories-dropdown-link">
-                                Все категории
-                            </a>
                         </div>
                     </div>
 
@@ -359,43 +375,59 @@
                         </svg>
 
                         <div class="header__categories-dropdown">
-                            <div class="header__categories-dropdown-items">
-                                <a href="#" class="header__categories-dropdown-item">
-                                    Разное
+                            <div class="header__categories-dropdown-inner">
+                                <div class="header__categories-dropdown-items">
+                                    <a href="#" class="header__categories-dropdown-item">
+                                        Разное
 
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52876 13.1381C5.26841 12.8777 5.26841 12.4556 5.52876 12.1953L9.72402 8.00001L5.52876 3.80475C5.26841 3.5444 5.26841 3.12229 5.52876 2.86194C5.78911 2.60159 6.21122 2.60159 6.47157 2.86194L11.1382 7.52861C11.3986 7.78896 11.3986 8.21107 11.1382 8.47142L6.47157 13.1381C6.21122 13.3984 5.78911 13.3984 5.52876 13.1381Z"/>
-                                    </svg>
-                                </a>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52876 13.1381C5.26841 12.8777 5.26841 12.4556 5.52876 12.1953L9.72402 8.00001L5.52876 3.80475C5.26841 3.5444 5.26841 3.12229 5.52876 2.86194C5.78911 2.60159 6.21122 2.60159 6.47157 2.86194L11.1382 7.52861C11.3986 7.78896 11.3986 8.21107 11.1382 8.47142L6.47157 13.1381C6.21122 13.3984 5.78911 13.3984 5.52876 13.1381Z"/>
+                                        </svg>
 
-                                <a href="#" class="header__categories-dropdown-item">
-                                    Сигареты
-                                </a>
+                                        <div class="header__categories-subdropdown">
+                                            <a href="#" class="header__categories-subdropdown-item">
+                                                Карты Тарлан
+                                            </a>
 
-                                <a href="#" class="header__categories-dropdown-item">
-                                    Канцтовары
+                                            <a href="#" class="header__categories-subdropdown-item">
+                                                Газеты, Журналы
+                                            </a>
 
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52876 13.1381C5.26841 12.8777 5.26841 12.4556 5.52876 12.1953L9.72402 8.00001L5.52876 3.80475C5.26841 3.5444 5.26841 3.12229 5.52876 2.86194C5.78911 2.60159 6.21122 2.60159 6.47157 2.86194L11.1382 7.52861C11.3986 7.78896 11.3986 8.21107 11.1382 8.47142L6.47157 13.1381C6.21122 13.3984 5.78911 13.3984 5.52876 13.1381Z"/>
-                                    </svg>
-                                </a>
+                                            <a href="#" class="header__categories-subdropdown-item">
+                                                Средства защиты от комаров
+                                            </a>
+                                        </div>
+                                    </a>
 
-                                <a href="#" class="header__categories-dropdown-item">
-                                    Одежда
+                                    <a href="#" class="header__categories-dropdown-item">
+                                        Сигареты
+                                    </a>
 
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52876 13.1381C5.26841 12.8777 5.26841 12.4556 5.52876 12.1953L9.72402 8.00001L5.52876 3.80475C5.26841 3.5444 5.26841 3.12229 5.52876 2.86194C5.78911 2.60159 6.21122 2.60159 6.47157 2.86194L11.1382 7.52861C11.3986 7.78896 11.3986 8.21107 11.1382 8.47142L6.47157 13.1381C6.21122 13.3984 5.78911 13.3984 5.52876 13.1381Z"/>
-                                    </svg>
-                                </a>
+                                    <a href="#" class="header__categories-dropdown-item">
+                                        Канцтовары
 
-                                <a href="#" class="header__categories-dropdown-item">
-                                    Комплект
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52876 13.1381C5.26841 12.8777 5.26841 12.4556 5.52876 12.1953L9.72402 8.00001L5.52876 3.80475C5.26841 3.5444 5.26841 3.12229 5.52876 2.86194C5.78911 2.60159 6.21122 2.60159 6.47157 2.86194L11.1382 7.52861C11.3986 7.78896 11.3986 8.21107 11.1382 8.47142L6.47157 13.1381C6.21122 13.3984 5.78911 13.3984 5.52876 13.1381Z"/>
+                                        </svg>
+                                    </a>
+
+                                    <a href="#" class="header__categories-dropdown-item">
+                                        Одежда
+
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52876 13.1381C5.26841 12.8777 5.26841 12.4556 5.52876 12.1953L9.72402 8.00001L5.52876 3.80475C5.26841 3.5444 5.26841 3.12229 5.52876 2.86194C5.78911 2.60159 6.21122 2.60159 6.47157 2.86194L11.1382 7.52861C11.3986 7.78896 11.3986 8.21107 11.1382 8.47142L6.47157 13.1381C6.21122 13.3984 5.78911 13.3984 5.52876 13.1381Z"/>
+                                        </svg>
+                                    </a>
+
+                                    <a href="#" class="header__categories-dropdown-item">
+                                        Комплект
+                                    </a>
+                                </div>
+
+                                <a href="#" class="header__categories-dropdown-link">
+                                    Все категории
                                 </a>
                             </div>
-
-                            <a href="#" class="header__categories-dropdown-link">
-                                Все категории
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -473,7 +505,7 @@
 
                     <div class="header__categories-dropdown">
                         <div class="header__categories-dropdown-inner">
-                            <div class="header__categories-dropdown-items menu-sub">
+                            <div class="header__categories-dropdown-items">
                                 <a href="#" class="header__categories-dropdown-item menu-sub-item">
                                     Разное
 
@@ -506,20 +538,6 @@
                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52876 13.1381C5.26841 12.8777 5.26841 12.4556 5.52876 12.1953L9.72402 8.00001L5.52876 3.80475C5.26841 3.5444 5.26841 3.12229 5.52876 2.86194C5.78911 2.60159 6.21122 2.60159 6.47157 2.86194L11.1382 7.52861C11.3986 7.78896 11.3986 8.21107 11.1382 8.47142L6.47157 13.1381C6.21122 13.3984 5.78911 13.3984 5.52876 13.1381Z"/>
                                     </svg>
-
-                                    <div class="header__categories-subdropdown">
-                                        <a href="#" class="header__categories-subdropdown-item">
-                                            Карты Тарлан
-                                        </a>
-
-                                        <a href="#" class="header__categories-subdropdown-item">
-                                            Газеты, Журналы
-                                        </a>
-
-                                        <a href="#" class="header__categories-subdropdown-item">
-                                            Средства защиты от комаров
-                                        </a>
-                                    </div>
                                 </a>
 
                                 <a href="#" class="header__categories-dropdown-item menu-sub-item">
@@ -528,20 +546,6 @@
                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52876 13.1381C5.26841 12.8777 5.26841 12.4556 5.52876 12.1953L9.72402 8.00001L5.52876 3.80475C5.26841 3.5444 5.26841 3.12229 5.52876 2.86194C5.78911 2.60159 6.21122 2.60159 6.47157 2.86194L11.1382 7.52861C11.3986 7.78896 11.3986 8.21107 11.1382 8.47142L6.47157 13.1381C6.21122 13.3984 5.78911 13.3984 5.52876 13.1381Z"/>
                                     </svg>
-
-                                    <div class="header__categories-subdropdown">
-                                        <a href="#" class="header__categories-subdropdown-item">
-                                            Карты Тарлан
-                                        </a>
-
-                                        <a href="#" class="header__categories-subdropdown-item">
-                                            Газеты, Журналы
-                                        </a>
-
-                                        <a href="#" class="header__categories-subdropdown-item">
-                                            Средства защиты от комаров
-                                        </a>
-                                    </div>
                                 </a>
 
                                 <a href="#" class="header__categories-dropdown-item menu-sub-item">
@@ -557,7 +561,7 @@
                 </div>
             </div>
 
-            <a href="cart.html" class="header__cart menu-more">
+            <a href="./cart.html" class="header__cart menu-more">
                 <div class="header__cart-price">
                     <span>Корзина</span>
                     2 400 г.
@@ -568,7 +572,7 @@
                 </div>
 
                 <svg>
-                    <use xlink:href="img/sprite.svg#cart-icon"></use>
+                    <use xlink:href="./img/sprite.svg#cart-icon"></use>
                 </svg>
             </a>
         </div>
@@ -592,7 +596,7 @@
         </div>
 
         <div class="mobile-menu__item">
-            <a href="cart.html" class="mobile-menu__link mobile-menu__link--notify">
+            <a href="./cart.html" class="mobile-menu__link mobile-menu__link--notify">
 
                 <div class="mobile-menu__link-icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -670,7 +674,7 @@
                                 <a href="#" class="banner__slide-link">Подробнее</a>
                             </div>
 
-                            <div class="banner__slide-img" style="background-image: url('img/slider.jpg');"></div>
+                            <div class="banner__slide-img" style="background-image: url('./img/slider.jpg');"></div>
                         </div><!-- /.banner__slide -->
 
                         <!-- Banner slide -->
@@ -684,7 +688,7 @@
                                 <a href="#" class="banner__slide-link">Подробнее</a>
                             </div>
 
-                            <div class="banner__slide-img" style="background-image: url('img/slider.jpg');"></div>
+                            <div class="banner__slide-img" style="background-image: url('./img/slider.jpg');"></div>
                         </div><!-- /.banner__slide -->
 
                         <!-- Banner slide -->
@@ -698,7 +702,7 @@
                                 <a href="#" class="banner__slide-link">Подробнее</a>
                             </div>
 
-                            <div class="banner__slide-img" style="background-image: url('img/slider.jpg');"></div>
+                            <div class="banner__slide-img" style="background-image: url('./img/slider.jpg');"></div>
                         </div><!-- /.banner__slide -->
 
                         <!-- Banner slide -->
@@ -712,7 +716,7 @@
                                 <a href="#" class="banner__slide-link">Подробнее</a>
                             </div>
 
-                            <div class="banner__slide-img" style="background-image: url('img/slider.jpg');"></div>
+                            <div class="banner__slide-img" style="background-image: url('./img/slider.jpg');"></div>
                         </div><!-- /.banner__slide -->
                     </div>
                 </div>
@@ -723,22 +727,22 @@
             <div class="container">
                 <div class="swiper-container propos__slider">
                     <div class="swiper-wrapper">
-                        <a href="#" class="propos__item swiper-slide" style="background: url('img/plov.png') 27px 15px no-repeat, linear-gradient(175.37deg, #FA6A6A -9.92%, #E43F3F 96.25%);">
+                        <a href="#" class="propos__item swiper-slide" style="background: url('./img/plov.png') 27px 15px no-repeat, linear-gradient(175.37deg, #FA6A6A -9.92%, #E43F3F 96.25%);">
                             <div class="propos__item-title">Горячие блюда</div>
                             <p class="propos__item-label">Вкуснейшие блюда из 4 ресторанов</p>
                         </a>
 
-                        <a href="#" class="propos__item swiper-slide" style="background: url('img/m_m.png') 26px 9px no-repeat, linear-gradient(171.27deg, #A8CBFF -6.86%, #7BB0FF 93.34%);">
+                        <a href="#" class="propos__item swiper-slide" style="background: url('./img/m_m.png') 26px 9px no-repeat, linear-gradient(171.27deg, #A8CBFF -6.86%, #7BB0FF 93.34%);">
                             <div class="propos__item-title">Новинки</div>
                             <p class="propos__item-label">Новые позиции</p>
                         </a>
 
-                        <a href="#" class="propos__item swiper-slide" style="background: url('img/percent.png') 60px 25px no-repeat, linear-gradient(166.25deg, #BBB0FF -21.04%, #8470FF 90.17%);">
+                        <a href="#" class="propos__item swiper-slide" style="background: url('./img/percent.png') 60px 25px no-repeat, linear-gradient(166.25deg, #BBB0FF -21.04%, #8470FF 90.17%);">
                             <div class="propos__item-title">Акции</div>
                             <p class="propos__item-label">Лучшие цены</p>
                         </a>
 
-                        <a href="#" class="propos__item swiper-slide" style="background: url('img/packet.png') -15px 0 no-repeat, linear-gradient(180.1deg, #FFD37D -7.02%, #FDC352 99.91%);">
+                        <a href="#" class="propos__item swiper-slide" style="background: url('./img/packet.png') -15px 0 no-repeat, linear-gradient(180.1deg, #FFD37D -7.02%, #FDC352 99.91%);">
                             <div class="propos__item-title">Комплекты</div>
                             <p class="propos__item-label">Все в одном</p>
                         </a>
@@ -773,11 +777,11 @@
                         <div class="swiper-wrapper products__slides">
                             <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -797,11 +801,11 @@
 </div>
                             <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -821,11 +825,11 @@
 </div>
                             <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -845,11 +849,11 @@
 </div>
                             <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -869,11 +873,11 @@
 </div>
                             <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -893,11 +897,11 @@
 </div>
                             <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -917,11 +921,11 @@
 </div>
                             <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -940,7 +944,7 @@
     </div>
 </div>
 
-                            <a href="#" class="swiper-slide product-card product-card--showall" style="background-image: url('img/product-bg.png');">
+                            <a href="#" class="swiper-slide product-card product-card--showall" style="background-image: url('./img/product-bg.png');">
                                 <svg class="product-card--showall__icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M25 17.019L25 26.5C25 27.3284 25.6716 28 26.5 28C27.3284 28 28 27.3284 28 26.5L28 13.5C28 12.6716 27.3284 12 26.5 12L13.5 12C12.6716 12 12 12.6716 12 13.5C12 14.3284 12.6716 15 13.5 15L22.7773 15L12.4341 25.4444C11.8511 26.033 11.8557 26.9828 12.4444 27.5657C13.033 28.1486 13.9827 28.144 14.5657 27.5554L25 17.019Z"/>
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M20 40C8.95431 40 -3.91405e-07 31.0457 -8.74228e-07 20C-1.35705e-06 8.95431 8.9543 -3.91405e-07 20 -8.74228e-07C31.0457 -1.35705e-06 40 8.9543 40 20C40 31.0457 31.0457 40 20 40ZM3 20C3 29.3888 10.6112 37 20 37C29.3888 37 37 29.3888 37 20C37 10.6112 29.3888 3 20 3C10.6112 3 3 10.6112 3 20Z"/>
@@ -980,11 +984,11 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -1004,11 +1008,11 @@
 </div>
                             <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -1028,11 +1032,11 @@
 </div>
                             <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -1052,11 +1056,11 @@
 </div>
                             <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -1076,11 +1080,11 @@
 </div>
                             <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -1100,11 +1104,11 @@
 </div>
                             <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -1124,11 +1128,11 @@
 </div>
                             <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -1147,7 +1151,7 @@
     </div>
 </div>
 
-                            <a href="#" class="swiper-slide product-card product-card--showall" style="background-image: url('img/product-bg.png');">
+                            <a href="#" class="swiper-slide product-card product-card--showall" style="background-image: url('./img/product-bg.png');">
                                 <svg class="product-card--showall__icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M25 17.019L25 26.5C25 27.3284 25.6716 28 26.5 28C27.3284 28 28 27.3284 28 26.5L28 13.5C28 12.6716 27.3284 12 26.5 12L13.5 12C12.6716 12 12 12.6716 12 13.5C12 14.3284 12.6716 15 13.5 15L22.7773 15L12.4341 25.4444C11.8511 26.033 11.8557 26.9828 12.4444 27.5657C13.033 28.1486 13.9827 28.144 14.5657 27.5554L25 17.019Z"/>
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M20 40C8.95431 40 -3.91405e-07 31.0457 -8.74228e-07 20C-1.35705e-06 8.95431 8.9543 -3.91405e-07 20 -8.74228e-07C31.0457 -1.35705e-06 40 8.9543 40 20C40 31.0457 31.0457 40 20 40ZM3 20C3 29.3888 10.6112 37 20 37C29.3888 37 37 29.3888 37 20C37 10.6112 29.3888 3 20 3C10.6112 3 3 10.6112 3 20Z"/>
@@ -1187,11 +1191,11 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -1211,11 +1215,11 @@
 </div>
                             <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -1235,11 +1239,11 @@
 </div>
                             <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -1259,11 +1263,11 @@
 </div>
                             <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -1283,11 +1287,11 @@
 </div>
                             <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -1307,11 +1311,11 @@
 </div>
                             <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -1331,11 +1335,11 @@
 </div>
                             <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -1354,7 +1358,7 @@
     </div>
 </div>
 
-                            <a href="#" class="swiper-slide product-card product-card--showall" style="background-image: url('img/product-bg.png');">
+                            <a href="#" class="swiper-slide product-card product-card--showall" style="background-image: url('./img/product-bg.png');">
                                 <svg class="product-card--showall__icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M25 17.019L25 26.5C25 27.3284 25.6716 28 26.5 28C27.3284 28 28 27.3284 28 26.5L28 13.5C28 12.6716 27.3284 12 26.5 12L13.5 12C12.6716 12 12 12.6716 12 13.5C12 14.3284 12.6716 15 13.5 15L22.7773 15L12.4341 25.4444C11.8511 26.033 11.8557 26.9828 12.4444 27.5657C13.033 28.1486 13.9827 28.144 14.5657 27.5554L25 17.019Z"/>
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M20 40C8.95431 40 -3.91405e-07 31.0457 -8.74228e-07 20C-1.35705e-06 8.95431 8.9543 -3.91405e-07 20 -8.74228e-07C31.0457 -1.35705e-06 40 8.9543 40 20C40 31.0457 31.0457 40 20 40ZM3 20C3 29.3888 10.6112 37 20 37C29.3888 37 37 29.3888 37 20C37 10.6112 29.3888 3 20 3C10.6112 3 3 10.6112 3 20Z"/>
@@ -1378,11 +1382,11 @@
                 <div class="products__items--four">
                     <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -1402,11 +1406,11 @@
 </div>
                     <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -1426,11 +1430,11 @@
 </div>
                     <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -1450,11 +1454,11 @@
 </div>
                     <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -1474,11 +1478,11 @@
 </div>
                     <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -1498,11 +1502,11 @@
 </div>
                     <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -1522,11 +1526,11 @@
 </div>
                     <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -1546,11 +1550,11 @@
 </div>
                     <div class="swiper-slide product-card">
     <div class="product-card__top">
-        <a href="product.html">
-            <img src="img/product.png" alt="Товар" class="product-card__img">
+        <a href="./product.html">
+            <img src="./img/product.png" alt="Товар" class="product-card__img">
         </a>
 
-        <a href="product.html">
+        <a href="./product.html">
             <h3 class="product-card__title">Конина тушеная Улан, 2 строка</h3>
         </a>
 
@@ -1577,11 +1581,11 @@
 	<div class="container footer__container">
 		<div class="footer__top">
 			<div class="footer__nav">
-				<a href="about.html" class="footer__nav-item">О компании</a>
-				<a href="faq.html" class="footer__nav-item">Вопрос-Ответ</a>
-				<a href="news.html" class="footer__nav-item">Новости</a>
-				<a href="contacts.html" class="footer__nav-item">Контакты</a>
-				<a href="balance.html" class="footer__nav-item">Пополнение баланса</a>
+				<a href="./about.html" class="footer__nav-item">О компании</a>
+				<a href="./faq.html" class="footer__nav-item">Вопрос-Ответ</a>
+				<a href="./news.html" class="footer__nav-item">Новости</a>
+				<a href="./contacts.html" class="footer__nav-item">Контакты</a>
+				<a href="./balance.html" class="footer__nav-item">Пополнение баланса</a>
 			</div>
 
 			<div class="footer__phone phone">
@@ -1604,19 +1608,19 @@
 				<div class="footer__bottom-socials socials">
 					<a href="#" class="socials__item">
 						<svg>
-							<use xlink:href="img/sprite.svg#facebook-icon"></use>
+							<use xlink:href="./img/sprite.svg#facebook-icon"></use>
 						</svg>
 					</a>
 
 					<a href="#" class="socials__item">
 						<svg>
-							<use xlink:href="img/sprite.svg#inst-icon"></use>
+							<use xlink:href="./img/sprite.svg#inst-icon"></use>
 						</svg>
 					</a>
 
 					<a href="#" class="socials__item">
 						<svg>
-							<use xlink:href="img/sprite.svg#twitter-icon"></use>
+							<use xlink:href="./img/sprite.svg#twitter-icon"></use>
 						</svg>
 					</a>
 				</div>
@@ -1624,7 +1628,7 @@
 
 			<div class="footer__bottom-right">
 				<svg class="footer__bottom-age">
-					<use xlink:href="img/sprite.svg#age-icon"></use>
+					<use xlink:href="./img/sprite.svg#age-icon"></use>
 				</svg>
 			</div>
 		</div>
@@ -1635,7 +1639,7 @@
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <div class="menu">
                 <div class="menu__head">
-                    <a href="index.html" class="logo menu__logo">
+                    <a href="./index.html" class="logo menu__logo">
                         <svg width="85" height="35" viewBox="0 0 85 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M75.5124 17.0355L75.3331 16.3613L74.7168 16.9123L75.5124 17.0355Z" fill="#00622B" />
                             <path
@@ -1677,23 +1681,23 @@
 
                 <div class="account-menu">
                     <div class="account-menu__nav">
-                        <a href="about.html" class="account-menu__link">
+                        <a href="./about.html" class="account-menu__link">
                             О Компании
                         </a>
 
-                        <a href="faq.html" class="account-menu__link">
+                        <a href="./faq.html" class="account-menu__link">
                             Вопрос-ответ
                         </a>
 
-                        <a href="news.html" class="account-menu__link">
+                        <a href="./news.html" class="account-menu__link">
                             Новости
                         </a>
 
-                        <a href="contacts.html" class="account-menu__link">
+                        <a href="./contacts.html" class="account-menu__link">
                             Контакты
                         </a>
 
-                        <a href="balance.html" class="account-menu__link">
+                        <a href="./balance.html" class="account-menu__link">
                             Пополнение баланса
                         </a>
                     </div>
@@ -1714,19 +1718,19 @@
                         <div class="socials">
                             <a href="#" class="socials__item">
                                 <svg>
-                                    <use xlink:href="img/sprite.svg#facebook-icon"></use>
+                                    <use xlink:href="./img/sprite.svg#facebook-icon"></use>
                                 </svg>
                             </a>
 
                             <a href="#" class="socials__item">
                                 <svg>
-                                    <use xlink:href="img/sprite.svg#inst-icon"></use>
+                                    <use xlink:href="./img/sprite.svg#inst-icon"></use>
                                 </svg>
                             </a>
 
                             <a href="#" class="socials__item">
                                 <svg>
-                                    <use xlink:href="img/sprite.svg#twitter-icon"></use>
+                                    <use xlink:href="./img/sprite.svg#twitter-icon"></use>
                                 </svg>
                             </a>
                         </div>

@@ -2,20 +2,36 @@
     padding: 53px 0 150px 0;
     flex-direction: column;
 
+    @include breakpoint(sm-max) {
+        padding: 20px 0 70px 0;
+    }
+
     &__head {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 30px;
+
+        @include breakpoint(sm-max) {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
     }
 
     &__title {
         max-width: 680px;
-        font-family: "Museo Sans Cyrl";
         font-weight: 900;
         font-size: 32px;
         line-height: 38px;
+
+        @include breakpoint(sm-max) {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+        }
     }
 
     &__date {
@@ -23,6 +39,12 @@
         line-height: 17px;
         text-align: right;
         color: var(--color-wistful);
+
+        @include breakpoint(sm-max) {
+            font-size: 12px;
+            line-height: 14px;
+            margin-bottom: 20px;
+        }
     }
 
     &__img {
@@ -32,6 +54,12 @@
         object-fit: cover;
         margin-bottom: 30px;
         border-radius: 10px;
+
+        @include breakpoint(sm-max) {
+            object-position: left;
+            height: 162px;
+            margin-bottom: 20px;
+        }
     }
 
     &__text {
@@ -39,5 +67,9 @@
         line-height: 150%;
         color: var(--color-black);
         text-align: justify;
+
+        @include breakpoint(sm-max) {
+            font-size: 14px;
+        }
     }
 }

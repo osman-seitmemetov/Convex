@@ -21,14 +21,14 @@
 </head>
 <body>
     <!-- Includes -->
-    @include('html/header-md.html')
-    @include('html/mobile-menu.html')
+    @include('./html/header-md.html')
+    @include('./html/mobile-menu.html')
 
     <main class="main">
         <section class="breadcrumbs">
-            <div class="container">
-                <a href="news.html" class="breadcrumbs__item">Новости</a>
-                <div class="breadcrumbs__separator">&nbsp/&nbsp</div>
+            <div class="container breadcrumbs__container">
+                <a href="./news.html" class="breadcrumbs__item">Новости</a>
+                <span class="breadcrumbs__separator">&nbsp/&nbsp</span>
                 <a class="breadcrumbs__item">Доставка товаров и продуктов питания в СИЗО и Колонии Алматы</a>
             </div>
         </section>
@@ -62,7 +62,7 @@
         </section>
     </main>
 
-    @include('html/footer.html')
-    @include('html/menu.html')
+    @include('./html/footer.html')
+    @include('./html/menu.html')
 </body>
 </html>
