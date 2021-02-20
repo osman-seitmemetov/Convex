@@ -25,13 +25,13 @@
 
     <main class="main">
         <section class="breadcrumbs">
-            <div class="container">
-                <a href="#" class="breadcrumbs__item">Главная</a>
-                <span class="breadcrumbs__separator">&nbsp/&nbsp</span>
+            <div class="container breadcrumbs__container">
+                <a href="./index.html" class="breadcrumbs__item">Главная</a>
+                <span class="breadcrumbs__separator">/</span>
                 <a href="#" class="breadcrumbs__item">Еда</a>
-                <span class="breadcrumbs__separator">&nbsp/&nbsp</span>
+                <span class="breadcrumbs__separator">/</span>
                 <a href="#" class="breadcrumbs__item">Консервы</a>
-                <span class="breadcrumbs__separator">&nbsp/&nbsp</span>
+                <span class="breadcrumbs__separator">/</span>
                 <a class="breadcrumbs__item">Говядина тушеная Улан высший сорт </a>
             </div>
         </section>
@@ -58,9 +58,60 @@
                             Товар доступен:
                             <span>11 шт.</span>
                         </div>
+
+                        <div class="product__desc-property product__desc-property--extend">
+                            Размер:
+
+                            <div class="product__desc-property-items">
+                                <label class="product__desc-property-item">
+                                    <input class="product__desc-property-item-input" name="size" type="radio" checked>
+                                    <div class="product__desc-property-item-radio">S</div>
+                                </label>
+
+                                <label class="product__desc-property-item">
+                                    <input class="product__desc-property-item-input" name="size" type="radio">
+                                    <div class="product__desc-property-item-radio">M</div>
+                                </label>
+
+                                <label class="product__desc-property-item">
+                                    <input class="product__desc-property-item-input" name="size" type="radio" disabled>
+                                    <div class="product__desc-property-item-radio">L</div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="product__desc-property product__desc-property--extend">
+                            Цвет:
+
+                            <div class="product__desc-property-items">
+                                <label class="product__desc-property-item">
+                                    <input class="product__desc-property-item-input" name="color" type="radio" checked>
+
+                                    <div class="product__desc-property-item-radio">
+                                        <div style="background-color: #303030;"></div>
+                                    </div>
+                                </label>
+
+                                <label class="product__desc-property-item">
+                                    <input class="product__desc-property-item-input" name="color" type="radio">
+
+                                    <div class="product__desc-property-item-radio">
+                                        <div style="background-color: #ffffff;"></div>
+                                    </div>
+                                </label>
+
+                                <label class="product__desc-property-item">
+                                    <input class="product__desc-property-item-input" name="color" type="radio">
+
+                                    <div class="product__desc-property-item-radio">
+                                        <div style="background-color: #F16161;"></div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
                     </div>
 
-                    <button disabled class="product__desc-btn btn">В корзину</button>
+                    <button class="product__desc-btn btn">В корзину</button>
 
                     <div class="product__desc-text">
                         Продукт имеет высокие сроки хранения, а также не требует дополнительных условий при хранении. Кроме того,

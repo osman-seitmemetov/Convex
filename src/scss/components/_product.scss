@@ -11,7 +11,6 @@
     }
 
     &__desc-title {
-        font-family: "Museo Sans Cyrl";
         font-weight: 700;
         font-size: 36px;
         line-height: 43px;
@@ -23,7 +22,6 @@
         display: flex;
         align-items: center;
         margin-bottom: 35px;
-        font-family: "Museo Sans Cyrl";
         font-weight: 700;
         font-size: 36px;
         line-height: 43px;
@@ -35,7 +33,6 @@
     }
 
     &__desc-price-old {
-        font-family: 'Museo Sans Cyrl';
         font-weight: 400;
         font-size: 24px;
         line-height: 29px;
@@ -50,19 +47,71 @@
 
     &__desc-property {
         margin-bottom: 5px;
-        font-family: "Museo Sans Cyrl";
         font-weight: 300;
         font-size: 14px;
         line-height: 17px;
         color: var(--color-black);
 
         span {
-            font-family: "Museo Sans Cyrl";
-        font-weight: 700;
+            font-weight: 700;
         }
 
         &:last-child {
             margin-bottom: 0;
+        }
+    }
+
+    &__desc-property--extend {
+        margin-top: 15px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: var(--color-black);
+    }
+
+    &__desc-property-items {
+        margin-top: 5px;
+        display: flex;
+    }
+
+    &__desc-property-item {
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+
+    &__desc-property-item-input {
+        display: none;
+
+        &:checked + .product__desc-property-item-radio {
+            border: 2px solid var(--color-emerald);
+        }
+    }
+
+    &__desc-property-item-input[disabled] + .product__desc-property-item-radio {
+        background-color: var(--color-gallery);
+        border: 0;
+        color: var(--color-silver-chalice);
+        cursor: default;
+    }
+
+    &__desc-property-item-radio {
+        width: 40px;
+        height: 40px;
+        border: 1px solid var(--color-wistful);
+        border-radius: 6px;
+        cursor: pointer;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+
+        div {
+            width: 100%;
+            height: 100%;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
         }
     }
 
@@ -75,11 +124,104 @@
     }
 
     &__desc-text {
-        font-family: "Museo Sans Cyrl";
         font-weight: 300;
         font-size: 15px;
         line-height: 150%;
         color: var(--color-black);
         max-width: 480px;
+    }
+
+    &__desc-table {
+    }
+
+    &__desc-content-btn {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        font-size: 15px;
+        line-height: 100%;
+        color: var(--color-emerald);
+        margin-top: 20px;
+
+        svg {
+            width: 18px;
+            height: 18px;
+            fill: var(--color-emerald);
+            transform: rotate(-180deg);
+            margin-left: 10px;
+        }
+    }
+
+    &__desc-content-btn--active {
+        svg {
+            transform: rotate(360deg);
+        }
+    }
+
+    &__desc-table-wrap {
+        height: 160px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__desc-table-bg {
+        width: 100%;
+        height: 196px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 50%);
+        position: absolute;
+        bottom: -106px;
+    }
+}
+
+.desc-table {
+    color: var(--color-black);
+    font-size: 15px;
+    line-height: 220%;
+
+    &__title {
+        margin-bottom: 10px;
+        text-align: left;
+        font-size: 15px;
+        line-height: 150%;
+    }
+
+    &__head {
+        margin-bottom: 10px;
+        border-spacing: 0 10px;
+    }
+
+    &__head-item {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 150%;
+        padding-right: 10px;
+    }
+
+    &__footer {
+    }
+
+    &__body {
+    }
+
+    &__body-number {
+        width: 50px;
+        padding-right: 10px;
+    }
+
+    &__body-title {
+        width: 317px;
+        padding-right: 10px;
+    }
+
+    &__body-count {
+        padding-right: 10px;
+        width: 127px;
+    }
+
+    &__body-weight {
+        width: 46px;
+        padding-right: 10px;
     }
 }
