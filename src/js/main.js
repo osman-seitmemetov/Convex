@@ -4,7 +4,7 @@ import './components/magic-line';
 import './components/search';
 import './components/sliders';
 import './components/select';
-import './components/menu';
+// import './components/menu';
 import './components/auth-dropdown';
 // import './components/account-accordion';
 import './_vars';

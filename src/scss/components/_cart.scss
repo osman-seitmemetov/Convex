@@ -231,6 +231,11 @@
         @include breakpoint(lg-max) {
             width: 100%;
         }
+
+        @include breakpoint(sm-max) {
+            border: 0 !important;
+            padding: 0 !important;
+        }
     }
 
     &__result {
@@ -318,6 +323,11 @@
         line-height: 100%;
         text-align: center;
         color: var(--color-silver-chalice);
+
+        @include breakpoint(sm-max) {
+            margin-top: 30px;
+            font-size: 14px;
+        }
     }
 }
 
