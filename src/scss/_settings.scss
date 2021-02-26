@@ -205,6 +205,10 @@ button[disabled] {
         line-height: 150%;
     }
 
+    &__separator {
+        color: var(--color-wistful);
+    }
+
     &__container {
         display: block !important;
     }

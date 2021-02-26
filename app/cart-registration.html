@@ -61,7 +61,7 @@
                         Поиск товаров
                     </span>
 
-                    <input type="text">
+                    <input type="text" inputmode="search">
 
                     <div class="header__search-dropdown header__search-dropdown--hidden">
                         <a href="./search.html" class="header__search-dropdown-item">Консервы</a>
@@ -648,20 +648,20 @@
                 <form action="cart-payment.html" class="form">
                     <div class="form__input input">
                         <label class="input__title" for="Адрес">Адрес</label>
-                        <input type="text" id="Адрес" placeholder="Алматы" class="input__field">
-                        <input type="text" id="Адрес" placeholder="ЕЦ-166/4" class="input__field">
+                        <input type="text" id="Адрес" inputmode="text" placeholder="Алматы" class="input__field">
+                        <input type="text" id="Адрес" inputmode="text" placeholder="ЕЦ-166/4" class="input__field">
                     </div>
 
                     <div class="form__input input">
-                        <div class="input__title">Данные получателя</div>
-                        <input type="text" placeholder="Логин" class="input__field">
+                        <label class="input__title" for="Данные получателя">Данные получателя</label>
+                        <input type="text" id="Данные получателя" inputmode="text" placeholder="Логин" class="input__field">
 
-                        <input type="text" placeholder="Имя" class="input__field input__field--hidden">
-                        <input type="text" placeholder="Фамилия" class="input__field input__field--hidden">
+                        <input type="text" id="Данные получателя" inputmode="text" placeholder="Имя" class="input__field input__field--hidden">
+                        <input type="text" id="Данные получателя" inputmode="text" placeholder="Фамилия" class="input__field input__field--hidden">
                     </div>
 
                     <div class="form__input input input--hidden">
-                        <div class="input__title">Дата рождения*</div>
+                        <label class="input__title" for="Дата рождения*">Дата рождения*</label>
 
                         <div class="input__selects">
                             <div class="select">
@@ -811,8 +811,8 @@
                     </div>
 
                     <div class="form__input input">
-                        <div class="input__title">Дата доставки</div>
-                        <input type="text" placeholder="дд.мм.гггг." class="input__field">
+                        <label class="input__title" for="Дата доставки">Дата доставки</label>
+                        <input type="text" id="Дата доставки" inputmode="decimal" placeholder="дд.мм.гггг." class="input__field">
                     </div>
 
                     <div class="form__warning">

@@ -62,7 +62,7 @@
                         Поиск товаров
                     </span>
 
-                    <input type="text">
+                    <input type="text" inputmode="search">
 
                     <div class="header__search-dropdown header__search-dropdown--hidden">
                         <a href="./search.html" class="header__search-dropdown-item">Консервы</a>
@@ -410,23 +410,23 @@
 
                 <form action="/" class="modal__form modal__form--faq form" method="dialog">
                     <div class="form__input input">
-                        <div class="input__title">Фамилия и имя*</div>
-                        <input type="text" inputmode="text" placeholder="Введите вашу фамилию и имя" class="input__field">
+                        <label class="input__title" for="Фамилия и имя*">Фамилия и имя*</label>
+                        <input type="text" id="Фамилия и имя*" inputmode="text" placeholder="Введите вашу фамилию и имя" class="input__field">
                     </div>
 
                     <div class="form__input input">
-                        <div class="input__title">Телефон*</div>
-                        <input type="tel" inputmode="tel" placeholder="Введите ваш номер телефона" class="input__field">
+                        <label class="input__title" for="Телефон*">Телефон*</label>
+                        <input type="tel" id="Телефон*" inputmode="tel" placeholder="Введите ваш номер телефона" class="input__field">
                     </div>
 
                     <div class="form__input input">
-                        <div class="input__title">Email*</div>
-                        <input type="email" inputmode="email" placeholder="Введите вашу почту" class="input__field">
+                        <label class="input__title" for="Email*">Email*</label>
+                        <input type="email" id="Email*" inputmode="email" placeholder="Введите вашу почту" class="input__field">
                     </div>
 
                     <div class="form__input input">
-                        <div class="input__title">Ваше сообщение*</div>
-                        <textarea cols="" rows="" inputmode="text" type="text" placeholder="Напишите нам" class="input__text-area"></textarea>
+                        <label class="input__title" for="Ваше сообщение*">Ваше сообщение*</label>
+                        <textarea cols="" rows="" id="Ваше сообщение*" inputmode="text" placeholder="Напишите нам" class="input__text-area"></textarea>
                     </div>
 
                     <div class="form__add">

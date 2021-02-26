@@ -79,7 +79,7 @@
                         Поиск товаров
                     </span>
 
-                    <input type="text">
+                    <input type="text" inputmode="search">
 
                     <div class="header__search-dropdown header__search-dropdown--hidden">
                         <a href="./search.html" class="header__search-dropdown-item">Консервы</a>
@@ -335,34 +335,33 @@
 
                     <div class="profile__inputs">
                         <div class="profile__input input input--disabled">
-                            <div class="input__title">Фамилия</div>
-                            <input type="text" value="Малахов" class="input__field" disabled>
+                            <label class="input__title" for="Фамилия">Фамилия</label>
+                            <input type="text" id="Фамилия" inputmode="text" value="Малахов" class="input__field" disabled>
                         </div>
 
                         <div class="profile__input input input--disabled">
-                            <div class="input__title">Имя</div>
-                            <input type="text" value="Виктор" class="input__field" disabled>
+                            <label class="input__title" for="Имя">Имя</label>
+                            <input type="text" id="Имя" inputmode="text" value="Виктор" class="input__field" disabled>
                         </div>
 
                         <div class="profile__input input input--disabled">
-                            <div class="input__title">Дата рождения</div>
-                            <input type="text" value="24.10.1976" class="input__field" disabled>
+                            <label class="input__title" for="Дата рождения">Дата рождения</label>
+                            <input type="text" id="Дата рождения" inputmode="decimal" value="24.10.1976" class="input__field" disabled>
                         </div>
 
                         <div class="profile__input input input--disabled">
-                            <div class="input__title">Мобильный телефон</div>
-                            <input type="tel" value="+7 (707) 998-61-63" class="input__field" disabled>
+                            <label class="input__title" for="Мобильный телефон">Мобильный телефон</label>
+                            <input type="tel" id="Мобильный телефон" inputmode="tel" value="+7 (707) 998-61-63" class="input__field" disabled>
                         </div>
 
                         <div class="profile__input input input--disabled">
-                            <div class="input__title">Email</div>
-                            <input type="email" value="viktor@gmail.com" class="input__field" disabled>
+                            <label class="input__title" for="Email">Email</label>
+                            <input type="email" id="Email" inputmode="email" value="viktor@gmail.com" class="input__field" disabled>
                         </div>
 
-
                         <div class="profile__input input input--disabled">
-                            <div class="input__title">Пол</div>
-                            <input type="text" value="Мужской" class="input__field" disabled>
+                            <label class="input__title" for="Пол">Пол</label>
+                            <input type="text" id="Пол" inputmode="text" value="Мужской" class="input__field" disabled>
                         </div>
                     </div>
 
@@ -492,20 +491,20 @@
 
                 <form action="/" class="modal__form form" method="dialog">
                     <div class="form__input input">
-                        <div class="input__title">Старый пароль</div>
-                        <input type="text" placeholder="Введите старый пароль" class="input__field">
+                        <label class="input__title" for="Старый пароль">Старый пароль</label>
+                        <input type="text" id="Старый пароль" inputmode="text" placeholder="Введите старый пароль" class="input__field">
                         <div class="input__error-log">Неверный формат телефона</div>
                     </div>
 
                     <div class="form__input input">
-                        <div class="input__title">Новый пароль</div>
-                        <input type="text" placeholder="Введите новый пароль" class="input__field">
+                        <label class="input__title" for="Новый пароль">Новый пароль</label>
+                        <input type="text" id="Новый пароль" inputmode="text" placeholder="Введите новый пароль" class="input__field">
                         <div class="input__error-log">Неверный формат телефона</div>
                     </div>
 
                     <div class="form__input input">
-                        <div class="input__title">Повторите новый пароль</div>
-                        <input type="text" placeholder="Повторите новый пароль" class="input__field">
+                        <label class="input__title" for="Повторите новый пароль">Повторите новый пароль</label>
+                        <input type="text" id="Повторите новый пароль" inputmode="text" placeholder="Повторите новый пароль" class="input__field">
                         <div class="input__error-log">Неверный формат телефона</div>
                     </div>
 
@@ -531,14 +530,14 @@
 
                 <form action="/" class="modal__form form" method="dialog">
                     <div class="form__input input">
-                        <div class="input__title">Логин</div>
-                        <input type="text" placeholder="Введите логин" class="input__field">
+                        <label class="input__title" for="Логин">Логин</label>
+                        <input type="text" id="Логин" inputmode="text" placeholder="Введите логин" class="input__field">
                         <div class="input__error-log">Неверный формат телефона</div>
                     </div>
 
                     <div class="form__input input">
-                        <div class="input__title">Сумма перевода</div>
-                        <input type="text" placeholder="Введите сумму перевода" class="input__field">
+                        <label class="input__title" for="Сумма перевода">Сумма перевода</label>
+                        <input type="text" id="Сумма перевода" inputmode="numeric" placeholder="Введите сумму перевода" class="input__field">
                         <div class="input__error-log">Неверный формат телефона</div>
                     </div>
 
@@ -705,7 +704,7 @@
 
                             <a href="./contacts.html" class="account-menu__link">
                                 Контакты
-                            </a
+                            </a>
                         </div>
 
                         <hr class="account-menu__separator">

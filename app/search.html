@@ -61,7 +61,7 @@
                         Поиск товаров
                     </span>
 
-                    <input type="text">
+                    <input type="text" inputmode="search">
 
                     <div class="header__search-dropdown header__search-dropdown--hidden">
                         <a href="./search.html" class="header__search-dropdown-item">Консервы</a>
@@ -641,20 +641,18 @@
 
     <main class="main">
         <section class="breadcrumbs">
-            <div class="container">
-                <div class="breadcrumbs__item">Главная</div>
-                <div class="breadcrumbs__separator">&nbsp/&nbsp</div>
-                <div class="breadcrumbs__item">Еда</div>
-                <div class="breadcrumbs__separator">&nbsp/&nbsp</div>
-                <div class="breadcrumbs__item">Консервы</div>
+            <div class="container breadcrumbs__container">
+                <a href="./index.html" class="breadcrumbs__item">Главная</a>
+                <span class="breadcrumbs__separator">/</span>
+                <a href="#" class="breadcrumbs__item">Еда</a>
+                <span class="breadcrumbs__separator">/</span>
+                <a class="breadcrumbs__item">Консервы</a>
             </div>
         </section>
 
         <section class="search">
             <div class="container">
-                <div class="title">
-                    Консервы
-                </div>
+                <div class="title">Консервы</div>
 
                 <div class="search__components">
                     <form action="search.html" class="sidebar">

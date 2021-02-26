@@ -31,15 +31,15 @@
 
             <form action="convicted-account.html" class="form">
                 <div class="form__input input input--error">
-                    <div class="input__title">Номер телефона</div>
-                    <input type="text" placeholder="Введите ваш номер телефона" class="input__field">
+                    <label class="input__title" for="Номер телефона">Номер телефона</label>
+                    <input type="text" id="Номер телефона" inputmode="tel" placeholder="Введите ваш номер телефона" class="input__field">
 
                     <div class="input__error-log">Неверный формат телефона</div>
                 </div>
 
                 <div class="form__input input">
-                    <div class="input__title">Пароль</div>
-                    <input type="password" placeholder="Введите пароль" class="input__field">
+                    <label class="input__title" for="Пароль">Пароль</label>
+                    <input type="password" id="Пароль" inputmode="text" placeholder="Введите пароль" class="input__field">
                 </div>
 
                 <div class="form-additional">
@@ -56,7 +56,7 @@
 
                 <span class="form__separator">или</span>
 
-                <a href="./signup.html" class="form__link">Зарегистрироваться</a>
+                <a href="./convicted-signup.html" class="form__link">Зарегистрироваться</a>
             </form>
         </div>
     </section>
