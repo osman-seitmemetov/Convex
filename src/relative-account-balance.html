@@ -34,7 +34,7 @@
                         122 200 тг
                     </div>
 
-                    <button type="button" class="account-sidebar__balance-btn">Сделать перевод</button>
+                    <button data-hystmodal="#relative-transfer-modal" id="transfer" type="button" class="account-sidebar__balance-btn">Сделать перевод</button>
                 </div>
 
                 <nav class="account-sidebar__nav">
@@ -105,89 +105,125 @@
                             <div class="balance__title">Выберите способ пополнения баланса</div>
 
                             <div class="payment">
-                                <button type="button" class="payment__item payment__item--active">
-                                    <div class="payment__item-icons">
-                                        <svg class="payment__item-icon">
-                                            <use xlink:href="./img/sprite.svg#mastercard-icon"></use>
-                                        </svg>
-
-                                        <svg class="payment__item-icon">
-                                            <use xlink:href="./img/sprite.svg#visa-icon"></use>
-                                        </svg>
+                                <label class="payment__item">
+                                    <input class="payment__item-input" type="radio" name="payment">
+        
+                                    <div class="payment__item-radio">
+                                        <div class="payment__item-icons">
+                                            <svg class="payment__item-icon">
+                                                <use xlink:href="./img/sprite.svg#mastercard-icon"></use>
+                                            </svg>
+        
+                                            <svg class="payment__item-icon">
+                                                <use xlink:href="./img/sprite.svg#visa-icon"></use>
+                                            </svg>
+                                        </div>
+        
+                                        <div class="payment__item-title">Банковские карты Visa, MasterCard, American Express</div>
                                     </div>
-
-                                    <div class="payment__item-title">Банковские карты Visa, MasterCard, American Express</div>
-                                </button>
-
-                                <button type="button" class="payment__item">
-                                    <div class="payment__item-icons">
-                                        <img src="./img/kassa24-icon.png" alt="Карта" class="payment__item-icon">
+                                </label>
+        
+                                <label class="payment__item">
+                                    <input class="payment__item-input" type="radio" name="payment">
+        
+                                    <div class="payment__item-radio">
+                                        <div class="payment__item-icons">
+                                            <img src="./img/kassa24-icon.png" alt="Карта" class="payment__item-icon">
+                                        </div>
+        
+                                        <div class="payment__item-title">Терминалы Касса24</div>
                                     </div>
-
-                                    <div class="payment__item-title">Терминалы Касса24</div>
-                                </button>
-
-                                <button type="button" class="payment__item">
-                                    <div class="payment__item-icons">
-                                        <img src="./img/atf24-icon.png" alt="Карта" class="payment__item-icon">
+                                </label>
+        
+                                <label class="payment__item">
+                                    <input class="payment__item-input" type="radio" name="payment">
+        
+                                    <div class="payment__item-radio">
+                                        <div class="payment__item-icons">
+                                            <img src="./img/atf24-icon.png" alt="Карта" class="payment__item-icon">
+                                        </div>
+        
+                                        <div class="payment__item-title">Интернет банкинг АТФ24</div>
                                     </div>
-
-                                    <div class="payment__item-title">Интернет банкинг АТФ24</div>
-                                </button>
-
-                                <button type="button" class="payment__item">
-                                    <div class="payment__item-icons">
-                                        <img src="./img/alfabank-icon.png" alt="Карта" class="payment__item-icon">
+                                </label>
+        
+                                <label class="payment__item">
+                                    <input class="payment__item-input" type="radio" name="payment">
+        
+                                    <div class="payment__item-radio">
+                                        <div class="payment__item-icons">
+                                            <img src="./img/alfabank-icon.png" alt="Карта" class="payment__item-icon">
+                                        </div>
+        
+                                        <div class="payment__item-title">Интернет Банкинг AlfaBank</div>
                                     </div>
-
-                                    <div class="payment__item-title">Интернет Банкинг AlfaBank</div>
-                                </button>
-
-                                <button type="button" class="payment__item">
-                                    <div class="payment__item-icons">
-                                        <img src="./img/bankrbk-icon.png" alt="Карта" class="payment__item-icon">
+                                </label>
+        
+                                <label class="payment__item">
+                                    <input class="payment__item-input" type="radio" name="payment">
+        
+                                    <div class="payment__item-radio">
+                                        <div class="payment__item-icons">
+                                            <img src="./img/bankrbk-icon.png" alt="Карта" class="payment__item-icon">
+                                        </div>
+        
+                                        <div class="payment__item-title">Интернет Банкинг RBK банк</div>
                                     </div>
-
-                                    <div class="payment__item-title">Интернет Банкинг RBK банк</div>
-                                </button>
-
-                                <button type="button" class="payment__item">
-                                    <div class="payment__item-icons">
-                                        <img src="./img/eurasianbank-icon.png" alt="Карта" class="payment__item-icon">
+                                </label>
+        
+                                <label class="payment__item">
+                                    <input class="payment__item-input" type="radio" name="payment">
+        
+                                    <div class="payment__item-radio">
+                                        <div class="payment__item-icons">
+                                            <img src="./img/eurasianbank-icon.png" alt="Карта" class="payment__item-icon">
+                                        </div>
+        
+                                        <div class="payment__item-title">Интернет Банкинг Евразийский</div>
                                     </div>
-
-                                    <div class="payment__item-title">Интернет Банкинг Евразийский</div>
-                                </button>
-
-                                <button type="button" class="payment__item">
-                                    <div class="payment__item-icons">
-                                        <svg class="payment__item-icon">
-                                            <use xlink:href="./img/sprite.svg#sberbank-icon"></use>
-                                        </svg>
+                                </label>
+        
+                                <label class="payment__item">
+                                    <input class="payment__item-input" type="radio" name="payment">
+        
+                                    <div class="payment__item-radio">
+                                        <div class="payment__item-icons">
+                                            <svg class="payment__item-icon">
+                                                <use xlink:href="./img/sprite.svg#sberbank-icon"></use>
+                                            </svg>
+                                        </div>
+        
+                                        <div class="payment__item-title">Интернет Банкинг Сбербанк Казахстан</div>
                                     </div>
-
-                                    <div class="payment__item-title">Интернет Банкинг Сбербанк Казахстан</div>
-                                </button>
-
-                                <button type="button" class="payment__item">
-                                    <div class="payment__item-icons">
-                                        <svg class="payment__item-icon">
-                                            <use xlink:href="./img/sprite.svg#qiwi-icon"></use>
-                                        </svg>
+                                </label>
+        
+                                <label class="payment__item">
+                                    <input class="payment__item-input" type="radio" name="payment">
+        
+                                    <div class="payment__item-radio">
+                                        <div class="payment__item-icons">
+                                            <svg class="payment__item-icon">
+                                                <use xlink:href="./img/sprite.svg#qiwi-icon"></use>
+                                            </svg>
+                                        </div>
+        
+                                        <div class="payment__item-title">Кошелек Qiwi</div>
                                     </div>
-
-                                    <div class="payment__item-title">Кошелек Qiwi</div>
-                                </button>
-
-                                <button type="button" class="payment__item">
-                                    <div class="payment__item-icons">
-                                        <svg class="payment__item-icon">
-                                            <use xlink:href="./img/sprite.svg#americanexpress-icon"></use>
-                                        </svg>
+                                </label>
+        
+                                <label class="payment__item">
+                                    <input class="payment__item-input" type="radio" name="payment">
+        
+                                    <div class="payment__item-radio">
+                                        <div class="payment__item-icons">
+                                            <svg class="payment__item-icon">
+                                                <use xlink:href="./img/sprite.svg#americanexpress-icon"></use>
+                                            </svg>
+                                        </div>
+        
+                                        <div class="payment__item-title">Банковские карты Visa, MasterCard, American Express</div>
                                     </div>
-
-                                    <div class="payment__item-title">Банковские карты Visa, MasterCard, American Express</div>
-                                </button>
+                                </label>
                             </div>
 
                             <button class="balance__btn btn">Пополнить баланс</button>
@@ -290,6 +326,10 @@
     <div class="footer-hidden">
         @include('./html/footer.html')
     </div>
+
+    @include('./html/password-popup-modal.html')
+    @include('./html/password-modal.html')
+    @include('./html/relative-transfer-modal.html')
 
 
     <div class="hystmodal hystmodal--menu" id="account-menu-relative" aria-hidden="true">

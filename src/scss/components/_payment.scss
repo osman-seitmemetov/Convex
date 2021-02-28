@@ -16,6 +16,31 @@
 	&__item {
 		width: 100%;
 		height: 180px;
+		cursor: pointer;
+
+		@include breakpoint(sm-max) {
+			height: 152px;
+		}
+
+		&:first-child {
+			@include breakpoint(sm-max) {
+				grid-column: 1 / span 2;
+			}
+		}
+	}
+
+	&__item-input {
+		display: none;
+
+		&:checked + .payment__item-radio {
+			background: rgba(70, 197, 120, 0.2);
+			border: 1px solid var(--color-emerald);
+		}
+	}
+
+	&__item-radio {
+		width: 100%;
+		height: 100%;
 		border: 1px solid var(--color-wistful);
 		border-radius: 10px;
 		background-color: transparent;
@@ -26,20 +51,8 @@
 		align-items: center;
 
 		@include breakpoint(sm-max) {
-			height: 152px;
 			padding: 15px;
 		}
-
-		&:first-child {
-			@include breakpoint(sm-max) {
-				grid-column: 1 / span 2;
-			}
-		}
-	}
-
-	&__item--active {
-		background: rgba(70, 197, 120, 0.2);
-		border: 1px solid var(--color-emerald);
 	}
 
 	&__item-icons {

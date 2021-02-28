@@ -33,7 +33,7 @@
                         122 200 тг
                     </div>
 
-                    <button type="button" class="account-sidebar__balance-btn">Сделать перевод</button>
+                    <button data-hystmodal="#relative-transfer-modal" id="transfer" type="button" class="account-sidebar__balance-btn">Сделать перевод</button>
                 </div>
 
                 <nav class="account-sidebar__nav">
@@ -190,6 +190,10 @@
     <div class="footer-hidden">
         @include('./html/footer.html')
     </div>
+
+    @include('./html/password-popup-modal.html')
+    @include('./html/password-modal.html')
+    @include('./html/relative-transfer-modal.html')
 
 
     <div class="hystmodal hystmodal--menu" id="account-menu-relative" aria-hidden="true">

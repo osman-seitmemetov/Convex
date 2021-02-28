@@ -647,89 +647,125 @@
 
                 <form action="cart.html" class="cart-payment__form">
                     <div class="payment">
-                        <button type="button" class="payment__item payment__item--active">
-                            <div class="payment__item-icons">
-                                <svg class="payment__item-icon">
-                                    <use xlink:href="./img/sprite.svg#mastercard-icon"></use>
-                                </svg>
+                        <label class="payment__item">
+                            <input class="payment__item-input" type="radio" name="payment">
 
-                                <svg class="payment__item-icon">
-                                    <use xlink:href="./img/sprite.svg#visa-icon"></use>
-                                </svg>
+                            <div class="payment__item-radio">
+                                <div class="payment__item-icons">
+                                    <svg class="payment__item-icon">
+                                        <use xlink:href="./img/sprite.svg#mastercard-icon"></use>
+                                    </svg>
+
+                                    <svg class="payment__item-icon">
+                                        <use xlink:href="./img/sprite.svg#visa-icon"></use>
+                                    </svg>
+                                </div>
+
+                                <div class="payment__item-title">Банковские карты Visa, MasterCard, American Express</div>
                             </div>
+                        </label>
 
-                            <div class="payment__item-title">Банковские карты Visa, MasterCard, American Express</div>
-                        </button>
+                        <label class="payment__item">
+                            <input class="payment__item-input" type="radio" name="payment">
 
-                        <button type="button" class="payment__item">
-                            <div class="payment__item-icons">
-                                <img src="./img/kassa24-icon.png" alt="Карта" class="payment__item-icon">
+                            <div class="payment__item-radio">
+                                <div class="payment__item-icons">
+                                    <img src="./img/kassa24-icon.png" alt="Карта" class="payment__item-icon">
+                                </div>
+
+                                <div class="payment__item-title">Терминалы Касса24</div>
                             </div>
+                        </label>
 
-                            <div class="payment__item-title">Терминалы Касса24</div>
-                        </button>
+                        <label class="payment__item">
+                            <input class="payment__item-input" type="radio" name="payment">
 
-                        <button type="button" class="payment__item">
-                            <div class="payment__item-icons">
-                                <img src="./img/atf24-icon.png" alt="Карта" class="payment__item-icon">
+                            <div class="payment__item-radio">
+                                <div class="payment__item-icons">
+                                    <img src="./img/atf24-icon.png" alt="Карта" class="payment__item-icon">
+                                </div>
+
+                                <div class="payment__item-title">Интернет банкинг АТФ24</div>
                             </div>
+                        </label>
 
-                            <div class="payment__item-title">Интернет банкинг АТФ24</div>
-                        </button>
+                        <label class="payment__item">
+                            <input class="payment__item-input" type="radio" name="payment">
 
-                        <button type="button" class="payment__item">
-                            <div class="payment__item-icons">
-                                <img src="./img/alfabank-icon.png" alt="Карта" class="payment__item-icon">
+                            <div class="payment__item-radio">
+                                <div class="payment__item-icons">
+                                    <img src="./img/alfabank-icon.png" alt="Карта" class="payment__item-icon">
+                                </div>
+
+                                <div class="payment__item-title">Интернет Банкинг AlfaBank</div>
                             </div>
+                        </label>
 
-                            <div class="payment__item-title">Интернет Банкинг AlfaBank</div>
-                        </button>
+                        <label class="payment__item">
+                            <input class="payment__item-input" type="radio" name="payment">
 
-                        <button type="button" class="payment__item">
-                            <div class="payment__item-icons">
-                                <img src="./img/bankrbk-icon.png" alt="Карта" class="payment__item-icon">
+                            <div class="payment__item-radio">
+                                <div class="payment__item-icons">
+                                    <img src="./img/bankrbk-icon.png" alt="Карта" class="payment__item-icon">
+                                </div>
+
+                                <div class="payment__item-title">Интернет Банкинг RBK банк</div>
                             </div>
+                        </label>
 
-                            <div class="payment__item-title">Интернет Банкинг RBK банк</div>
-                        </button>
+                        <label class="payment__item">
+                            <input class="payment__item-input" type="radio" name="payment">
 
-                        <button type="button" class="payment__item">
-                            <div class="payment__item-icons">
-                                <img src="./img/eurasianbank-icon.png" alt="Карта" class="payment__item-icon">
+                            <div class="payment__item-radio">
+                                <div class="payment__item-icons">
+                                    <img src="./img/eurasianbank-icon.png" alt="Карта" class="payment__item-icon">
+                                </div>
+
+                                <div class="payment__item-title">Интернет Банкинг Евразийский</div>
                             </div>
+                        </label>
 
-                            <div class="payment__item-title">Интернет Банкинг Евразийский</div>
-                        </button>
+                        <label class="payment__item">
+                            <input class="payment__item-input" type="radio" name="payment">
 
-                        <button type="button" class="payment__item">
-                            <div class="payment__item-icons">
-                                <svg class="payment__item-icon">
-                                    <use xlink:href="./img/sprite.svg#sberbank-icon"></use>
-                                </svg>
+                            <div class="payment__item-radio">
+                                <div class="payment__item-icons">
+                                    <svg class="payment__item-icon">
+                                        <use xlink:href="./img/sprite.svg#sberbank-icon"></use>
+                                    </svg>
+                                </div>
+
+                                <div class="payment__item-title">Интернет Банкинг Сбербанк Казахстан</div>
                             </div>
+                        </label>
 
-                            <div class="payment__item-title">Интернет Банкинг Сбербанк Казахстан</div>
-                        </button>
+                        <label class="payment__item">
+                            <input class="payment__item-input" type="radio" name="payment">
 
-                        <button type="button" class="payment__item">
-                            <div class="payment__item-icons">
-                                <svg class="payment__item-icon">
-                                    <use xlink:href="./img/sprite.svg#qiwi-icon"></use>
-                                </svg>
+                            <div class="payment__item-radio">
+                                <div class="payment__item-icons">
+                                    <svg class="payment__item-icon">
+                                        <use xlink:href="./img/sprite.svg#qiwi-icon"></use>
+                                    </svg>
+                                </div>
+
+                                <div class="payment__item-title">Кошелек Qiwi</div>
                             </div>
+                        </label>
 
-                            <div class="payment__item-title">Кошелек Qiwi</div>
-                        </button>
+                        <label class="payment__item">
+                            <input class="payment__item-input" type="radio" name="payment">
 
-                        <button type="button" class="payment__item">
-                            <div class="payment__item-icons">
-                                <svg class="payment__item-icon">
-                                    <use xlink:href="./img/sprite.svg#americanexpress-icon"></use>
-                                </svg>
+                            <div class="payment__item-radio">
+                                <div class="payment__item-icons">
+                                    <svg class="payment__item-icon">
+                                        <use xlink:href="./img/sprite.svg#americanexpress-icon"></use>
+                                    </svg>
+                                </div>
+
+                                <div class="payment__item-title">Банковские карты Visa, MasterCard, American Express</div>
                             </div>
-
-                            <div class="payment__item-title">Банковские карты Visa, MasterCard, American Express</div>
-                        </button>
+                        </label>
                     </div>
 
                     <button type="submit" class="cart-payment__btn btn">Продолжить</button>
