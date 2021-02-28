@@ -2,12 +2,15 @@
 	display: grid;
 	grid-gap: 20px;
 	grid-template-columns: repeat(3, 1fr);
+	width: 100%;
 	max-width: 760px;
 
 	@include breakpoint(sm-max) {
 		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 7px;
-		max-width: 480px;
+		max-width: 380px;
+		width: 100%;
+		margin: 0 auto;
 	}
 
 	&__item {

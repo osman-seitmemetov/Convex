@@ -5,16 +5,23 @@
 
     &__title {
         margin-bottom: 50px;
+        text-align: center;
     }
 
     &__form {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include breakpoint(sm-max) {
+            width: 100%;
+            margin: 0 auto;
+            max-width: 380px;
+        }
     }
 
     &__btn {
-        width: 380px;
+        width: 100%;
         height: 50px;
         margin-top: 30px;
         font-family: "Museo Sans Cyrl";
