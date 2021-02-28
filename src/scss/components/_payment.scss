@@ -26,6 +26,12 @@
 			height: 152px;
 			padding: 15px;
 		}
+
+		&:first-child {
+			@include breakpoint(sm-max) {
+				grid-column: 1 / span 2;
+			}
+		}
 	}
 
 	&__item--active {

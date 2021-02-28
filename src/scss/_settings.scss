@@ -26,10 +26,6 @@ html {
     font-weight: 400;
     font-style: normal;
     color: var(--color-mine-shaft);
-
-    // @include breakpoint(md-max) {
-    //     cursor: default;
-    // }
 }
 
 body {
@@ -104,6 +100,7 @@ button[disabled] {
     text-decoration: none;
     border: 0;
     max-width: 380px;
+    padding: 0 15px;
 
     &:hover {
         background-color: var(--color-emerald-hover);
@@ -122,6 +119,7 @@ button[disabled] {
     bottom: 80px;
     left: 50%;
     transform: translateX(-50%);
+    padding: 0 15px;
     width: calc(100% - 30px);
     max-width: 380px;
     height: 50px;
@@ -288,7 +286,7 @@ button[disabled] {
     align-items: inherit;
 
     @include breakpoint(lg-max) {
-        padding: 0 50px;
+        padding: 0 30px;
     }
 
     @include breakpoint(sm-max) {
