@@ -3,13 +3,25 @@
     flex-direction: column;
     padding: 38px 0 0 0;
 
+    &__container {
+        @include breakpoint(sm-max) {
+            max-width: 380px;
+        }
+    }
+
     &__title {
-        font-family: "Museo Sans Cyrl";
-        font-weight: 700;
-        font-size: 42px;
-        line-height: 100%;
-        color: var(--color-black);
-        margin-bottom: 50px;
+        @include breakpoint(sm-max) {
+            display: none;
+        }
+    }
+
+    &__title--mob {
+        display: none;
+        margin: 0;
+
+        @include breakpoint(sm-max) {
+            display: block;
+        }
     }
 
     &__components {

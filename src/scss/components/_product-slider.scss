@@ -20,7 +20,6 @@
     }
 
     &__title {
-        font-family: "Museo Sans Cyrl";
         font-weight: 700;
         font-size: 42px;
         line-height: 50px;
@@ -34,6 +33,11 @@
     &__count {
         font-size: 18px;
         line-height: 22px;
+
+        @include breakpoint(sm-max) {
+            font-size: 14px;
+            line-height: 100%;
+        }
     }
 
     &__filter {
@@ -43,6 +47,10 @@
         cursor: pointer;
         align-items: center;
         position: relative;
+
+        @include breakpoint(sm-max) {
+            display: none;
+        }
 
         svg {
             width: 16px;
@@ -112,6 +120,12 @@
         }
     }
 
+    &__items {
+        @include breakpoint(sm-max) {
+            margin-top: 0 !important;
+        }
+    }
+
     &__items--four {
         width: 100%;
         // display: flex;
@@ -120,7 +134,7 @@
         grid-gap: 60px;
         grid-template-columns: repeat(4, 1fr);
 
-        .product {
+        .product-card {
             width: auto;
         }
 
@@ -154,37 +168,58 @@
     }
 
     &__items--three {
-        display: flex;
-        flex-wrap: wrap;
+        // display: flex;
+        // flex-wrap: wrap;
+        display: grid;
+        grid-gap: 60px;
+        grid-template-columns: repeat(3, 1fr);
         margin-top: -20px;
 
-        .product {
-            @include breakpoint(sm-max) {
-                margin-right: 60px;
-                margin-bottom: 60px;
-
-                &:nth-child(3n) {
-                    margin-right: 0;
-                }
-
-                &:nth-last-child(-n + 3) {
-                    margin-bottom: 0;
-                }
-            }
-
-            @include breakpoint(sm-max) {
-                margin-right: 30px;
-                margin-bottom: 30px;
-
-                &:nth-child(2n) {
-                    margin-right: 0;
-                }
-
-                &:nth-last-child(-n + 2) {
-                    margin-bottom: 0;
-                }
-            }
+        @include breakpoint(lg-max) {
+            grid-gap: 30px;
         }
+
+        @include breakpoint(md-max) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+
+        @include breakpoint(sm-max) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 15px;
+        }
+
+        .product-card {
+            width: auto;
+        }
+
+        // .product {
+        //     @include breakpoint(sm-max) {
+        //         margin-right: 60px;
+        //         margin-bottom: 60px;
+
+        //         &:nth-child(3n) {
+        //             margin-right: 0;
+        //         }
+
+        //         &:nth-last-child(-n + 3) {
+        //             margin-bottom: 0;
+        //         }
+        //     }
+
+        //     @include breakpoint(sm-max) {
+        //         margin-right: 30px;
+        //         margin-bottom: 30px;
+
+        //         &:nth-child(2n) {
+        //             margin-right: 0;
+        //         }
+
+        //         &:nth-last-child(-n + 2) {
+        //             margin-bottom: 0;
+        //         }
+        //     }
+        // }
     }
 
     &__empty {
@@ -205,23 +240,32 @@
 
     &__empty-title {
         max-width: 380px;
-        font-family: "Museo Sans Cyrl";
         font-weight: 700;
         font-size: 24px;
         line-height: 29px;
         text-align: center;
         color: var(--color-black);
         margin-bottom: 15px;
+
+        @include breakpoint(sm-max) {
+            font-size: 20px;
+            line-height: 24px;
+        }
     }
 
     &__empty-text {
         max-width: 280px;
-        font-family: "Museo Sans Cyrl";
         font-weight: 300;
         font-size: 16px;
         line-height: 19px;
         text-align: center;
         color: var(--color-black);
+
+        @include breakpoint(sm-max) {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+        }
 
         a {
             color: var(--color-emerald);
@@ -366,7 +410,6 @@
     }
 
     &__price-old {
-        font-family: "Museo Sans Cyrl";
         font-weight: 400;
         font-size: 18px;
         line-height: 22px;
@@ -436,7 +479,6 @@
     }
 
     &__title {
-        font-family: "Museo Sans Cyrl";
         font-weight: 700;
         font-size: 18px;
         line-height: 22px;

@@ -519,6 +519,10 @@
     &__categories-items {
         display: flex;
         margin-right: 30px;
+
+        @include breakpoint(lg-max) {
+            display: none;
+        }
     }
 
     &__categories-item {

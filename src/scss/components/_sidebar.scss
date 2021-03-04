@@ -5,12 +5,19 @@
     margin-right: 30px;
     margin-bottom: 80px;
 
+    @include breakpoint(sm-max) {
+        display: none;
+    }
+
     &__filter {
         margin-bottom: 50px;
     }
 
+    &__checkbox {
+        margin-bottom: 20px;
+    }
+
     &__filter-title {
-        font-family: "Museo Sans Cyrl";
         font-weight: 700;
         font-size: 18px;
         line-height: 22px;
@@ -28,7 +35,6 @@
         display: flex;
         margin-right: 10px;
         align-items: center;
-        font-family: "Museo Sans Cyrl";
         font-weight: 300;
         font-size: 12px;
         line-height: 14px;
@@ -61,21 +67,9 @@
         border: none;
         background-color: var(--color-emerald);
         color: var(--color-white);
-        font-family: "Museo Sans Cyrl";
         font-weight: 700;
         font-size: 18px;
         line-height: 22px;
-        outline: none;
-        cursor: pointer;
-        transition: .5s;
-
-        &:hover {
-            background-color: var(--color-emerald-hover);
-        }
-
-        &:active {
-            background-color: var(--color-emerald-pressed);
-        }
     }
 
     &__reset {
@@ -85,8 +79,6 @@
         border-radius: 10px;
         outline: none;
         background: none;
-        cursor: pointer;
-        font-family: "Museo Sans Cyrl";
         font-weight: 700;
         font-size: 18px;
         line-height: 22px;

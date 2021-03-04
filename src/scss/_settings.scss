@@ -21,7 +21,7 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
-    -webkit-tap-highlight-color: transparent;
+    // -webkit-tap-highlight-color: transparent;
     font-family: "Museo Sans Cyrl";
     font-weight: 400;
     font-style: normal;
@@ -286,7 +286,7 @@ button[disabled] {
     align-items: inherit;
 
     @include breakpoint(lg-max) {
-        padding: 0 30px;
+        padding: 0 50px;
     }
 
     @include breakpoint(sm-max) {

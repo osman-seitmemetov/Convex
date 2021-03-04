@@ -32,6 +32,8 @@
     }
 
     &__link--active {
+        cursor: default;
+
         .mobile-menu__link-icon {
             svg {
                 fill: var(--color-emerald);
